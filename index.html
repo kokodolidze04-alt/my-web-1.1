@@ -3,50 +3,94 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>პორტფოლიო | მთავარი</title>
+
+    <title>Portfolio | Home</title>
+
+    <meta name="description" content="Professional portfolio showcasing web development and 3D visualization projects.">
+    <meta name="author" content="Your Name">
+    <meta name="theme-color" content="#050505">
+
     <link rel="stylesheet" href="style.css">
-    <script src="https://unpkg.com/lucide@latest"></script>
-    <script src="script.js"></script>
+
+    <script src="https://unpkg.com/lucide@latest" defer></script>
+    <script src="script.js" defer></script>
 </head>
 <body>
 
-    <header class="navbar">
-        <div class="logo">MyPortfolio</div>
-        <nav class="nav-links">
-            <ul>
-                <li><a href="#about">About</a></li>
-                <li><a href="#services">Services</a></li>
-                <li><a href="#contact">Contact</a></li>
-            </ul>
-        </nav>
-    </header>
+<header class="navbar">
+    <div class="logo">MyPortfolio</div>
 
-    <main>
-        <section id="about" class="glass-card profile-container">
-            <img src="https://via.placeholder.com/150" alt="Profile" class="profile-img">
-            <div class="profile-text">
-                <h1>Hello, I am [Your Name]</h1>
-                <p>Frontend developer creating modern and user-centric websites.</p>
-            </div>
-        </section>
+    <nav class="nav-links" aria-label="Main Navigation">
+        <ul>
+            <li><a href="#about">About</a></li>
+            <li><a href="#services">Services</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+</header>
 
-        <section id="services" class="services-container">
-    <div class="service-box">
+<main>
+
+    <section id="about" class="glass-card profile-container">
+
+        <img
+            src="https://via.placeholder.com/150"
+            alt="Portrait of Your Name"
+            class="profile-img"
+            loading="lazy"
+            width="150"
+            height="150"
+        >
+
+        <div class="profile-text">
+            <h1>Hello, I am [Your Name]</h1>
+            <p>
+                Frontend developer creating modern,
+                responsive, and user-centric websites.
+            </p>
+        </div>
+
+    </section>
+
+    <section id="services" class="services-container">
+
+        <a href="web.html" class="service-link">
+
+    <article class="service-box">
+
         <i data-lucide="code-2" class="icon"></i>
+
         <h3>Web Development</h3>
-        <p>Creating modern, responsive, and high-performance websites.</p>
-    </div>
 
-    <div class="service-box">
-        <i data-lucide="box" class="icon"></i>
-        <h3>3D Visualization</h3>
-        <p>Creating realistic 3D product models and immersive visualizations.</p>
-    </div>
-</section>
-    </main>
+        <p>
+            Creating modern, responsive,
+            and high-performance websites.
+        </p>
 
-    <script>
-      lucide.createIcons();
-    </script>
+    </article>
+
+</a>
+
+        <article class="service-box">
+            <i data-lucide="box" class="icon" aria-hidden="true"></i>
+
+            <h3>3D Visualization</h3>
+
+            <p>
+                Creating realistic 3D product models
+                and immersive visualizations.
+            </p>
+        </article>
+
+    </section>
+
+</main>
+
+<script>
+    window.addEventListener("DOMContentLoaded", () => {
+        lucide.createIcons();
+    });
+</script>
+
 </body>
 </html>
