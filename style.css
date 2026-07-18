@@ -63,6 +63,20 @@ main{
 }
 
 
+#matrix-canvas {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    pointer-events: none; /* უზრუნველყოფს, რომ ტილომ არ დაბლოკოს ღილაკებზე დაჭერა */
+}
+
+header, main {
+    position: relative;
+    z-index: 10; /* ეს უზრუნველყოფს, რომ მთელი კონტენტი ანიმაციის წინ იყოს მობილურშიც და კომპიუტერშიც */
+}
+
 /* ==========================================================================
    2. Navbar
    ========================================================================== */
@@ -397,143 +411,10 @@ main{
 }
 
 
-/* ==========================================================================
-   6. Responsive
-   ========================================================================== */
 
-@media (max-width:1000px){
-
-    .pricing-grid{
-
-        grid-template-columns:repeat(2,1fr);
-
-    }
-
-}
-
-@media (max-width:768px){
-
-    .navbar{
-
-        flex-direction:column;
-
-        gap:18px;
-
-        padding:20px;
-
-    }
-
-    .glass-card{
-
-        flex-direction:column;
-
-        text-align:center;
-
-        width:92%;
-
-        padding:35px;
-
-    }
-
-    .services-container{
-
-        flex-direction:column;
-
-        align-items:center;
-
-    }
-
-    .service-box{
-
-        width:100%;
-
-        max-width:100%;
-
-    }
-
-}
-
-@media (max-width:700px){
-
-    .hero{
-
-        padding:40px 20px;
-
-    }
-
-    .hero h1{
-
-        font-size:2.6rem;
-
-    }
-
-    .hero-buttons{
-
-        flex-direction:column;
-
-        width:100%;
-
-    }
-
-    .primary-btn,
-    .secondary-btn{
-
-        width:100%;
-
-        text-align:center;
-
-    }
-
-    .pricing-section{
-
-        padding:70px 20px;
-
-    }
-
-    .pricing-grid{
-
-        grid-template-columns:1fr;
-
-    }
-
-}
-
-@media (max-width:500px){
-
-    .nav-links ul{
-
-        flex-direction:column;
-
-        align-items:center;
-
-        gap:15px;
-
-    }
-
-    .profile-img{
-
-        width:120px;
-
-        height:120px;
-
-    }
-
-    .profile-text h1{
-
-        font-size:1.8rem;
-
-    }
-
-    .section-title h2{
-
-        font-size:2rem;
-
-    }
-
-}
 
 /* ==========================================================================
-   7. web development - Pricing Section
+   6. web development - Pricing Section
    ========================================================================== */
 
 .pricing-section{
@@ -746,6 +627,376 @@ main{
 
 .details-btn:hover{
 
-    opacity:.9;
+    transform:translateY(-4px);
+
+}
+
+.card-body {
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1; /* ბარათმა სიმაღლე თანაბრად რომ შეავსოს დიდ ეკრანზე */
+}
+
+.toggle-icon {
+    display: none; /* კომპიუტერში ჩამოსაშლელი ისარი არ გვჭირდება და ვმალავთ */
+}
+
+
+
+
+
+/* ==========================================================================
+    7. Consultation Page Styles
+   ========================================================================== */
+
+.consult-main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    padding: 120px 20px 40px; /* ზედა დაშორება მენიუს გამო */
+}
+
+.consult-box {
+    flex-direction: column;
+    max-width: 800px;
+    width: 100%;
+    padding: 40px;
+    text-align: left;
+}
+
+.consult-back {
+    margin-bottom: 30px;
+    align-self: flex-start;
+}
+
+.consult-header {
+    margin-bottom: 40px;
+}
+
+.consult-header h2 {
+    font-size: 2.5rem;
+    margin-bottom: 15px;
+    color: var(--text-light);
+}
+
+.consult-header p {
+    color: var(--text-dim);
+    font-size: 1.1rem;
+    line-height: 1.6;
+}
+
+.faq-container {
+    background: rgba(0, 0, 0, 0.2);
+    border-radius: 15px;
+    padding: 25px;
+    margin-bottom: 40px;
+    border: 1px solid var(--glass-border);
+}
+
+.faq-title {
+    color: var(--accent);
+    margin-bottom: 25px;
+    font-size: 1.4rem;
+}
+
+.faq-item {
+    display: flex;
+    gap: 15px;
+    margin-bottom: 25px;
+}
+
+.faq-item:last-child {
+    margin-bottom: 0;
+}
+
+.faq-icon {
+    color: var(--accent);
+    flex-shrink: 0;
+    margin-top: 3px;
+}
+
+.faq-item h4 {
+    color: var(--text-light);
+    font-size: 1.1rem;
+    margin-bottom: 8px;
+}
+
+.faq-item p {
+    color: var(--text-dim);
+    font-size: 0.95rem;
+    line-height: 1.5;
+}
+
+.contact-action {
+    border-top: 1px solid var(--glass-border);
+    padding-top: 30px;
+}
+
+.contact-action h3 {
+    color: var(--text-light);
+    margin-bottom: 20px;
+}
+
+.contact-links {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.contact-method {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    color: var(--text-dim);
+    font-size: 1.1rem;
+    transition: color 0.3s ease;
+}
+
+.contact-method:hover {
+    color: var(--accent);
+}
+
+/* მობილურისთვის (ჩააგდე @media (max-width: 768px)-ის შიგნით სადმე) */
+@media (max-width: 768px) {
+    .consult-box {
+        padding: 30px 20px;
+    }
+    .consult-header h2 {
+        font-size: 2rem;
+    }
+}
+
+
+
+
+
+
+/* ==========================================================================
+  Responsive
+   ========================================================================== */
+
+@media (max-width:1024px){
+
+    .pricing-grid{
+        grid-template-columns:repeat(2,1fr);
+    }
+
+}
+
+@media (max-width:768px){
+
+    /* Navbar - გვერდიგვერდ განლაგებული ლოგო და მენიუ */
+
+    .navbar{
+        padding: 15px 15px; 
+    }
+
+    .logo {
+        font-size: 1.1rem; 
+    }
+
+    .nav-links ul{
+        display: flex;
+        flex-direction: row; 
+        gap: 12px; 
+    }
+
+    .nav-links a {
+        font-size: 0.8rem; 
+    }
+
+    /* About */
+
+    .glass-card{
+        flex-direction:column;
+        text-align:center;
+        width:92%;
+        padding:35px;
+    }
+
+    .profile-img{
+        width:120px;
+        height:120px;
+    }
+
+    /* Services */
+
+    .services-container{
+        flex-direction:column;
+        align-items:center;
+        gap: 20px;
+    }
+    
+    .service-link {
+        width: 100%;
+    }
+
+    .service-box{
+        width:100%;
+        max-width:100%;
+        padding: 30px 20px;
+    }
+
+    /* Hero */
+
+    .hero{
+        min-height:auto;
+        padding:60px 20px;
+    }
+
+    .hero-text{
+        max-width:100%;
+    }
+
+    .hero h1{
+        font-size:2.6rem;
+        line-height:1.2;
+    }
+
+    .hero-buttons{
+        flex-direction:column;
+        gap:15px;
+        width:100%;
+    }
+
+    .primary-btn,
+    .secondary-btn{
+        width:100%;
+        text-align:center;
+    }
+
+    /* Pricing */
+
+    .pricing-section{
+        padding:70px 20px;
+    }
+
+    .pricing-grid{
+        grid-template-columns:1fr;
+        gap:25px;
+    }
+
+    .pricing-card{
+        width:100%;
+        padding:25px;
+        border-radius:20px;
+    }
+
+    /* აკორდეონის სტილები მობილურისთვის */
+    
+    .card-header.toggle-header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-bottom: 0;
+        cursor: pointer;
+    }
+
+    .toggle-icon {
+        display: block; /* ტელეფონში ვაჩენთ ისარს */
+        color: var(--accent);
+        transition: transform 0.3s ease;
+    }
+
+    .card-body {
+        display: none; /* შიგთავსი თავიდან დამალულია */
+        margin-top: 20px;
+    }
+
+    /* როცა active კლასი დაემატება (დაჭერისას) */
+    .pricing-card.active .card-body {
+        display: flex;
+    }
+
+    .pricing-card.active .toggle-icon {
+        transform: rotate(180deg); /* ისრის ამოტრიალება */
+    }
+
+    .pricing-card.active .card-header.toggle-header {
+        margin-bottom: 20px;
+        padding-bottom: 15px;
+        border-bottom: 1px solid var(--glass-border);
+    }
+
+    /* ბარათის შიდა ელემენტების ზომები */
+    
+    .card-header h3{
+        font-size:1.5rem;
+    }
+
+    .card-header p{
+        font-size:.95rem;
+    }
+
+    .card-section{
+        margin-bottom:20px;
+    }
+
+    .card-section h4{
+        font-size:1rem;
+    }
+
+    .card-section li{
+        font-size:.95rem;
+        line-height:1.6;
+    }
+
+    .price{
+        margin-top:20px;
+    }
+
+    .price strong{
+        font-size:1.8rem;
+    }
+
+    .details-btn{
+        width:100%;
+        padding:14px;
+        font-size:1rem;
+    }
+
+} /* <-- აქ იხურება 768px */
+
+@media (max-width:480px){
+
+    .hero{
+        padding:40px 20px;
+    }
+
+    .hero h1{
+        font-size:2rem;
+    }
+
+    .section-title h2{
+        font-size:2rem;
+    }
+
+    .pricing-card{
+        padding:20px;
+    }
+
+    .popular-badge{
+        top:15px;
+        right:15px;
+        padding:5px 10px;
+        font-size:.7rem;
+    }
+
+    .card-header h3{
+        font-size:1.3rem;
+    }
+
+    .price strong{
+        font-size:1.6rem;
+    }
+    
+    /* ნავიგაციის ფონტები კიდევ უფრო პატარა ეკრანებზე */
+    .nav-links a {
+        font-size: 0.75rem; 
+    }
+    .logo {
+        font-size: 1rem;
+    }
 
 }
