@@ -496,30 +496,20 @@ header, main {
 
 }
 
-.featured{
-
-    border:1px solid var(--accent);
-
+.pricing-card.featured {
+    border: 2px solid var(--accent); /* 2px სისქე უფრო კარგად გამოაჩენს ჩარჩოს */
 }
 
-.popular-badge{
-
-    position:absolute;
-
-    top:20px;
-
-    right:20px;
-
-    padding:6px 14px;
-
-    border-radius:999px;
-
-    background:var(--accent);
-
-    color:white;
-
-    font-size:.8rem;
-
+.popular-badge {
+    position: absolute;
+    top: -15px; /* -15px აიტანს წარწერას ზუსტად ჩარჩოს ხაზზე */
+    right: 40px;
+    padding: 6px 14px;
+    border-radius: 999px;
+    background: var(--accent);
+    color: white;
+    font-size: .8rem;
+    z-index: 10; /* უზრუნველყოფს, რომ წარწერა სხვა ელემენტების უკან არ დაიმალოს */
 }
 
 .card-header{
