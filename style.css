@@ -455,14 +455,11 @@ header, main {
 
 }
 
-.pricing-grid{
-
-    display:grid;
-
-    grid-template-columns:repeat(3,1fr);
-
-    gap:30px;
-
+.pricing-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr); /* აქ ვწერთ 4-ს, რომ ოთხივე ერთ ხაზზე გამოჩნდეს */
+    gap: 20px; /* 30px-ის ნაცვლად 20px ჯობია 4 ბარათის შემთხვევაში */
+    width: 100%;
 }
 
 .pricing-card{
