@@ -129,4 +129,296 @@ if (canvas) {
             }
         }
     });
+
+    
+}
+
+// ==========================================
+// Modal Popup Logic
+// ==========================================
+const planDetails = {
+    starter: {
+        title: "🚀 Starter Package",
+        description: "Perfect for freelancers, personal websites, and small businesses.",
+        content: `
+            <div class="modal-grid">
+                <div class="modal-section">
+                    <h3>✨ Feature Breakdown</h3>
+                    <div class="feature-list">
+                        <div class="feature-item">
+                            <span class="feature-icon">✓</span>
+                            <div class="feature-text">
+                                <strong>Responsive Design</strong>
+                                <p><strong>What it means:</strong> The website layout automatically adapts to look perfect on mobile phones, tablets, and desktop screens.</p>
+                            </div>
+                        </div>
+                        <div class="feature-item">
+                            <span class="feature-icon">✓</span>
+                            <div class="feature-text">
+                                <strong>Clean Code</strong>
+                                <p><strong>What it means:</strong> Hand-written, optimized HTML/CSS without heavy builders, ensuring high security and blazing-fast loading speeds.</p>
+                            </div>
+                        </div>
+                        <div class="feature-item">
+                            <span class="feature-icon">✓</span>
+                            <div class="feature-text">
+                                <strong>Contact Form</strong>
+                                <p><strong>What it means:</strong> A dedicated, secure messaging section that sends client inquiries directly to your personal email inbox.</p>
+                            </div>
+                        </div>
+                        <div class="feature-item">
+                            <span class="feature-icon">✓</span>
+                            <div class="feature-text">
+                                <strong>Fast Delivery</strong>
+                                <p><strong>What it means:</strong> A streamlined process ensuring your 1-3 page website is designed, coded, and launched in record time.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="modal-section">
+                    <h3>⚙️ The Process</h3>
+                    <div class="process-steps">
+                        <div class="step">
+                            <span class="step-num">1</span>
+                            <p><strong>Onboarding & Strategy:</strong> We gather your branding assets, texts, and define your main goals.</p>
+                        </div>
+                        <div class="step">
+                            <span class="step-num">2</span>
+                            <p><strong>Wireframing:</strong> Creating a clear, conversion-focused layout structure for your pages.</p>
+                        </div>
+                        <div class="step">
+                            <span class="step-num">3</span>
+                            <p><strong>Front-End Development:</strong> Writing clean, mobile-optimized HTML/CSS code from scratch.</p>
+                        </div>
+                        <div class="step">
+                            <span class="step-num">4</span>
+                            <p><strong>QA & Testing:</strong> Checking form functionality, responsiveness, and cross-browser compatibility.</p>
+                        </div>
+                        <div class="step">
+                            <span class="step-num">5</span>
+                            <p><strong>Launch & Handover:</strong> Final deployment to the live server and delivering your fast website.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="modal-cta-box">
+                    <h4>Not sure if this is the right fit?</h4>
+                    <p>Let's discuss your specific needs and find the perfect solution for your business.</p>
+                    <a href="consult.html" class="modal-cta-btn">Get a Free Consultation</a>
+                </div>
+            </div>
+        `
+    },
+    business: {
+        title: "💼 Business Package",
+        description: "Perfect for restaurants, growing companies, and agencies.",
+        content: `
+            <div class="modal-grid">
+                <div class="modal-section">
+                    <h3>✨ Feature Breakdown</h3>
+                    <div class="feature-list">
+                        <div class="feature-item">
+                            <span class="feature-icon">✓</span>
+                            <div class="feature-text">
+                                <strong>Everything in Starter</strong>
+                                <p><strong>What it means:</strong> Includes responsive design, clean code, contact forms, and fast delivery built-in.</p>
+                            </div>
+                        </div>
+                        <div class="feature-item">
+                            <span class="feature-icon">✓</span>
+                            <div class="feature-text">
+                                <strong>Gallery</strong>
+                                <p><strong>What it means:</strong> Beautifully structured image grids or interactive sliders to showcase your products, portfolio, or team.</p>
+                            </div>
+                        </div>
+                        <div class="feature-item">
+                            <span class="feature-icon">✓</span>
+                            <div class="feature-text">
+                                <strong>Dark & Light Themes</strong>
+                                <p><strong>What it means:</strong> A modern toggle feature allowing users to switch the site's color scheme to their preference.</p>
+                            </div>
+                        </div>
+                        <div class="feature-item">
+                            <span class="feature-icon">✓</span>
+                            <div class="feature-text">
+                                <strong>Google Maps</strong>
+                                <p><strong>What it means:</strong> Interactive location maps integrated directly into your site to help local clients find your physical address.</p>
+                            </div>
+                        </div>
+                        <div class="feature-item">
+                            <span class="feature-icon">✓</span>
+                            <div class="feature-text">
+                                <strong>SEO Optimization</strong>
+                                <p><strong>What it means:</strong> Foundational meta-tags, image alt-texts, and structure so Google can easily index and rank your pages.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="modal-section">
+                    <h3>⚙️ The Process</h3>
+                    <div class="process-steps">
+                        <div class="step">
+                            <span class="step-num">1</span>
+                            <p><strong>Discovery & Architecture:</strong> Mapping out the user journey and structure for up to 8 pages.</p>
+                        </div>
+                        <div class="step">
+                            <span class="step-num">2</span>
+                            <p><strong>UI/UX Design:</strong> Designing interactive elements, light/dark themes, and structured galleries.</p>
+                        </div>
+                        <div class="step">
+                            <span class="step-num">3</span>
+                            <p><strong>Development & Integration:</strong> Coding the site and embedding Google Maps & necessary APIs.</p>
+                        </div>
+                        <div class="step">
+                            <span class="step-num">4</span>
+                            <p><strong>On-Page SEO Setup:</strong> Structuring meta-tags and optimizing all assets for search engines.</p>
+                        </div>
+                        <div class="step">
+                            <span class="step-num">5</span>
+                            <p><strong>Staging & Revisions:</strong> You test the fully functional site on a private link before we finalize.</p>
+                        </div>
+                        <div class="step">
+                            <span class="step-num">6</span>
+                            <p><strong>Deployment & Go-Live:</strong> Official launch and final indexing checks.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="modal-cta-box">
+                    <h4>Need help deciding?</h4>
+                    <p>Every business is unique. Let's schedule a quick chat to figure out exactly what your brand needs.</p>
+                    <a href="consult.html" class="modal-cta-btn">Get a Free Consultation</a>
+                </div>
+            </div>
+        `
+    },
+    premium: {
+        title: "👑 Premium Package",
+        description: "Perfect for large companies, e-commerce, and complex projects.",
+        content: `
+            <div class="modal-grid">
+                <div class="modal-section">
+                    <h3>✨ Feature Breakdown</h3>
+                    <div class="feature-list">
+                        <div class="feature-item">
+                            <span class="feature-icon">✓</span>
+                            <div class="feature-text">
+                                <strong>CMS Integration</strong>
+                                <p><strong>What it means:</strong> A powerful back-end dashboard allowing you to add unlimited pages, manage blogs, and update content yourself.</p>
+                            </div>
+                        </div>
+                        <div class="feature-item">
+                            <span class="feature-icon">✓</span>
+                            <div class="feature-text">
+                                <strong>Advanced SEO</strong>
+                                <p><strong>What it means:</strong> Deep technical optimization and keyword structuring designed to push your site higher in search engine results.</p>
+                            </div>
+                        </div>
+                        <div class="feature-item">
+                            <span class="feature-icon">✓</span>
+                            <div class="feature-text">
+                                <strong>Performance Optimization</strong>
+                                <p><strong>What it means:</strong> Advanced image compression and code minification to guarantee top-tier speed scores (90+) on Google.</p>
+                            </div>
+                        </div>
+                        <div class="feature-item">
+                            <span class="feature-icon">✓</span>
+                            <div class="feature-text">
+                                <strong>Documentation</strong>
+                                <p><strong>What it means:</strong> You receive a comprehensive, easy-to-understand written guide on how to use and manage your new website.</p>
+                            </div>
+                        </div>
+                        <div class="feature-item">
+                            <span class="feature-icon">✓</span>
+                            <div class="feature-text">
+                                <strong>Analytics & Priority Support</strong>
+                                <p><strong>What it means:</strong> Integration of tracking tools (like Google Analytics) to monitor traffic, plus fast-tracked technical assistance from me.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="modal-section">
+                    <h3>⚙️ The Process</h3>
+                    <div class="process-steps">
+                        <div class="step">
+                            <span class="step-num">1</span>
+                            <p><strong>Deep Discovery & Tech Stack:</strong> Defining your CMS architecture and complex database needs.</p>
+                        </div>
+                        <div class="step">
+                            <span class="step-num">2</span>
+                            <p><strong>Custom UI/UX & Prototyping:</strong> Crafting a premium, unique design system tailored for your scale.</p>
+                        </div>
+                        <div class="step">
+                            <span class="step-num">3</span>
+                            <p><strong>Full-Stack Development:</strong> Building the front-end interface and connecting the Headless CMS securely.</p>
+                        </div>
+                        <div class="step">
+                            <span class="step-num">4</span>
+                            <p><strong>Advanced Integrations:</strong> Setting up Google Analytics, tracking pixels, and advanced on-page SEO.</p>
+                        </div>
+                        <div class="step">
+                            <span class="step-num">5</span>
+                            <p><strong>Rigorous QA & Performance:</strong> Aggressive optimization to guarantee a 90+ score on Core Web Vitals.</p>
+                        </div>
+                        <div class="step">
+                            <span class="step-num">6</span>
+                            <p><strong>Training & Handover:</strong> Final launch, priority support setup, and providing custom documentation.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="modal-cta-box">
+                    <h4>Ready to scale your business?</h4>
+                    <p>Let's map out a custom digital strategy tailored precisely to your long-term goals.</p>
+                    <a href="consult.html" class="modal-cta-btn">Get a Free Consultation</a>
+                </div>
+            </div>
+        `
+    }
+};
+
+const detailsButtons = document.querySelectorAll('.details-btn[data-plan]');
+const modalOverlay = document.getElementById('details-modal');
+const closeModalBtn = document.querySelector('.close-modal-btn');
+const modalBodyContent = document.getElementById('modal-body-content');
+
+if (modalOverlay && detailsButtons.length > 0) {
+    detailsButtons.forEach(button => {
+        button.addEventListener('click', () => {
+            const planType = button.getAttribute('data-plan');
+            
+            if (planType && planDetails[planType]) {
+                const data = planDetails[planType];
+                
+                modalBodyContent.innerHTML = `
+                    <h2>${data.title}</h2>
+                    <p><strong>${data.description}</strong></p>
+                    <hr style="margin: 20px 0; border: 0; border-top: 1px solid #eee;">
+                    ${data.content}
+                    <a href="consult.html" class="primary-btn" style="display: inline-block; margin-top: 20px; text-decoration: none;">Book This Package</a>
+                `;
+                
+                modalOverlay.classList.remove('hidden');
+                
+                if (window.lucide) {
+                    lucide.createIcons();
+                }
+            }
+        });
+    });
+
+    const closeModal = () => {
+        modalOverlay.classList.add('hidden');
+    };
+
+    closeModalBtn.addEventListener('click', closeModal);
+
+    modalOverlay.addEventListener('click', (e) => {
+        if (e.target === modalOverlay) {
+            closeModal();
+        }
+    });
 }

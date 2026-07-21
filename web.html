@@ -84,9 +84,9 @@
                     <h4>Included</h4>
                     <ul>
                         <li>Responsive Design</li>
-                        <li>Modern UI</li>
+                        <li>Clean code</li>
                         <li>Contact Form</li>
-                        <li>Basic SEO</li>
+                        <li>Fast Delivery</li>
                     </ul>
                 </div>
                 <div class="card-section">
@@ -99,11 +99,9 @@
                 </div>
                 <div class="price">
                     <span>Starting From</span>
-                    <strong>$80</strong>
+                    <strong>$99</strong>
                 </div>
-                <button class="details-btn">
-                    View Details
-                </button>
+                <button class="details-btn" data-plan="starter">View Details</button>
             </div>
         </article>
 
@@ -125,7 +123,7 @@
                     <ul>
                         <li>Everything in Starter</li>
                         <li>Gallery</li>
-                        <li>Animations</li>
+                        <li>Dark & Light Themes</li>
                         <li>Google Maps</li>
                         <li>SEO Optimization</li>
                     </ul>
@@ -140,11 +138,9 @@
                 </div>
                 <div class="price">
                     <span>Starting From</span>
-                    <strong>$180</strong>
+                    <strong>$149</strong>
                 </div>
-                <button class="details-btn">
-                    View Details
-                </button>
+                <button class="details-btn" data-plan="business">View Details</button>
             </div>
         </article>
 
@@ -162,10 +158,13 @@
                 <div class="card-section">
                     <h4>Included</h4>
                     <ul>
-                        <li>Custom UI</li>
+                        <li>Everything in Business</li>
                         <li>CMS Integration</li>
                         <li>Advanced SEO</li>
                         <li>Performance Optimization</li>
+                        <li>documentation </li>
+                        <li>Analytics & Priority Support </li>
+                        
                     </ul>
                 </div>
                 <div class="card-section">
@@ -173,16 +172,13 @@
                     <ul>
                         <li>Large Companies</li>
                         <li>E-commerce</li>
-                        <li>Web Applications</li>
                     </ul>
                 </div>
                 <div class="price">
                     <span>Starting From</span>
                     <strong>$350+</strong>
                 </div>
-                <button class="details-btn">
-                    View Details
-                </button>
+                <button class="details-btn" data-plan="premium">View Details</button>
             </div>
         </article>
 
@@ -208,6 +204,7 @@
                         <li>Custom Features</li>
                         <li>Personalized UI/UX</li>
                         <li>Complex Integrations</li>
+                        <li>Everything in Premium</li>
                     </ul>
                 </div>
                 <div class="card-section">
@@ -215,7 +212,7 @@
                     <ul>
                         <li>Startups</li>
                         <li>Unique Projects</li>
-                        <li>Clients with existing designs</li>
+                        <li>Everything at your designs</li>
                     </ul>
                 </div>
                 <div class="price">
@@ -234,6 +231,19 @@
 </section>
 
 </main>
+
+<!-- Full-Screen Modal Overlay -->
+<div id="details-modal" class="modal-overlay hidden">
+    <div class="modal-content">
+        <button class="close-modal-btn">
+            <i data-lucide="x"></i>
+        </button>
+        
+        <div class="modal-body" id="modal-body-content">
+            <!-- JS აქ ჩასვამს კონტენტს დინამიურად -->
+        </div>
+    </div>
+</div>
 
 </body>
 </html>

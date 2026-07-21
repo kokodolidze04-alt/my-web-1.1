@@ -755,8 +755,259 @@ header, main {
 }
 
 
+/* ==========================================================================
+    8. Modal / Pop-up Styles
+   ========================================================================== */
 
+/* Modal Overlay - ფარავს მთელ ეკრანს */
+.modal-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.8);
+    backdrop-filter: blur(5px);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+    opacity: 1;
+    transition: opacity 0.3s ease;
+}
 
+/* დამალვის კლასი */
+.modal-overlay.hidden {
+    opacity: 0;
+    pointer-events: none;
+}
+
+/* მთავარი კონტეინერი (Pop-up ფანჯარა) */
+/* მთავარი კონტეინერი */
+.modal-content {
+    background: var(--glass-bg);
+    backdrop-filter: blur(25px);
+    -webkit-backdrop-filter: blur(25px);
+    border: 1px solid var(--glass-border);
+    color: var(--text-main);
+    width: 90%;
+    max-width: 1000px; /* გაიზარდა სიგანე 700px-დან 1000px-მდე */
+    max-height: 90vh;
+    border-radius: 24px;
+    padding: 40px;
+    position: relative;
+    overflow-y: auto;
+    box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.5);
+    transform: translateY(0);
+    transition: transform 0.3s ease;
+    
+    /* ვმალავთ სქროლბარს ვიზუალურად, მაგრამ სქროლვა იმუშავებს თუ მაინც დაგჭირდა */
+    scrollbar-width: none; /* Firefox */
+}
+
+.modal-content::-webkit-scrollbar {
+    display: none; /* Chrome, Safari, Opera */
+}
+
+/* შიდა განლაგება */
+.modal-grid {
+    display: grid;
+    grid-template-columns: 1fr; /* მობილურზე ერთ სვეტად */
+    gap: 25px;
+    margin-top: 20px;
+    text-align: left;
+}
+
+/* დახურვის (X) ღილაკი */
+.close-modal-btn {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    background: rgba(255, 255, 255, 0.05);
+    border: 1px solid var(--glass-border);
+    cursor: pointer;
+    color: var(--text-main);
+    padding: 8px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: background-color 0.2s, transform 0.2s;
+}
+
+.close-modal-btn:hover {
+    background-color: var(--accent);
+    transform: scale(1.1);
+}
+
+/* Modal-ის შიდა დიზაინი (JS-ით ჩასმული კოდისთვის) */
+.modal-body h2 {
+    font-size: 2rem;
+    margin-bottom: 10px;
+    color: var(--text-main);
+}
+
+.modal-body p {
+    color: var(--text-muted);
+    margin-bottom: 20px;
+    line-height: 1.6;
+}
+
+.modal-body h3 {
+    margin-top: 20px;
+    margin-bottom: 15px;
+    font-size: 1.2rem;
+    color: var(--accent);
+}
+
+.modal-body ul {
+    list-style-type: none;
+    margin-bottom: 25px;
+}
+
+.modal-body ul li {
+    margin-bottom: 12px;
+    color: var(--text-muted);
+    display: flex;
+    align-items: flex-start;
+}
+
+.modal-body ul li::before {
+    content: "✓";
+    color: var(--accent);
+    margin-right: 10px;
+    font-weight: bold;
+}
+
+.modal-section h3 {
+    font-size: 1.3rem;
+    color: var(--accent);
+    margin-bottom: 20px;
+    border-bottom: 1px solid var(--glass-border);
+    padding-bottom: 10px;
+}
+
+/* ფუნქციების ბარათები */
+.feature-list {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.feature-item {
+    display: flex;
+    gap: 15px;
+    background: rgba(255, 255, 255, 0.03);
+    padding: 15px 20px;
+    border-radius: 12px;
+    border: 1px solid var(--glass-border);
+    transition: transform 0.2s ease, background 0.2s;
+}
+
+.feature-item:hover {
+    background: rgba(255, 255, 255, 0.06);
+    transform: translateX(5px);
+}
+
+.feature-icon {
+    color: var(--accent);
+    font-weight: bold;
+    font-size: 1.2rem;
+    margin-top: 2px;
+}
+
+.feature-text strong {
+    display: block;
+    margin-bottom: 5px;
+    color: var(--text-main);
+    font-size: 1.05rem;
+}
+
+.feature-text p {
+    margin: 0;
+    font-size: 0.95rem;
+    color: var(--text-muted);
+    line-height: 1.5;
+}
+
+/* ნაბიჯ-ნაბიჯ პროცესი */
+.process-steps {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.step {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    background: rgba(0, 0, 0, 0.2);
+    padding: 15px;
+    border-radius: 12px;
+    border: 1px solid rgba(255, 255, 255, 0.05);
+}
+
+.step-num {
+    background: var(--accent);
+    color: white;
+    width: 32px;
+    height: 32px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    font-weight: bold;
+    font-size: 1rem;
+    flex-shrink: 0;
+}
+
+.step p {
+    margin: 0;
+    font-size: 0.95rem;
+    color: var(--text-muted);
+}
+
+.step p strong {
+    color: var(--text-main);
+}
+
+/* Modal Free Consultation CTA Box */
+.modal-cta-box {
+    margin-top: 35px;
+    padding: 25px;
+    background: rgba(79, 140, 255, 0.08); /* ლურჯი ფერის მსუბუქი ფონი */
+    border: 1px solid rgba(79, 140, 255, 0.3); /* აქცენტის ფერის ჩარჩო */
+    border-radius: 16px;
+    text-align: center;
+}
+
+.modal-cta-box h4 {
+    color: var(--text-main);
+    font-size: 1.3rem;
+    margin-bottom: 10px;
+}
+
+.modal-cta-box p {
+    color: var(--text-muted);
+    font-size: 0.95rem;
+    margin-bottom: 20px;
+}
+
+.modal-cta-btn {
+    display: inline-block;
+    padding: 12px 28px;
+    background: var(--accent);
+    color: white;
+    text-decoration: none;
+    border-radius: 12px;
+    font-weight: 600;
+    transition: transform 0.3s ease, background 0.3s ease;
+}
+
+.modal-cta-btn:hover {
+    transform: translateY(-3px);
+    background: #3a75e6;
+}
 
 
 /* ==========================================================================
@@ -943,6 +1194,13 @@ header, main {
         font-size:1rem;
     }
 
+    .consult-box {
+        padding: 30px 20px;
+    }
+    .consult-header h2 {
+        font-size: 2rem;
+    }
+
 } /* <-- აქ იხურება 768px */
 
 @media (max-width:480px){
@@ -986,4 +1244,95 @@ header, main {
         font-size: 1rem;
     }
 
+}
+
+/* დიდ ეკრანებზე ორ სვეტად დაყოფა */
+@media (min-width: 800px) {
+    .modal-grid {
+        display: grid;
+        grid-template-columns: 1.2fr 1fr; /* ფუნქციებს ოდნავ მეტი სივრცე მიეცემა */
+        gap: 40px;
+    }
+    
+    .modal-cta-box {
+        grid-column: 1 / -1; /* მოსაწვევი ყუთი გაიშლება ორივე სვეტზე ბოლოში */
+    }
+}
+
+/* ==========================================================================
+   Modal Desktop Optimization
+   ========================================================================== */
+
+@media (min-width: 992px) {
+    .modal-content {
+        max-width: 1250px; /* კიდევ უფრო გავაფართოვეთ, სივრცე რომ გამოვიყენოთ */
+        padding: 30px 40px; /* ზედა და ქვედა დაშორება შევამცირეთ */
+    }
+
+    .modal-grid {
+        grid-template-columns: 1.1fr 1fr; /* ორ სვეტად დაყოფა */
+        column-gap: 50px; /* სვეტებს შორის სივრცე */
+        row-gap: 15px; /* ვერტიკალური დაშორება შევამცირეთ */
+        margin-top: 10px;
+    }
+
+    .modal-section h3 {
+        margin-bottom: 12px;
+        font-size: 1.2rem;
+        padding-bottom: 5px;
+    }
+
+    /* ლისტების კომპაქტურობა ვერტიკალურად */
+    .feature-list,
+    .process-steps {
+        gap: 8px; /* ბარათებს შორის დაშორება მინიმუმამდე დავიდა */
+    }
+
+    .feature-item,
+    .step {
+        padding: 10px 15px; /* შიდა სივრცეები შევამცირეთ */
+    }
+
+    .feature-icon {
+        font-size: 1.1rem;
+    }
+
+    .feature-text strong {
+        font-size: 1rem;
+        margin-bottom: 2px;
+    }
+
+    .feature-text p,
+    .step p {
+        font-size: 0.85rem; /* ტექსტი ოდნავ დაპატარავდა, რომ 6-ვე ნაბიჯი ჩაეტიოს */
+        line-height: 1.4;
+    }
+
+    .step-num {
+        width: 26px;
+        height: 26px;
+        font-size: 0.85rem;
+    }
+
+    /* ქვედა სარეკლამო (CTA) ყუთის დაპატარავება */
+    .modal-cta-box {
+        grid-column: 1 / -1;
+        margin-top: 10px;
+        padding: 15px 20px;
+    }
+
+    .modal-cta-box h4 {
+        font-size: 1.1rem;
+        margin-bottom: 5px;
+    }
+
+    .modal-cta-box p {
+        margin-bottom: 12px;
+        font-size: 0.85rem;
+    }
+
+    .modal-cta-btn {
+        padding: 10px 24px;
+        font-size: 0.9rem;
+    }
 }
