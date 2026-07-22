@@ -398,7 +398,7 @@ if (modalOverlay && detailsButtons.length > 0) {
                     <p><strong>${data.description}</strong></p>
                     <hr style="margin: 20px 0; border: 0; border-top: 1px solid #eee;">
                     ${data.content}
-                    <a href="consult.html" class="primary-btn" style="display: inline-block; margin-top: 20px; text-decoration: none;">Book This Package</a>
+                    <a href="cont.html" class="primary-btn" style="display: inline-block; margin-top: 20px; text-decoration: none;">Book This Package</a>
                 `;
                 
                 modalOverlay.classList.remove('hidden');
@@ -420,5 +420,38 @@ if (modalOverlay && detailsButtons.length > 0) {
         if (e.target === modalOverlay) {
             closeModal();
         }
+    });
+}
+
+/* ==========================================================================
+   Mailto: საკონტაქტო ფორმის გაგზავნა
+   ========================================================================== */
+const contactForm = document.getElementById('contact-form');
+
+if (contactForm) {
+    contactForm.addEventListener('submit', function(event) {
+        event.preventDefault(); // აჩერებს გვერდის დარეფრეშებას
+
+        // ვიღებთ მომხმარებლის მიერ შევსებულ მონაცემებს
+        const name = document.getElementById('user_name').value;
+        const email = document.getElementById('user_email').value;
+        const message = document.getElementById('message').value;
+
+        // აქ აუცილებლად ჩაწერე შენი რეალური მეილი!
+        const myEmail = "შენი.მეილი@gmail.com"; 
+        
+        // ვაწყობთ მეილის სათაურს და შიგთავსს (ტექსტს)
+        const subject = encodeURIComponent(`New Project Inquiry from ${name}`);
+        const body = encodeURIComponent(
+            `Name: ${name}\n` +
+            `Email: ${email}\n\n` +
+            `Message:\n${message}`
+        );
+
+        // ვხსნით მომხმარებლის მეილის აპლიკაციას გამზადებული ტექსტით
+        window.location.href = `mailto:${myEmail}?subject=${subject}&body=${body}`;
+        
+        // ფორმის გასუფთავება გაგზავნის შემდეგ (სურვილისამებრ)
+        contactForm.reset(); 
     });
 }

@@ -1011,6 +1011,221 @@ header, main {
 
 
 /* ==========================================================================
+   9. Contact Page Styles (cont.html)
+   ========================================================================== */
+
+.contact-page-main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: calc(100vh - 80px);
+    padding: 50px 20px;
+}
+
+.contact-container {
+    max-width: 1100px;
+    width: 100%;
+}
+
+.contact-bento-grid {
+    display: grid;
+    grid-template-columns: 1fr 1.2fr; /* ფორმის მხარე ოდნავ უფრო ფართოა */
+    gap: 40px;
+    margin-top: 20px;
+}
+
+.glass-card-style {
+    background: var(--glass-bg);
+    backdrop-filter: blur(20px);
+    -webkit-backdrop-filter: blur(20px);
+    border: 1px solid var(--glass-border);
+    border-radius: 24px;
+    padding: 45px;
+}
+
+/* --- Left Side: Info --- */
+.contact-info-side h2 {
+    font-size: 2.8rem;
+    line-height: 1.2;
+    margin-bottom: 20px;
+    color: var(--text-main);
+}
+
+.contact-info-side h2 span {
+    color: var(--text-muted);
+    font-size: 2rem;
+}
+
+.contact-info-side p {
+    color: var(--text-muted);
+    margin-bottom: 40px;
+    font-size: 1.05rem;
+}
+
+.direct-contacts {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    margin-bottom: 45px;
+}
+
+.info-row {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    text-decoration: none;
+    color: var(--text-main);
+    font-size: 1.1rem;
+    transition: var(--transition);
+}
+
+.info-row:hover {
+    color: var(--accent);
+    transform: translateX(5px);
+}
+
+.info-icon {
+    width: 45px;
+    height: 45px;
+    background: rgba(255, 255, 255, 0.05);
+    border: 1px solid var(--glass-border);
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: var(--accent);
+    transition: var(--transition);
+}
+
+.info-row:hover .info-icon {
+    background: var(--accent);
+    color: white;
+}
+
+/* --- Social Circles --- */
+.social-title {
+    font-size: 0.9rem !important;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    margin-bottom: 15px !important;
+}
+
+.circle-links {
+    display: flex;
+    gap: 15px;
+    flex-wrap: wrap;
+}
+
+.circle-btn {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background: rgba(255, 255, 255, 0.05);
+    border: 1px solid var(--glass-border);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: var(--text-main);
+    font-size: 1.2rem;
+    text-decoration: none;
+    transition: var(--transition);
+}
+
+.circle-btn:hover {
+    transform: translateY(-5px);
+    color: white;
+}
+
+.circle-btn.viber:hover { background: #7360f2; border-color: #7360f2; }
+.circle-btn.linkedin:hover { background: #0077b5; border-color: #0077b5; }
+.circle-btn.instagram:hover { background: #e1306c; border-color: #e1306c; }
+.circle-btn.behance:hover { background: #1769ff; border-color: #1769ff; }
+.circle-btn.fiverr:hover { background: #00b22d; border-color: #00b22d; }
+
+/* --- Right Side: Form --- */
+.contact-form-side h3 {
+    font-size: 1.8rem;
+    margin-bottom: 30px;
+}
+
+.input-group {
+    margin-bottom: 25px;
+    display: flex;
+    flex-direction: column;
+}
+
+.input-group label {
+    font-size: 0.9rem;
+    color: var(--text-muted);
+    margin-bottom: 8px;
+    padding-left: 5px;
+}
+
+.input-group input,
+.input-group textarea {
+    background: rgba(0, 0, 0, 0.2);
+    border: 1px solid var(--glass-border);
+    border-radius: 12px;
+    padding: 15px 20px;
+    color: var(--text-main);
+    font-family: inherit;
+    font-size: 1rem;
+    transition: var(--transition);
+}
+
+.input-group input:focus,
+.input-group textarea:focus {
+    outline: none;
+    border-color: var(--accent);
+    background: rgba(0, 0, 0, 0.4);
+    box-shadow: 0 0 15px rgba(79, 140, 255, 0.1);
+}
+
+.submit-btn {
+    width: 100%;
+    padding: 16px;
+    background: var(--accent);
+    color: white;
+    border: none;
+    border-radius: 12px;
+    font-size: 1.1rem;
+    font-weight: 600;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    transition: var(--transition);
+}
+
+.submit-btn:hover {
+    background: #3a75e6;
+    transform: translateY(-3px);
+}
+
+/* --- Responsive --- */
+@media (max-width: 992px) {
+    .contact-bento-grid {
+        grid-template-columns: 1fr;
+    }
+    
+    .contact-info-side h2 {
+        font-size: 2.2rem;
+    }
+    
+    .contact-info-side h2 span {
+        font-size: 1.6rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .glass-card-style {
+        padding: 30px 20px;
+    }
+}
+
+
+/* ==========================================================================
   Responsive
    ========================================================================== */
 
