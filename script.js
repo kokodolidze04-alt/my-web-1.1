@@ -20,11 +20,11 @@ document.addEventListener("DOMContentLoaded", () => {
         if (!navbar) return;
 
         if (window.scrollY > 50) {
-            navbar.style.background = "rgba(255,255,255,0.18)";
+            navbar.style.background = "rgba(255, 255, 255, 0)";
             navbar.style.backdropFilter = "blur(20px)";
             navbar.style.webkitBackdropFilter = "blur(20px)";
         } else {
-            navbar.style.background = "rgba(255,255,255,0.158)";
+            navbar.style.background = "rgba(255, 255, 255, 0)";
             navbar.style.backdropFilter = "blur(10px)";
             navbar.style.webkitBackdropFilter = "blur(10px)";
         }
@@ -57,6 +57,7 @@ document.addEventListener("DOMContentLoaded", () => {
     });
 
 });
+
 
 // ==========================================
 // Matrix Background Code Rain
@@ -455,3 +456,6 @@ if (contactForm) {
         contactForm.reset(); 
     });
 }
+
+
+

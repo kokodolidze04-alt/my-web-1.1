@@ -16,7 +16,7 @@
 
     /* Glass */
 
-    --glass-bg:rgba(255, 255, 255, 0.158);
+    --glass-bg:rgba(255, 255, 255, 0.027);
     --glass-border:rgba(10, 4, 0, 0.08);
 
     /* Text */
@@ -1395,6 +1395,100 @@ header, main {
         transform: translateX(-1624px); 
     }
 }
+
+/* ==========================================================================
+   12. Footer Styles
+   ========================================================================== */
+
+.glass-footer {
+    max-width: 1400px;
+    margin: 40px auto;
+    padding: 0 20px;
+}
+
+.footer-inner {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 18px 30px;
+    background: var(--glass-bg);
+    backdrop-filter: blur(20px);
+    -webkit-backdrop-filter: blur(20px);
+    border: 1px solid var(--glass-border);
+    border-radius: 20px;
+    color: var(--text-muted);
+    font-size: 0.9rem;
+    box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.2);
+}
+
+.footer-nav {
+    display: flex;
+    gap: 20px;
+}
+
+.footer-nav a {
+    color: var(--text-muted);
+    text-decoration: none;
+    transition: color var(--transition);
+}
+
+.footer-nav a:hover {
+    color: var(--accent);
+}
+
+/* Responsive Footer */
+@media (max-width: 768px) {
+    .glass-footer {
+        margin: 20px auto;
+        padding: 0 15px;
+    }
+    
+    .footer-inner {
+        flex-direction: column;
+        gap: 10px;
+        padding: 15px 20px;
+        text-align: center;
+        border-radius: 16px;
+    }
+
+    .footer-nav {
+        gap: 15px;
+    }
+}
+
+/* ==========================================================================
+   Under Construction Service Card Styles
+   ========================================================================== */
+
+.service-box.under-construction {
+    position: relative;
+    opacity: 0.75;
+    border: 1px dashed rgba(255, 255, 255, 0.2);
+    transition: all 0.3s ease;
+}
+
+.service-box.under-construction:hover {
+    opacity: 0.9;
+    transform: translateY(-3px);
+}
+
+.construction-badge {
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    background: rgba(255, 0, 0, 0);
+    border: 1px solid rgba(255, 0, 0, 0.952);
+    color: #ff0000;
+    padding: 4px 10px;
+    font-size: 0.7rem;
+    font-weight: 600;
+    border-radius: 20px;
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
 /* ==========================================================================
   Responsive
    ========================================================================== */
