@@ -9,6 +9,9 @@
     <meta name="description" content="Professional portfolio showcasing web development and 3D visualization projects.">
     <meta name="author" content="Your Name">
     <meta name="theme-color" content="#050505">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Georgian:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 
     <link rel="stylesheet" href="style.css">
 
@@ -18,16 +21,15 @@
 </head>
 <body>
 
-
-
 <header class="navbar">
     <div class="logo">MyPortfolio</div>
 
     <nav class="nav-links" aria-label="Main Navigation">
         <ul>
-            <li><a href="#about">About</a></li>
-            <li><a href="#services">Services</a></li>
-            <li><a href="#contact">Contact</a></li>
+            <li><a href="#about" data-i18n="nav_about">About</a></li>
+            <li><a href="#services" data-i18n="nav_services">Services</a></li>
+            <li><a href="#contact" data-i18n="nav_contact">Contact</a></li>
+            <li><button id="lang-toggle" class="lang-btn">GE</button></li>
         </ul>
     </nav>
 </header>
@@ -46,8 +48,8 @@
         >
 
         <div class="profile-text">
-            <h1>Hello, I am TORNIKE</h1>
-            <p>
+            <h1 data-i18n="hero_title">Hello, I am TORNIKE</h1>
+            <p data-i18n="hero_subtitle">
                 Frontend developer creating modern,
                 responsive, and user-centric websites.
             </p>
@@ -61,23 +63,23 @@
         <a href="web.html" class="service-link">
             <article class="service-box">
                 <i data-lucide="code-2" class="icon"></i>
-                <h3>Web Development</h3>
-                <p>
+                <h3 data-i18n="service_web_title">Web Development</h3>
+                <p data-i18n="service_web_desc">
                     Creating modern, responsive,
                     and high-performance websites.
                 </p>
             </article>
         </a>
 
-        <!-- სერვისი 2 (დავუმატეთ აკრული a ტეგი, რომ სტრუქტურა დამსგავსდეს) -->
+        <!-- სერვისი 2 -->
         <a href="#" class="service-link">
            <article class="service-box under-construction">
-    <div class="construction-badge">reconstructing </div>
+    <div class="construction-badge" data-i18n="service_3d_badge">reconstructing </div>
     <i data-lucide="box" class="icon" aria-hidden="true"></i>
 
-    <h3>3D Visualization</h3>
+    <h3 data-i18n="service_3d_title">3D Visualization</h3>
 
-    <p>
+    <p data-i18n="service_3d_desc">
         Creating realistic 3D product models
         and immersive visualizations.
     </p>
@@ -88,7 +90,7 @@
 
    <!-- შეფასებების სექცია -->
     <section class="testimonials-container">
-        <h2 class="section-title">What Clients Say</h2>
+        <h2 class="section-title" data-i18n="testimonials_title">What Clients Say</h2>
         
         <div class="slider">
             <div class="slider-track">
@@ -101,12 +103,12 @@
                         </div>
                         <i data-lucide="quote" class="quote-icon"></i>
                     </div>
-                    <p>"Tornike completely transformed our online presence. The web interface he built is not only visually stunning but perfectly optimized. His frontend skills and attention to detail are on another level."</p>
+                    <p data-i18n="review_1">"Tornike completely transformed our online presence. The web interface he built is not only visually stunning but perfectly optimized. His frontend skills and attention to detail are on another level."</p>
                     <div class="client-info">
                         <div class="client-avatar">DK</div>
                         <div class="client-details">
                             <h4>David K.</h4>
-                            <span>Tech Startup Founder</span>
+                            <span data-i18n="role_startup_founder">Tech Startup Founder</span>
                         </div>
                     </div>
                 </div>
@@ -119,12 +121,12 @@
                         </div>
                         <i data-lucide="quote" class="quote-icon"></i>
                     </div>
-                    <p>"We needed hyper-realistic 3D models for our new product launch. Tornike delivered assets that looked better than real life. The lighting and textures were flawless, saving us thousands on photography."</p>
+                    <p data-i18n="review_2">"We needed hyper-realistic 3D models for our new product launch. Tornike delivered assets that looked better than real life. The lighting and textures were flawless, saving us thousands on photography."</p>
                     <div class="client-info">
                         <div class="client-avatar">EM</div>
                         <div class="client-details">
                             <h4>Elena M.</h4>
-                            <span>Product Manager</span>
+                            <span data-i18n="role_product_manager">Product Manager</span>
                         </div>
                     </div>
                 </div>
@@ -137,12 +139,12 @@
                         </div>
                         <i data-lucide="quote" class="quote-icon"></i>
                     </div>
-                    <p>"Working with Tornike was a seamless experience. He translated our complex ideas into a responsive, pixel-perfect website in record time. His communication is as impressive as his coding."</p>
+                    <p data-i18n="review_3">"Working with Tornike was a seamless experience. He translated our complex ideas into a responsive, pixel-perfect website in record time. His communication is as impressive as his coding."</p>
                     <div class="client-info">
                         <div class="client-avatar">MR</div>
                         <div class="client-details">
                             <h4>Marcus R.</h4>
-                            <span>Creative Director</span>
+                            <span data-i18n="role_creative_director">Creative Director</span>
                         </div>
                     </div>
                 </div>
@@ -155,12 +157,12 @@
                         </div>
                         <i data-lucide="quote" class="quote-icon"></i>
                     </div>
-                    <p>"Tornike optimized our web application, reducing load times by 60%. The UI is now incredibly fast, and our users are loving the seamless experience. Truly top-tier frontend optimization."</p>
+                    <p data-i18n="review_4">"Tornike optimized our web application, reducing load times by 60%. The UI is now incredibly fast, and our users are loving the seamless experience. Truly top-tier frontend optimization."</p>
                     <div class="client-info">
                         <div class="client-avatar">JS</div>
                         <div class="client-details">
                             <h4>John S.</h4>
-                            <span>Technical Lead</span>
+                            <span data-i18n="role_tech_lead">Technical Lead</span>
                         </div>
                     </div>
                 </div>
@@ -173,12 +175,12 @@
                         </div>
                         <i data-lucide="quote" class="quote-icon"></i>
                     </div>
-                    <p>"I wanted a modern, glassmorphism UI with complex interactions, and he nailed it perfectly. The CSS animations are buttery smooth and don't affect browser performance at all."</p>
+                    <p data-i18n="review_5">"I wanted a modern, glassmorphism UI with complex interactions, and he nailed it perfectly. The CSS animations are buttery smooth and don't affect browser performance at all."</p>
                     <div class="client-info">
                         <div class="client-avatar">AL</div>
                         <div class="client-details">
                             <h4>Anna L.</h4>
-                            <span>UI/UX Designer</span>
+                            <span data-i18n="role_uiux_designer">UI/UX Designer</span>
                         </div>
                     </div>
                 </div>
@@ -191,12 +193,12 @@
                         </div>
                         <i data-lucide="quote" class="quote-icon"></i>
                     </div>
-                    <p>"Finally, a frontend developer who understands mobile-first design! The website he built looks and works flawlessly on every device, browser, and screen size we tested."</p>
+                    <p data-i18n="review_6">"Finally, a frontend developer who understands mobile-first design! The website he built looks and works flawlessly on every device, browser, and screen size we tested."</p>
                     <div class="client-info">
                         <div class="client-avatar">TB</div>
                         <div class="client-details">
                             <h4>Tom B.</h4>
-                            <span>E-commerce Manager</span>
+                            <span data-i18n="role_ecommerce_manager">E-commerce Manager</span>
                         </div>
                     </div>
                 </div>
@@ -209,12 +211,12 @@
                         </div>
                         <i data-lucide="quote" class="quote-icon"></i>
                     </div>
-                    <p>"Clean, maintainable, and highly scalable frontend architecture. Tornike stepped in and refactored our messy JavaScript into a beautifully structured, modern codebase."</p>
+                    <p data-i18n="review_7">"Clean, maintainable, and highly scalable frontend architecture. Tornike stepped in and refactored our messy JavaScript into a beautifully structured, modern codebase."</p>
                     <div class="client-info">
                         <div class="client-avatar">SV</div>
                         <div class="client-details">
                             <h4>Sophie V.</h4>
-                            <span>Senior Software Engineer</span>
+                            <span data-i18n="role_software_engineer">Senior Software Engineer</span>
                         </div>
                     </div>
                 </div>
@@ -224,15 +226,12 @@
     </section>
 </main>
 
-
-
-
 <footer class="glass-footer">
     <div class="footer-inner">
-        <p>&copy; 2026 WebStudio. All rights reserved.</p>
+        <p data-i18n="footer_rights">&copy; 2026 WebStudio. All rights reserved.</p>
         <div class="footer-nav">
-            <a href="cont.html">contact</a>
-            <a href="consult.html">Consultation</a>
+            <a href="cont.html" data-i18n="footer_contact">contact</a>
+            <a href="consult.html" data-i18n="footer_consultation">Consultation</a>
         </div>
     </div>
 </footer>

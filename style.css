@@ -36,22 +36,29 @@ html{
     scroll-behavior:smooth;
 }
 
-body{
+body {
+    min-height: 100vh;
+    background: var(--bg-color);
+    color: var(--text-main);
 
-    min-height:100vh;
+    /* აქ შევცვალეთ ფონტი Noto Sans Georgian-ით */
+    font-family: 'Noto Sans Georgian', 'Segoe UI', -apple-system, sans-serif;
 
-    background:var(--bg-color);
+    line-height: 1.6;
+    -webkit-font-smoothing: antialiased;
+    text-rendering: optimizeLegibility;
+}
 
-    color:var(--text-main);
+/* როცა ენა ქართულია, ტექსტის ზომას და შორის მანძილს ვაბალანსებთ */
+html[lang="ka"] body {
+    font-size: 0.95rem;
+    letter-spacing: 0.2px;
+}
 
-    font-family:"Segoe UI",sans-serif;
-
-    line-height:1.6;
-
-    -webkit-font-smoothing:antialiased;
-
-    text-rendering:optimizeLegibility;
-
+html[lang="ka"] h1, 
+html[lang="ka"] h2, 
+html[lang="ka"] h3 {
+    letter-spacing: normal;
 }
 
 main{
@@ -145,6 +152,25 @@ header, main {
 
     color:var(--accent);
 
+}
+
+/* ენის ღილაკის პოზიციონირება */
+.lang-btn {
+    background: rgba(255, 255, 255, 0.05);
+    border: 1px solid var(--glass-border);
+    color: var(--text-main);
+    padding: 6px 12px;
+    border-radius: 8px;
+    cursor: pointer;
+    font-weight: 600;
+    margin-left: 20px; /* აშორებს მენიუს ლინკებს */
+    align-self: center; /* სვამს ზუსტად შუაში სიმაღლეზე */
+    transition: var(--transition);
+}
+
+.lang-btn:hover {
+    background: var(--accent);
+    color: white;
 }
 
 
@@ -1489,8 +1515,31 @@ header, main {
     letter-spacing: 1px;
 }
 
+
 /* ==========================================================================
-  Responsive
+  13. transitions and animations
+   ========================================================================== */
+
+   .lang-btn {
+    background: var(--glass-bg);
+    border: 1px solid var(--glass-border);
+    color: var(--text-main);
+    padding: 6px 14px;
+    border-radius: 8px;
+    cursor: pointer;
+    font-weight: 600;
+    transition: var(--transition);
+}
+
+.lang-btn:hover {
+    background: var(--accent);
+    color: white;
+}
+
+
+
+/* ==========================================================================
+   Responsive
    ========================================================================== */
 
 @media (max-width: 1024px) {
@@ -1500,36 +1549,47 @@ header, main {
 }
 
 @media (max-width: 768px) {
-    /* Navbar */
+    /* Navbar Mobile Fixes */
     .navbar {
-        padding: 15px 15px; 
+        padding: 12px 15px; 
     }
 
     .logo {
-        font-size: 1.1rem; 
+        font-size: 1rem; 
+        flex-shrink: 0;
     }
 
     .nav-links ul {
         display: flex;
         flex-direction: row; 
-        gap: 12px; 
+        gap: 8px; 
+        align-items: center;
     }
 
     .nav-links a {
-        font-size: 0.8rem; 
+        font-size: 0.75rem; 
+        white-space: nowrap; /* კრძალავს ტექსტის 2 ხაზად გადატეხას */
     }
 
-    /* About */
+    .lang-btn {
+        padding: 4px 8px;
+        font-size: 0.7rem;
+        white-space: nowrap;
+    }
+
+    /* About / Profile Section Fixes */
     .glass-card {
         flex-direction: column;
         text-align: center;
         width: 92%;
-        padding: 35px;
+        padding: 35px 20px;
     }
 
     .profile-img {
         width: 120px;
         height: 120px;
+        aspect-ratio: 1 / 1; /* ინარჩუნებს სწორ კვადრატულ ფორმას */
+        object-fit: cover;
     }
 
     /* Services */
@@ -1585,7 +1645,7 @@ header, main {
     }
 
     .hero h1 {
-        font-size: 2.6rem;
+        font-size: 2.4rem;
         line-height: 1.2;
     }
 
@@ -1686,7 +1746,7 @@ header, main {
         font-size: 1rem;
     }
 
-    /* Modal Mobile Optimization (მუქი მინის ფონით და ფიქსირებული X ღილაკით) */
+    /* Modal Mobile Optimization */
     .modal-content {
         position: relative !important;
         width: 95% !important;
@@ -1695,7 +1755,7 @@ header, main {
         flex-direction: column !important;
         padding: 0 !important;
         overflow: hidden !important;
-        background: rgba(12, 16, 26, 0.192) !important;
+        background: rgba(12, 16, 26, 0.95) !important;
         backdrop-filter: blur(16px) !important;
         -webkit-backdrop-filter: blur(16px) !important;
         border: 1px solid rgba(255, 255, 255, 0.12) !important;
@@ -1788,16 +1848,37 @@ header, main {
 }
 
 @media (max-width: 480px) {
+    .navbar {
+        padding: 10px 8px;
+    }
+
+    .logo {
+        font-size: 0.85rem;
+    }
+
+    .nav-links ul {
+        gap: 5px;
+    }
+
+    .nav-links a {
+        font-size: 0.68rem;
+    }
+
+    .lang-btn {
+        padding: 3px 6px;
+        font-size: 0.65rem;
+    }
+
     .hero {
         padding: 40px 20px;
     }
 
     .hero h1 {
-        font-size: 2rem;
+        font-size: 1.9rem;
     }
 
     .section-title h2 {
-        font-size: 2rem;
+        font-size: 1.8rem;
     }
 
     .pricing-card {
@@ -1817,13 +1898,6 @@ header, main {
 
     .price strong {
         font-size: 1.6rem;
-    }
-    
-    .nav-links a {
-        font-size: 0.75rem; 
-    }
-    .logo {
-        font-size: 1rem;
     }
 }
 
