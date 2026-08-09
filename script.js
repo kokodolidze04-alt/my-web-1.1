@@ -464,7 +464,7 @@ const translations = {
         btn_back: "Back",
         
         // Index Hero
-        hero_title: "Hello, I am TORNIKE",
+        hero_title: "Hello, I am KOKO",
         hero_subtitle: "Frontend developer creating modern, responsive, and user-centric websites.",
         
         // Services
@@ -592,7 +592,7 @@ const translations = {
         service_web_desc: "თანამედროვე, სწრაფი და ყველა მოწყობილობაზე მორგებული საიტების დამზადება.",
         service_3d_title: "3D ვიზუალიზაცია",
         service_3d_desc: "რეალისტური 3D პროდუქტის მოდელები და ინტერაქტიული ვიზუალიზაცია.",
-        service_3d_badge: "განახლების პროცესშია",
+        service_3d_badge: "აქ რემონტია",
         
         // Testimonials
         testimonials_title: "რას ამბობენ კლიენტები",
@@ -691,7 +691,7 @@ const translations = {
         cont_btn_send: 'გაგზავნა ელ.ფოსტით',
 
         // Footer
-        footer_rights: "© 2026 KOKOSLAB. ყველა უფლება დაცულია.",
+        footer_rights: "© 2026 KOKOS-LAB. ყველა უფლება დაცულია.",
         footer_contact: "კონტაქტი",
         footer_consultation: "კონსულტაცია"
     }
