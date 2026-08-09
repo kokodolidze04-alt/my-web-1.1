@@ -720,6 +720,7 @@ function updateLanguage(lang) {
         langBtn.textContent = lang === 'en' ? 'GE' : 'EN';
     }
     
+    
     // არჩეული ენის დამახსოვრება
     localStorage.setItem('site_lang', lang);
 }
