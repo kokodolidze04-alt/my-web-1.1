@@ -483,8 +483,8 @@ header, main {
 
 .pricing-grid {
     display: grid;
-    grid-template-columns: repeat(4, 1fr); /* აქ ვწერთ 4-ს, რომ ოთხივე ერთ ხაზზე გამოჩნდეს */
-    gap: 20px; /* 30px-ის ნაცვლად 20px ჯობია 4 ბარათის შემთხვევაში */
+    grid-template-columns: repeat(4, minmax(0, 1fr)); /* minmax არ მისცემს ტექსტს ბარათის გაწელვის უფლებას */
+    gap: 20px;
     width: 100%;
 }
 
