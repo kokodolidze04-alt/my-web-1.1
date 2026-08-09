@@ -496,7 +496,7 @@ const translations = {
         web_hero_title: "Modern Websites <br> Built to Grow Your Business",
         web_hero_desc: "I create fast, responsive, and modern websites that combine clean design with reliable performance. Every project is crafted to help your business stand out online.",
         btn_get_consultation: "GET A FREE CONSULTATION",
-        pricing_title: "Choose the Right Package",
+        
         pricing_subtitle: "Every website is built with performance, responsiveness, and clean design in mind.",
         plan_starter_pages: "1–3 Pages",
         plan_business_pages: "4–8 Pages",
@@ -616,7 +616,7 @@ const translations = {
         web_hero_title: "თანამედროვე ვებსაიტები <br> თქვენი ბიზნესის გასაზრდელად",
         web_hero_desc: "ვქმნი სწრაფ, ადაპტირებად და თანამედროვე ვებსაიტებს, რომლებიც აერთიანებს დახვეწილ დიზაინსა და საიმედო წარმადობას. თითოეული პროექტი შექმნილია იმისთვის, რომ თქვენი ბიზნესი გამოირჩეოდეს ონლაინ სივრცეში.",
         btn_get_consultation: " უფასო კონსულტაცია",
-        pricing_title: "აირჩიეთ სასურველი პაკეტი",
+        
         pricing_subtitle: "თითოეული ვებსაიტი იქმნება მაღალი წარმადობის, ადაპტირებადობისა და სუფთა დიზაინის გათვალისწინებით.",
         plan_starter_pages: "1–3 გვერდი",
         plan_business_pages: "4–8 გვერდი",
