@@ -1,104 +1,707 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Free Consultation</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Georgian:wght@300;400;500;600;700&display=swap" rel="stylesheet">
-    
-    <link rel="stylesheet" href="style.css">
-    
-    <script src="https://unpkg.com/lucide@latest" defer></script>
-    <script src="script.js" defer></script>
-</head>
-<body>
+<html lang="ka">
 
-<!-- მატრიცას უკანა ფონი -->
-<canvas id="matrix-canvas"></canvas>
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+
+    <title>
+        KOKOS-LAB | Free Consultation
+    </title>
+
+    <meta
+        name="description"
+        content="Book a free consultation with KOKOS-LAB to discuss your website or digital project."
+    >
+
+    <meta
+        name="author"
+        content="Tornike Dolidze"
+    >
+
+    <meta
+        name="theme-color"
+        content="#050505"
+    >
+
+
+    <!-- Fonts -->
+
+    <link
+        rel="preconnect"
+        href="https://fonts.googleapis.com"
+    >
+
+    <link
+        rel="preconnect"
+        href="https://fonts.gstatic.com"
+        crossorigin
+    >
+
+    <link
+        href="https://fonts.googleapis.com/css2?family=Noto+Sans+Georgian:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet"
+    >
+
+
+    <!-- Styles -->
+
+    <link
+        rel="stylesheet"
+        href="style.css"
+    >
+
+
+    <!-- Icons -->
+
+    <script
+        src="https://unpkg.com/lucide@latest"
+        defer
+    ></script>
+
+
+    <!-- Main JavaScript -->
+
+    <script
+        src="script.js"
+        defer
+    ></script>
+
+</head>
+
+
+<body class="consult-page">
+
+
+<canvas
+    id="matrix-canvas"
+    aria-hidden="true"
+></canvas>
+
+
+
+<!-- =====================================================
+     NAVIGATION
+===================================================== -->
 
 <header class="navbar">
-    <div class="logo">KOKOS-LAB</div>
-    <nav class="nav-links">
+
+
+    <a
+        href="index.html"
+        class="logo"
+        aria-label="KOKOS-LAB Home"
+    >
+        KOKOS-LAB
+    </a>
+
+
+
+    <nav
+        class="nav-links"
+        aria-label="Main Navigation"
+    >
+
         <ul>
-            <li><a href="index.html" data-i18n="nav_home">Home</a></li>
-            <li><a href="index.html#services" data-i18n="nav_services">Services</a></li>
-            <li><a href="index.html#contact" data-i18n="nav_contact">Contact</a></li>
-            <li><button id="lang-toggle" class="lang-btn">GE</button></li>
+
+
+            <li>
+
+                <a
+                    href="index.html"
+                    data-i18n="nav_home"
+                >
+                    Home
+                </a>
+
+            </li>
+
+
+
+            <li>
+
+                <a
+                    href="web.html"
+                    data-i18n="nav_services"
+                >
+                    Services
+                </a>
+
+            </li>
+
+
+
+            <li>
+
+                <a
+                    href="cont.html"
+                    data-i18n="nav_contact"
+                >
+                    Contact
+                </a>
+
+            </li>
+
+
+
+            <li>
+
+                <button
+                    id="lang-toggle"
+                    class="lang-btn"
+                    type="button"
+                >
+                    GE
+                </button>
+
+            </li>
+
+
         </ul>
+
     </nav>
+
+
 </header>
 
+
+
+<!-- =====================================================
+     MAIN
+===================================================== -->
+
 <main class="consult-main">
-    
-    <section class="glass-card consult-box">
-        
-        <a href="web.html" class="back-btn consult-back">
-            <i data-lucide="arrow-left"></i>
-            <span data-i18n="consult_back">Back to Web Development</span>
-        </a>
 
-        <div class="consult-header">
-            <h2 data-i18n="consult_title">Free Consultation</h2>
-            <p data-i18n="consult_desc">Book a free, no-obligation call to discuss your project. Read the FAQs below to prepare, then reach out!</p>
+
+    <section class="consult-layout">
+
+
+        <!-- =================================================
+             INTRO
+        ================================================== -->
+
+        <div class="consult-intro">
+
+
+            <a
+                href="web.html"
+                class="back-btn consult-back"
+            >
+
+                <i
+                    data-lucide="arrow-left"
+                    aria-hidden="true"
+                ></i>
+
+
+                <span
+                    data-i18n="consult_back"
+                >
+                    Back to Web Development
+                </span>
+
+            </a>
+
+
+
+            <span
+                class="section-kicker"
+                data-i18n="consult_kicker"
+            >
+                FREE CONSULTATION
+            </span>
+
+
+
+            <h1
+                data-i18n="consult_title"
+            >
+                Free Consultation
+            </h1>
+
+
+
+            <p
+                data-i18n="consult_desc"
+            >
+                Book a free, no-obligation call
+                to discuss your project. Read the
+                FAQs below to prepare, then reach out!
+            </p>
+
+
+
+            <div class="consult-intro-line">
+
+                <span></span>
+
+
+                <small
+                    data-i18n="consult_brand"
+                >
+                    KOKOS-LAB
+                </small>
+
+            </div>
+
+
         </div>
 
-        <div class="faq-container">
-            <h3 class="faq-title" data-i18n="faq_main_title">Frequently Asked Questions</h3>
-            
-            <div class="faq-item">
-                <i data-lucide="clock" class="faq-icon"></i>
+
+
+        <!-- =================================================
+             CONSULTATION CARD
+        ================================================== -->
+
+        <section
+            class="glass-card consult-box"
+        >
+
+
+            <div class="consult-card-header">
+
+
                 <div>
-                    <h4 data-i18n="faq_q1">How long does the consultation take?</h4>
-                    <p data-i18n="faq_a1">Usually between 15 to 30 minutes. We'll discuss your goals, target audience, and preferred design style.</p>
+
+
+                    <span
+                        class="card-eyebrow"
+                        data-i18n="faq_kicker"
+                    >
+                        BEFORE WE START
+                    </span>
+
+
+
+                    <h2
+                        data-i18n="faq_main_title"
+                    >
+                        Frequently Asked Questions
+                    </h2>
+
+
                 </div>
+
+
+
+                <div class="consult-icon">
+
+                    <i
+                        data-lucide="message-circle"
+                    ></i>
+
+                </div>
+
+
             </div>
 
-            <div class="faq-item">
-                <i data-lucide="file-question" class="faq-icon"></i>
-                <div>
-                    <h4 data-i18n="faq_q2">What should I prepare beforehand?</h4>
-                    <p data-i18n="faq_a2">Just a basic idea of what you want your website to achieve. If you have links to websites you like, that's a big plus!</p>
+
+
+            <!-- =================================================
+                 FAQ 1
+            ================================================== -->
+
+            <article class="faq-item">
+
+
+                <div class="faq-icon">
+
+                    <i
+                        data-lucide="clock"
+                    ></i>
+
                 </div>
+
+
+
+                <div class="faq-content">
+
+
+                    <span class="faq-number">
+                        01
+                    </span>
+
+
+
+                    <h3
+                        data-i18n="faq_q1"
+                    >
+                        How long does the consultation take?
+                    </h3>
+
+
+
+                    <p
+                        data-i18n="faq_a1"
+                    >
+                        Usually between 15 to 30 minutes.
+                        We'll discuss your goals, target
+                        audience, and preferred design style.
+                    </p>
+
+
+                </div>
+
+
+            </article>
+
+
+
+            <!-- =================================================
+                 FAQ 2
+            ================================================== -->
+
+            <article class="faq-item">
+
+
+                <div class="faq-icon">
+
+                    <i
+                        data-lucide="file-question"
+                    ></i>
+
+                </div>
+
+
+
+                <div class="faq-content">
+
+
+                    <span class="faq-number">
+                        02
+                    </span>
+
+
+
+                    <h3
+                        data-i18n="faq_q2"
+                    >
+                        What should I prepare beforehand?
+                    </h3>
+
+
+
+                    <p
+                        data-i18n="faq_a2"
+                    >
+                        Just a basic idea of what you
+                        want your website to achieve.
+                        If you have links to websites
+                        you like, that's a big plus!
+                    </p>
+
+
+                </div>
+
+
+            </article>
+
+
+
+            <!-- =================================================
+                 FAQ 3
+            ================================================== -->
+
+            <article class="faq-item">
+
+
+                <div class="faq-icon">
+
+                    <i
+                        data-lucide="badge-dollar-sign"
+                    ></i>
+
+                </div>
+
+
+
+                <div class="faq-content">
+
+
+                    <span class="faq-number">
+                        03
+                    </span>
+
+
+
+                    <h3
+                        data-i18n="faq_q3"
+                    >
+                        Is it really free?
+                    </h3>
+
+
+
+                    <p
+                        data-i18n="faq_a3"
+                    >
+                        Yes! The initial consultation
+                        is 100% free to see if we are
+                        a good fit for your project.
+                    </p>
+
+
+                </div>
+
+
+            </article>
+
+
+
+            <!-- =================================================
+                 CONTACT ACTION
+            ================================================== -->
+
+            <div class="contact-action">
+
+
+                <div class="contact-action-header">
+
+
+                    <span
+                        class="card-eyebrow"
+                        data-i18n="consult_contact_kicker"
+                    >
+                        LET'S TALK
+                    </span>
+
+
+
+                    <h2
+                        data-i18n="consult_contact_ready"
+                    >
+                        Ready to start? Contact me:
+                    </h2>
+
+
+                </div>
+
+
+
+                <div class="contact-links">
+
+
+                    <!-- Email -->
+
+                    <a
+                        href="mailto:tornikedolidze04@gmail.com"
+                        class="contact-method"
+                    >
+
+
+                        <div class="contact-method-icon">
+
+                            <i
+                                data-lucide="mail"
+                            ></i>
+
+                        </div>
+
+
+
+                        <div>
+
+
+                            <small
+                                data-i18n="consult_email_label"
+                            >
+                                EMAIL
+                            </small>
+
+
+                            <span>
+                                tornikedolidze04@gmail.com
+                            </span>
+
+
+                        </div>
+
+
+
+                        <i
+                            data-lucide="arrow-up-right"
+                            class="contact-arrow"
+                        ></i>
+
+
+                    </a>
+
+
+
+                    <!-- Phone -->
+
+                    <a
+                        href="tel:+995593598456"
+                        class="contact-method"
+                    >
+
+
+                        <div class="contact-method-icon">
+
+                            <i
+                                data-lucide="phone"
+                            ></i>
+
+                        </div>
+
+
+
+                        <div>
+
+
+                            <small
+                                data-i18n="consult_phone_label"
+                            >
+                                PHONE
+                            </small>
+
+
+                            <span>
+                                +995 593 598 456
+                            </span>
+
+
+                        </div>
+
+
+
+                        <i
+                            data-lucide="arrow-up-right"
+                            class="contact-arrow"
+                        ></i>
+
+
+                    </a>
+
+
+
+                    <!-- WhatsApp / Telegram -->
+
+                    <a
+                        href="#"
+                        class="contact-method"
+                    >
+
+
+                        <div class="contact-method-icon">
+
+                            <i
+                                data-lucide="message-circle"
+                            ></i>
+
+                        </div>
+
+
+
+                        <div>
+
+
+                            <small
+                                data-i18n="consult_messaging_label"
+                            >
+                                MESSAGING
+                            </small>
+
+
+                            <span
+                                data-i18n="consult_messaging_value"
+                            >
+                                WhatsApp / Telegram
+                            </span>
+
+
+                        </div>
+
+
+
+                        <i
+                            data-lucide="arrow-up-right"
+                            class="contact-arrow"
+                        ></i>
+
+
+                    </a>
+
+
+                </div>
+
+
             </div>
 
-            <div class="faq-item">
-                <i data-lucide="badge-dollar-sign" class="faq-icon"></i>
-                <div>
-                    <h4 data-i18n="faq_q3">Is it really free?</h4>
-                    <p data-i18n="faq_a3">Yes! The initial consultation is 100% free to see if we are a good fit for your project.</p>
-                </div>
-            </div>
-        </div>
 
-        <div class="contact-action">
-            <h3 data-i18n="consult_contact_ready">Ready to start? Contact me:</h3>
-            <div class="contact-links">
-                <a href="mailto:tornikedolidze04@gmail.com" class="contact-method">
-                    <i data-lucide="mail"></i> tornikedolidze04@gmail.com
-                </a>
-                <a href="tel:+995593598456" class="contact-method">
-                    <i data-lucide="phone"></i> +995 593 598 456
-                </a>
-                <a href="#" class="contact-method">
-                    <i data-lucide="message-circle"></i> WhatsApp / Telegram
-                </a>
-            </div>
-        </div>
+        </section>
+
 
     </section>
 
-    
+
 </main>
+
+
+
+<!-- =====================================================
+     FOOTER
+===================================================== -->
+
 <footer class="glass-footer">
+
+
     <div class="footer-inner">
-        <p data-i18n="footer_rights">&copy; 2026 KOKOS-LAB. All rights reserved.</p>
+
+
+        <p
+            data-i18n="footer_rights"
+        >
+            © 2026 KOKOS-LAB.
+            All rights reserved.
+        </p>
+
+
+
         <div class="footer-nav">
-            <a href="index.html" data-i18n="nav_home">Home</a>
-            <a href="web.html" data-i18n="service_web_title">Web Development</a>
+
+
+            <a
+                href="index.html"
+                data-i18n="nav_home"
+            >
+                Home
+            </a>
+
+
+
+            <a
+                href="web.html"
+                data-i18n="nav_services"
+            >
+                Web Development
+            </a>
+
+
+
+            <a
+                href="cont.html"
+                data-i18n="footer_contact"
+            >
+                Contact
+            </a>
+
+
         </div>
+
+
     </div>
+
+
 </footer>
+
+
+
 </body>
+
 </html>

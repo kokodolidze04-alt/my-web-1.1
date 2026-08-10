@@ -1,108 +1,791 @@
+```html
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ka">
+
 <head>
+
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Contact Me | Web Development</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Georgian:wght@300;400;500;600;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="style.css">
-    <!-- FontAwesome ხატულებისთვის -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+
+    <title>
+        KOKOS-LAB | Contact
+    </title>
+
+    <meta
+        name="description"
+        content="Get in touch with KOKOS-LAB about your website or 3D visualization project."
+    >
+
+    <meta
+        name="author"
+        content="Tornike Dolidze"
+    >
+
+    <meta
+        name="theme-color"
+        content="#050505"
+    >
+
+
+    <!-- Fonts -->
+
+    <link
+        rel="preconnect"
+        href="https://fonts.googleapis.com"
+    >
+
+    <link
+        rel="preconnect"
+        href="https://fonts.gstatic.com"
+        crossorigin
+    >
+
+    <link
+        href="https://fonts.googleapis.com/css2?family=Noto+Sans+Georgian:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet"
+    >
+
+
+    <!-- Main Styles -->
+
+    <link
+        rel="stylesheet"
+        href="style.css"
+    >
+
+
+    <!-- Icons -->
+
+    <script
+        src="https://unpkg.com/lucide@latest"
+        defer
+    ></script>
+
+
+    <!-- Main JS -->
+
+    <script
+        src="script.js"
+        defer
+    ></script>
+
 </head>
-<body>
-    <!-- ანიმაციური ფონი -->
-    <canvas id="matrix-canvas"></canvas>
 
-    
-    <!-- ნავიგაცია -->
-    <header class="navbar">
-        <div class="logo">KOKOS-LAB</div>
-        <nav class="nav-links">
-            <ul>
-                <li><a href="index.html" data-i18n="nav_home">Home</a></li>
-                <li><a href="web.html#services" data-i18n="nav_services">Services</a></li>
-                
-                <li><button id="lang-toggle" class="lang-btn">GE</button></li>
-            </ul>
-        </nav>
-    </header>
 
-    <!-- საკონტაქტო სექცია -->
-    <main class="contact-page-main">
-        <div class="contact-container">
-            <a href="index.html" class="back-btn" style="margin-bottom: 20px;">
-                <i class="fas fa-arrow-left"></i> <span data-i18n="cont_back_home">Back to Home</span>
+<body class="contact-page">
+
+
+<canvas
+    id="matrix-canvas"
+    aria-hidden="true"
+></canvas>
+
+
+
+<!-- =====================================================
+     NAVIGATION
+===================================================== -->
+
+<header class="navbar">
+
+
+    <a
+        href="index.html"
+        class="logo"
+        aria-label="KOKOS-LAB Home"
+    >
+        KOKOS-LAB
+    </a>
+
+
+
+    <nav
+        class="nav-links"
+        aria-label="Main Navigation"
+    >
+
+        <ul>
+
+
+            <li>
+
+                <a
+                    href="index.html"
+                    data-i18n="nav_home"
+                >
+                    Home
+                </a>
+
+            </li>
+
+
+
+            <li>
+
+                <a
+                    href="web.html"
+                    data-i18n="nav_services"
+                >
+                    Services
+                </a>
+
+            </li>
+
+
+
+            <li>
+
+                <button
+                    id="lang-toggle"
+                    class="lang-btn"
+                    type="button"
+                >
+                    GE
+                </button>
+
+            </li>
+
+
+        </ul>
+
+    </nav>
+
+
+</header>
+
+
+
+<!-- =====================================================
+     MAIN CONTACT AREA
+===================================================== -->
+
+<main class="contact-page-main">
+
+
+    <div class="contact-container">
+
+
+        <!-- Back -->
+
+        <a
+            href="index.html"
+            class="back-btn"
+        >
+
+            <i
+                data-lucide="arrow-left"
+                aria-hidden="true"
+            ></i>
+
+
+            <span
+                data-i18n="cont_back_home"
+            >
+                Back to Home
+            </span>
+
+        </a>
+
+
+
+        <!-- =================================================
+             CONTACT HEADER
+        ================================================== -->
+
+        <div class="contact-page-header">
+
+
+            <span
+                class="section-kicker"
+                data-i18n="cont_get_in_touch"
+            >
+                GET IN TOUCH
+            </span>
+
+
+
+            <h1
+                data-i18n="cont_talk_title"
+            >
+                Let's talk
+                <br>
+                <span>
+                    about your project
+                </span>
+            </h1>
+
+
+
+            <p
+                data-i18n="cont_talk_desc"
+            >
+                Whether you have a specific project
+                in mind or just want to explore options,
+                I'm here to help you build something great.
+            </p>
+
+
+        </div>
+
+
+
+        <!-- =================================================
+             BENTO GRID
+        ================================================== -->
+
+        <div class="contact-bento-grid">
+
+
+            <!-- =================================================
+                 LEFT — CONTACT INFORMATION
+            ================================================== -->
+
+            <section
+                class="contact-info-side glass-card-style"
+            >
+
+
+                <div class="contact-card-top">
+
+
+                    <span class="card-eyebrow">
+                        KOKOS-LAB
+                    </span>
+
+
+
+                    <h2
+                        data-i18n="cont_create_title"
+                    >
+                        Let's create
+                        <span>
+                            something.
+                        </span>
+                    </h2>
+
+
+
+                    <p
+                        data-i18n="cont_talk_desc"
+                    >
+                        Whether you have a specific project
+                        in mind or just want to explore options,
+                        I'm here to help you build something great.
+                    </p>
+
+
+                </div>
+
+
+
+                <!-- Direct Contacts -->
+
+                <div class="direct-contacts">
+
+
+                    <a
+                        href="mailto:tornikedolidze04@gmail.com"
+                        class="info-row"
+                    >
+
+
+                        <div class="info-icon">
+
+                            <i
+                                data-lucide="mail"
+                            ></i>
+
+                        </div>
+
+
+
+                        <div>
+
+                            <small
+                                data-i18n="cont_email_label"
+                            >
+                                EMAIL
+                            </small>
+
+
+                            <span>
+                                tornikedolidze04@gmail.com
+                            </span>
+
+                        </div>
+
+
+                    </a>
+
+
+
+                    <a
+                        href="tel:+995593598456"
+                        class="info-row"
+                    >
+
+
+                        <div class="info-icon">
+
+                            <i
+                                data-lucide="phone"
+                            ></i>
+
+                        </div>
+
+
+
+                        <div>
+
+                            <small
+                                data-i18n="cont_phone_label"
+                            >
+                                PHONE
+                            </small>
+
+
+                            <span>
+                                +995 593 598 456
+                            </span>
+
+                        </div>
+
+
+                    </a>
+
+
+                </div>
+
+
+
+                <!-- Social Links -->
+
+                <div class="social-circles">
+
+
+                    <p
+                        class="social-title"
+                        data-i18n="cont_follow_connect"
+                    >
+                        Follow & Connect
+                    </p>
+
+
+
+                    <div class="circle-links">
+
+
+                        <a
+                            href="viber://chat?number=%995593598456"
+                            class="circle-btn viber"
+                            title="Viber"
+                            aria-label="Viber"
+                        >
+
+                            <i
+                                data-lucide="phone"
+                            ></i>
+
+                        </a>
+
+
+
+                        <!-- LinkedIn -->
+
+                        <a
+                            href="https://www.linkedin.com/in/kokodolidze/"
+                            class="circle-btn linkedin"
+                            title="LinkedIn"
+                            aria-label="LinkedIn"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                        >
+
+                            <svg
+                                viewBox="0 0 24 24"
+                                aria-hidden="true"
+                                class="social-brand-icon"
+                            >
+
+                                <path
+                                    fill="currentColor"
+                                    d="M6.94 8.5H3.2V20h3.74V8.5ZM5.07 3A2.17 2.17 0 1 0 5.07 7.34 2.17 2.17 0 0 0 5.07 3ZM20.8 13.42c0-3.47-1.85-5.09-4.32-5.09-1.99 0-2.88 1.09-3.38 1.86V8.5H9.36V20h3.74v-6.4c0-1.69.32-3.33 2.42-3.33 2.07 0 2.1 1.94 2.1 3.44V20h3.74l.01-6.58Z"
+                                />
+
+                            </svg>
+
+                        </a>
+
+
+
+                        <!-- Instagram -->
+
+                        <a
+                            href="https://www.instagram.com/kokodolidze/"
+                            class="circle-btn instagram"
+                            title="Instagram"
+                            aria-label="Instagram"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                        >
+
+                            <svg
+                                viewBox="0 0 24 24"
+                                aria-hidden="true"
+                                class="social-brand-icon"
+                            >
+
+                                <path
+                                    fill="currentColor"
+                                    d="M7.5 2h9A5.5 5.5 0 0 1 22 7.5v9a5.5 5.5 0 0 1-5.5 5.5h-9A5.5 5.5 0 0 1 2 16.5v-9A5.5 5.5 0 0 1 7.5 2Zm0 1.8A3.7 3.7 0 0 0 3.8 7.5v9a3.7 3.7 0 0 0 3.7 3.7h9a3.7 3.7 0 0 0 3.7-3.7v-9a3.7 3.7 0 0 0-3.7-3.7h-9Zm9.75 1.35a1.3 1.3 0 1 1 0 2.6 1.3 1.3 0 0 1 0-2.6ZM12 7a5 5 0 1 1 0 10 5 5 0 0 1 0-10Zm0 1.8a3.2 3.2 0 1 0 0 6.4 3.2 3.2 0 0 0 0-6.4Z"
+                                />
+
+                            </svg>
+
+                        </a>
+
+
+
+                        <!-- Behance -->
+
+                        <a
+                            href="https://www.behance.net/kokodolidze"
+                            class="circle-btn behance"
+                            title="Behance"
+                            aria-label="Behance"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                        >
+
+                            <span>
+                                Be
+                            </span>
+
+                        </a>
+
+
+
+                        <!-- Fiverr -->
+
+                        <a
+                            href="https://www.fiverr.com/s/6Yll5wL"
+                            class="circle-btn fiverr"
+                            title="Fiverr"
+                            aria-label="Fiverr"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                        >
+
+                            <span>
+                                Fi
+                            </span>
+
+                        </a>
+
+
+                    </div>
+
+                </div>
+
+
+            </section>
+
+
+
+            <!-- =================================================
+                 RIGHT — CONTACT FORM
+            ================================================== -->
+
+            <section
+                class="contact-form-side glass-card-style"
+            >
+
+
+                <div class="form-header">
+
+
+                    <span class="card-eyebrow">
+                        CONTACT
+                    </span>
+
+
+
+                    <h2
+                        data-i18n="cont_send_message"
+                    >
+                        Send a Message
+                    </h2>
+
+
+
+                    <p
+                        data-i18n="cont_form_desc"
+                    >
+                        Tell me a little about your
+                        project and I'll get back to you.
+                    </p>
+
+
+                </div>
+
+
+
+                <form
+                    id="contact-form"
+                    class="glass-form"
+                >
+
+
+                    <!-- Name -->
+
+                    <div class="input-group">
+
+
+                        <label
+                            for="user_name"
+                            data-i18n="cont_lbl_name"
+                        >
+                            Your Name
+                        </label>
+
+
+
+                        <div class="input-wrapper">
+
+
+                            <i
+                                data-lucide="user"
+                                aria-hidden="true"
+                            ></i>
+
+
+
+                            <input
+                                type="text"
+                                id="user_name"
+                                name="name"
+                                required
+                                autocomplete="name"
+                                placeholder="John Doe"
+                                data-i18n-placeholder="cont_placeholder_name"
+                            >
+
+
+                        </div>
+
+
+                    </div>
+
+
+
+                    <!-- Email -->
+
+                    <div class="input-group">
+
+
+                        <label
+                            for="user_email"
+                            data-i18n="cont_lbl_email"
+                        >
+                            Email Address
+                        </label>
+
+
+
+                        <div class="input-wrapper">
+
+
+                            <i
+                                data-lucide="mail"
+                                aria-hidden="true"
+                            ></i>
+
+
+
+                            <input
+                                type="email"
+                                id="user_email"
+                                name="email"
+                                required
+                                autocomplete="email"
+                                placeholder="john@example.com"
+                                data-i18n-placeholder="cont_placeholder_email"
+                            >
+
+
+                        </div>
+
+
+                    </div>
+
+
+
+                    <!-- Message -->
+
+                    <div class="input-group">
+
+
+                        <label
+                            for="message"
+                            data-i18n="cont_lbl_message"
+                        >
+                            How can I help you?
+                        </label>
+
+
+
+                        <div class="input-wrapper textarea-wrapper">
+
+
+                            <i
+                                data-lucide="message-square"
+                                aria-hidden="true"
+                            ></i>
+
+
+
+                            <textarea
+                                id="message"
+                                name="message"
+                                rows="6"
+                                required
+                                placeholder="Tell me about your project..."
+                                data-i18n-placeholder="cont_placeholder_message"
+                            ></textarea>
+
+
+                        </div>
+
+
+                    </div>
+
+
+
+                    <!-- Submit -->
+
+                    <button
+                        type="submit"
+                        class="submit-btn"
+                    >
+
+
+                        <span
+                            data-i18n="cont_btn_send"
+                        >
+                            Send via Email
+                        </span>
+
+
+
+                        <i
+                            data-lucide="arrow-up-right"
+                            aria-hidden="true"
+                        ></i>
+
+
+                    </button>
+
+
+                </form>
+
+
+
+                <div class="form-note">
+
+
+                    <i
+                        data-lucide="shield-check"
+                    ></i>
+
+
+
+                    <span
+                        data-i18n="cont_form_note"
+                    >
+                        Your message will open
+                        directly in your email client.
+                    </span>
+
+
+                </div>
+
+
+            </section>
+
+
+        </div>
+
+
+    </div>
+
+
+</main>
+
+
+
+<!-- =====================================================
+     FOOTER
+===================================================== -->
+
+<footer class="glass-footer">
+
+
+    <div class="footer-inner">
+
+
+        <p
+            data-i18n="footer_rights"
+        >
+            © 2026 KOKOS-LAB.
+            All rights reserved.
+        </p>
+
+
+
+        <div class="footer-nav">
+
+
+            <a
+                href="index.html"
+                data-i18n="nav_home"
+            >
+                Home
             </a>
-            
-            <div class="contact-bento-grid">
-                
-                <!-- მარცხენა მხარე: ინფორმაცია და სოციალური ქსელები -->
-                <div class="contact-info-side glass-card-style">
-                    <h2 data-i18n="cont_talk_title">Let's talk <br><span>about your project</span></h2>
-                    <p data-i18n="cont_talk_desc">Whether you have a specific project in mind or just want to explore options, I'm here to help you build something great.</p>
-                    
-                    <div class="direct-contacts">
-                        <a href="mailto:tornikedolidze04@gmail.com" class="info-row">
-                            <div class="info-icon"><i class="fas fa-envelope"></i></div>
-                            <span>tornikedolidze04@gmail.com</span>
-                        </a>
-                        <a href="tel:+995593598456" class="info-row">
-                            <div class="info-icon"><i class="fas fa-phone"></i></div>
-                            <span>+995 593 598 456</span>
-                        </a>
-                    </div>
 
-                    <div class="social-circles">
-                        <p class="social-title" data-i18n="cont_follow_connect">Follow & Connect</p>
-                        <div class="circle-links">
-                            <a href="viber://chat?number=%995593598456" class="circle-btn viber" title="Viber"><i class="fab fa-viber"></i></a>
-                            <a href="https://www.linkedin.com/in/kokodolidze/" class="circle-btn linkedin" title="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
-                            <a href="https://www.instagram.com/kokodolidze/" class="circle-btn instagram" title="Instagram"><i class="fab fa-instagram"></i></a>
-                            <a href="https://www.behance.net/kokodolidze" class="circle-btn behance" title="Behance"><i class="fab fa-behance"></i></a>
-                            <a href="https://www.fiverr.com/s/6Yll5wL" class="circle-btn fiverr" title="Fiverr"><i class="fas fa-check-circle"></i></a>
-                        </div>
-                    </div>
-                </div>
 
-                <!-- მარჯვენა მხარე: საკონტაქტო ფორმა -->
-                <div class="contact-form-side glass-card-style">
-                    <h3 data-i18n="cont_send_message">Send a Message</h3>
-                    <form id="contact-form" class="glass-form">
-                        <div class="input-group">
-                            <label data-i18n="cont_lbl_name">Your Name</label>
-                            <input type="text" id="user_name" required placeholder="John Doe">
-                        </div>
-                        <div class="input-group">
-                            <label data-i18n="cont_lbl_email">Email Address</label>
-                            <input type="email" id="user_email" required placeholder="john@example.com">
-                        </div>
-                        <div class="input-group">
-                            <label data-i18n="cont_lbl_message">How can I help you?</label>
-                            <textarea id="message" rows="4" required placeholder="Tell me about your project..."></textarea>
-                        </div>
-                        <button type="submit" class="submit-btn" data-i18n="cont_btn_send">
-                            Send via Email <i class="fas fa-paper-plane"></i>
-                        </button>
-                    </form>
-                </div>
 
-            </div>
+            <a
+                href="web.html"
+                data-i18n="nav_services"
+            >
+                Services
+            </a>
+
+
+
+            <a
+                href="consult.html"
+                data-i18n="footer_consultation"
+            >
+                Consultation
+            </a>
+
+
         </div>
-    </main>
 
-    <script src="script.js"></script>
 
-    <footer class="glass-footer">
-        <div class="footer-inner">
-            <p data-i18n="footer_rights">&copy; 2026 KOKOS-LAB. All rights reserved.</p>
-            <div class="footer-nav">
-                <a href="index.html" data-i18n="nav_home">Home</a>
-                <a href="consult.html" data-i18n="footer_consultation">Consultation</a>
-            </div>
-        </div>
-    </footer>
+    </div>
+
+
+</footer>
+
+
 
 </body>
+
 </html>
+```
