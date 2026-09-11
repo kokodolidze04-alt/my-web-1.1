@@ -1329,6 +1329,91 @@ p {
 }
 
 
+
+/* =========================================================
+   E-COMMERCE — RGB BORDER ONLY
+========================================================= */
+
+.pricing-card.ecommerce-card {
+    position: relative;
+    overflow: hidden;
+}
+
+
+/* RGB BORDER */
+
+.pricing-card.ecommerce-card::before {
+    content: "";
+    position: absolute;
+
+    inset: 0;
+
+    border-radius: inherit;
+
+    padding: 1px;
+
+    background: linear-gradient(
+        90deg,
+        #ff0080,
+        #ff8a00,
+        #ffe600,
+        #00ff88,
+        #00eaff,
+        #7a00ff,
+        #ff0080
+    );
+
+    background-size: 300% 100%;
+
+    animation: ecommerceRGB 5s linear infinite;
+
+    -webkit-mask:
+        linear-gradient(#fff 0 0) content-box,
+        linear-gradient(#fff 0 0);
+
+    -webkit-mask-composite: xor;
+
+    mask-composite: exclude;
+
+    pointer-events: none;
+
+    z-index: 2;
+}
+
+
+
+
+
+@keyframes ecommerceRGB {
+
+    0% {
+        background-position: 0% 50%;
+    }
+
+    50% {
+        background-position: 100% 50%;
+    }
+
+    100% {
+        background-position: 0% 50%;
+    }
+
+}
+
+
+@media (prefers-reduced-motion: reduce) {
+
+    .pricing-card.ecommerce-card::before,
+    .pricing-card.ecommerce-card::after {
+
+        animation: none;
+
+    }
+
+}
+
+
+
 /* =========================================================
    13. POSITIONING
 ========================================================= */

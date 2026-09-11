@@ -423,8 +423,8 @@ function getPlanDetails(lang) {
 
                                         ${
                                             isKa
-                                                ? "დაცული შეტყობინების სექცია, საიდანაც კლიენტის წერილები პირდაპირ თქვენს მეილზე მოდის."
-                                                : "A dedicated, secure messaging section that sends client inquiries directly to your personal email inbox."
+                                                ? "მარტივი და ფუნქციური ფორმა, რომლის საშუალებითაც ვიზიტორებს შეუძლიათ პირდაპირ დაგიკავშირდნენ."
+                                                : "A simple and functional form that allows visitors to contact you directly."
                                         }
 
                                     </p>
@@ -465,8 +465,8 @@ function getPlanDetails(lang) {
 
                                         ${
                                             isKa
-                                                ? "ოპტიმიზებული პროცესი, რომელიც უზრუნველყოფს 1-3 გვერდიანი საიტის რეკორდულ დროში დამზადებას."
-                                                : "A streamlined process ensuring your 1-3 page website is designed, coded, and launched in record time."
+                                                ? "პროექტზე მუშაობა მიმდინარეობს შეთანხმებული ვადების მიხედვით, რათა თქვენი საიტი სწრაფად გაეშვას."
+                                                : "The project is developed according to an agreed timeline so your website can go live quickly."
                                         }
 
                                     </p>
@@ -484,151 +484,101 @@ function getPlanDetails(lang) {
                     <div class="modal-section">
 
                         <h3>
-                            ⚙️ ${
+                            🎯 ${
                                 isKa
-                                    ? "სამუშაო პროცესი"
-                                    : "The Process"
+                                    ? "ვისთვის არის"
+                                    : "Perfect For"
                             }
                         </h3>
 
 
-                        <div class="process-steps">
+                        <div class="feature-list">
 
-                            <div class="step">
+                            <div class="feature-item">
 
-                                <span class="step-num">
-                                    1
+                                <span class="feature-icon">
+                                    ✓
                                 </span>
 
-                                <p>
+                                <div class="feature-text">
 
                                     <strong>
                                         ${
                                             isKa
-                                                ? "სტრატეგია:"
-                                                : "Onboarding & Strategy:"
+                                                ? "ფრილანსერები"
+                                                : "Freelancers"
                                         }
                                     </strong>
 
-                                    ${
-                                        isKa
-                                            ? "ვაგროვებთ მასალებს, ტექსტებს და განვსაზღვრავთ მთავარ მიზნებს."
-                                            : "We gather your branding assets, texts, and define your main goals."
-                                    }
+                                    <p>
+                                        ${
+                                            isKa
+                                                ? "პირადი პორტფოლიოსა და პროფესიული ონლაინ-პრეზენტაციისთვის."
+                                                : "For personal portfolios and professional online presence."
+                                        }
+                                    </p>
 
-                                </p>
+                                </div>
 
                             </div>
 
 
 
-                            <div class="step">
+                            <div class="feature-item">
 
-                                <span class="step-num">
-                                    2
+                                <span class="feature-icon">
+                                    ✓
                                 </span>
 
-                                <p>
+                                <div class="feature-text">
 
                                     <strong>
                                         ${
                                             isKa
-                                                ? "სტრუქტურა:"
-                                                : "Wireframing:"
+                                                ? "პირადი საიტები"
+                                                : "Personal Websites"
                                         }
                                     </strong>
 
-                                    ${
-                                        isKa
-                                            ? "ვქმნით გვერდების მკაფიო და შედეგზე ორიენტირებულ განლაგებას."
-                                            : "Creating a clear, conversion-focused layout structure for your pages."
-                                    }
+                                    <p>
+                                        ${
+                                            isKa
+                                                ? "მათთვის, ვისაც სურს საკუთარი საქმიანობის, პროექტების ან გამოცდილების წარმოჩენა."
+                                                : "For showcasing your work, projects, experience, or personal brand."
+                                        }
+                                    </p>
 
-                                </p>
+                                </div>
 
                             </div>
 
 
 
-                            <div class="step">
+                            <div class="feature-item">
 
-                                <span class="step-num">
-                                    3
+                                <span class="feature-icon">
+                                    ✓
                                 </span>
 
-                                <p>
+                                <div class="feature-text">
 
                                     <strong>
                                         ${
                                             isKa
-                                                ? "დეველოპმენტი:"
-                                                : "Front-End Development:"
+                                                ? "მცირე ბიზნესი"
+                                                : "Small Businesses"
                                         }
                                     </strong>
 
-                                    ${
-                                        isKa
-                                            ? "ვწერთ სუფთა, მობილურზე მორგებულ HTML/CSS კოდს."
-                                            : "Writing clean, mobile-optimized HTML/CSS code from scratch."
-                                    }
-
-                                </p>
-
-                            </div>
-
-
-
-                            <div class="step">
-
-                                <span class="step-num">
-                                    4
-                                </span>
-
-                                <p>
-
-                                    <strong>
+                                    <p>
                                         ${
                                             isKa
-                                                ? "ტესტირება:"
-                                                : "QA & Testing:"
+                                                ? "მცირე კომპანიებისთვის, რომლებსაც სჭირდებათ პროფესიული ონლაინ-წარმოდგენა."
+                                                : "For small businesses that need a professional online presence."
                                         }
-                                    </strong>
+                                    </p>
 
-                                    ${
-                                        isKa
-                                            ? "ვამოწმებთ ფორმის გამართულობასა და ადაპტირებადობას."
-                                            : "Checking form functionality, responsiveness, and cross-browser compatibility."
-                                    }
-
-                                </p>
-
-                            </div>
-
-
-
-                            <div class="step">
-
-                                <span class="step-num">
-                                    5
-                                </span>
-
-                                <p>
-
-                                    <strong>
-                                        ${
-                                            isKa
-                                                ? "გაშვება:"
-                                                : "Launch & Handover:"
-                                        }
-                                    </strong>
-
-                                    ${
-                                        isKa
-                                            ? "საიტის სერვერზე განთავსება და პროექტის ჩაბარება."
-                                            : "Final deployment to the live server and delivering your fast website."
-                                    }
-
-                                </p>
+                                </div>
 
                             </div>
 
@@ -643,8 +593,8 @@ function getPlanDetails(lang) {
                         <h4>
                             ${
                                 isKa
-                                    ? "ვერ ჩამოყალიბდით?"
-                                    : "Not sure if this is the right fit?"
+                                    ? "გჭირდებათ დახმარება არჩევანში?"
+                                    : "Need help deciding?"
                             }
                         </h4>
 
@@ -652,8 +602,8 @@ function getPlanDetails(lang) {
                         <p>
                             ${
                                 isKa
-                                    ? "განვიხილოთ თქვენი საჭიროებები და ვიპოვოთ საუკეთესო გამოსავალი."
-                                    : "Let's discuss your specific needs and find the perfect solution for your business."
+                                    ? "დავჯავშნოთ მოკლე ზარი და გავარკვიოთ, რა სჭირდება თქვენს ბრენდს."
+                                    : "Every business is unique. Let's schedule a quick chat to figure out exactly what your brand needs."
                             }
                         </p>
 
@@ -910,8 +860,8 @@ function getPlanDetails(lang) {
 
                                         ${
                                             isKa
-                                                ? "საბაზისო მეტა-ტეგები, რათა Google-მა ადვილად აღმოაჩინოს თქვენი საიტი."
-                                                : "Foundational meta-tags, image alt-texts, and structure so Google can easily index and rank your pages."
+                                                ? "საიტის სტრუქტურისა და კონტენტის ოპტიმიზაცია საძიებო სისტემებისთვის."
+                                                : "Optimization of your website structure and content for better search engine visibility."
                                         }
 
                                     </p>
@@ -929,179 +879,101 @@ function getPlanDetails(lang) {
                     <div class="modal-section">
 
                         <h3>
-                            ⚙️ ${
+                            🎯 ${
                                 isKa
-                                    ? "სამუშაო პროცესი"
-                                    : "The Process"
+                                    ? "ვისთვის არის"
+                                    : "Perfect For"
                             }
                         </h3>
 
 
-                        <div class="process-steps">
+                        <div class="feature-list">
 
-                            <div class="step">
+                            <div class="feature-item">
 
-                                <span class="step-num">
-                                    1
+                                <span class="feature-icon">
+                                    ✓
                                 </span>
 
-                                <p>
+                                <div class="feature-text">
 
                                     <strong>
                                         ${
                                             isKa
-                                                ? "არქიტექტურა:"
-                                                : "Discovery & Architecture:"
+                                                ? "რესტორნები"
+                                                : "Restaurants"
                                         }
                                     </strong>
 
-                                    ${
-                                        isKa
-                                            ? "8 გვერდამდე სტრუქტურის დაგეგმვა."
-                                            : "Mapping out the user journey and structure for up to 8 pages."
-                                    }
+                                    <p>
+                                        ${
+                                            isKa
+                                                ? "რესტორნებისთვის, კაფეებისთვის და კვების ობიექტებისთვის."
+                                                : "For restaurants, cafes, and food businesses."
+                                        }
+                                    </p>
 
-                                </p>
+                                </div>
 
                             </div>
 
 
 
-                            <div class="step">
+                            <div class="feature-item">
 
-                                <span class="step-num">
-                                    2
+                                <span class="feature-icon">
+                                    ✓
                                 </span>
 
-                                <p>
+                                <div class="feature-text">
 
                                     <strong>
                                         ${
                                             isKa
-                                                ? "UI/UX დიზაინი:"
-                                                : "UI/UX Design:"
+                                                ? "კომპანიები"
+                                                : "Companies"
                                         }
                                     </strong>
 
-                                    ${
-                                        isKa
-                                            ? "ინტერაქტიული ელემენტებისა და გალერეების დაპროექტება."
-                                            : "Designing interactive elements, light/dark themes, and structured galleries."
-                                    }
+                                    <p>
+                                        ${
+                                            isKa
+                                                ? "კომპანიებისთვის, რომლებსაც სჭირდებათ პროფესიული და მრავალგვერდიანი საიტი."
+                                                : "For companies that need a professional multi-page website."
+                                        }
+                                    </p>
 
-                                </p>
+                                </div>
 
                             </div>
 
 
 
-                            <div class="step">
+                            <div class="feature-item">
 
-                                <span class="step-num">
-                                    3
+                                <span class="feature-icon">
+                                    ✓
                                 </span>
 
-                                <p>
+                                <div class="feature-text">
 
                                     <strong>
                                         ${
                                             isKa
-                                                ? "დეველოპმენტი:"
-                                                : "Development & Integration:"
+                                                ? "სააგენტოები"
+                                                : "Agencies"
                                         }
                                     </strong>
 
-                                    ${
-                                        isKa
-                                            ? "საიტის აწყობა და Google Maps-ის ინტეგრაცია."
-                                            : "Coding the site and embedding Google Maps & necessary APIs."
-                                    }
-
-                                </p>
-
-                            </div>
-
-
-
-                            <div class="step">
-
-                                <span class="step-num">
-                                    4
-                                </span>
-
-                                <p>
-
-                                    <strong>
+                                    <p>
                                         ${
                                             isKa
-                                                ? "SEO გამართვა:"
-                                                : "On-Page SEO Setup:"
+                                                ? "სააგენტოებისთვის, რომლებსაც სჭირდებათ ძლიერი ონლაინ-წარმოდგენა."
+                                                : "For agencies that need a strong and professional online presence."
                                         }
-                                    </strong>
+                                    </p>
 
-                                    ${
-                                        isKa
-                                            ? "მეტა-ტეგების გამართვა და ფოტოების ოპტიმიზაცია."
-                                            : "Structuring meta-tags and optimizing all assets for search engines."
-                                    }
-
-                                </p>
-
-                            </div>
-
-
-
-                            <div class="step">
-
-                                <span class="step-num">
-                                    5
-                                </span>
-
-                                <p>
-
-                                    <strong>
-                                        ${
-                                            isKa
-                                                ? "ტესტირება:"
-                                                : "Staging & Revisions:"
-                                        }
-                                    </strong>
-
-                                    ${
-                                        isKa
-                                            ? "საიტის შემოწმება და შესწორებები გაშვებამდე."
-                                            : "You test the fully functional site on a private link before we finalize."
-                                    }
-
-                                </p>
-
-                            </div>
-
-
-
-                            <div class="step">
-
-                                <span class="step-num">
-                                    6
-                                </span>
-
-                                <p>
-
-                                    <strong>
-                                        ${
-                                            isKa
-                                                ? "გაშვება:"
-                                                : "Deployment & Go-Live:"
-                                        }
-                                    </strong>
-
-                                    ${
-                                        isKa
-                                            ? "ოფიციალური გაშვება Google-ში ინდექსაციით."
-                                            : "Official launch and final indexing checks."
-                                    }
-
-                                </p>
+                                </div>
 
                             </div>
 
@@ -1116,8 +988,8 @@ function getPlanDetails(lang) {
                         <h4>
                             ${
                                 isKa
-                                    ? "გჭირდებათ დახმარება არჩევანში?"
-                                    : "Need help deciding?"
+                                    ? "გსურთ ბიზნესის გაძლიერება ონლაინ?"
+                                    : "Ready to grow your business online?"
                             }
                         </h4>
 
@@ -1125,8 +997,8 @@ function getPlanDetails(lang) {
                         <p>
                             ${
                                 isKa
-                                    ? "დავჯავშნოთ მოკლე ზარი და გავარკვიოთ, რა სჭირდება თქვენს ბრენდს."
-                                    : "Every business is unique. Let's schedule a quick chat to figure out exactly what your brand needs."
+                                    ? "მოდით განვიხილოთ თქვენი მიზნები და შევქმნათ საიტი, რომელიც თქვენს ბიზნესს რეალურად მოემსახურება."
+                                    : "Let's discuss your goals and build a website that actually works for your business."
                             }
                         </p>
 
@@ -1152,6 +1024,548 @@ function getPlanDetails(lang) {
 
 
 
+        ecommerce: {
+
+            title:
+                isKa
+                    ? "🛒 E-commerce პაკეტი"
+                    : "🛒 E-commerce Package",
+
+
+            description:
+                isKa
+                    ? "სრული ონლაინ მაღაზია პროდუქტების, კალათის, შეკვეთისა და გადახდის სისტემით."
+                    : "A complete online store with products, shopping cart, checkout, payments, and order management.",
+
+
+            btn_book:
+                isKa
+                    ? "ამ პაკეტის განხილვა"
+                    : "Discuss This Package",
+
+
+            content: `
+
+                <div class="modal-grid">
+
+                    <div class="modal-section">
+
+                        <h3>
+                            ✨ ${
+                                isKa
+                                    ? "ფუნქციების ჩამონათვალი"
+                                    : "Feature Breakdown"
+                            }
+                        </h3>
+
+
+                        <div class="feature-list">
+
+                            <div class="feature-item">
+
+                                <span class="feature-icon">
+                                    ✓
+                                </span>
+
+
+                                <div class="feature-text">
+
+                                    <strong>
+                                        ${
+                                            isKa
+                                                ? "პროდუქტების კატალოგი"
+                                                : "Product Catalog"
+                                        }
+                                    </strong>
+
+
+                                    <p>
+
+                                        <strong>
+                                            ${
+                                                isKa
+                                                    ? "რას ნიშნავს:"
+                                                    : "What it means:"
+                                            }
+                                        </strong>
+
+                                        ${
+                                            isKa
+                                                ? "პროდუქტების, კატეგორიების, სურათების, ფასებისა და პროდუქტის დეტალური გვერდების ორგანიზებული სისტემა."
+                                                : "A structured catalog for products, categories, images, prices, and detailed product pages."
+                                        }
+
+                                    </p>
+
+                                </div>
+
+                            </div>
+
+
+
+                            <div class="feature-item">
+
+                                <span class="feature-icon">
+                                    ✓
+                                </span>
+
+
+                                <div class="feature-text">
+
+                                    <strong>
+                                        ${
+                                            isKa
+                                                ? "სავაჭრო კალათა"
+                                                : "Shopping Cart"
+                                        }
+                                    </strong>
+
+
+                                    <p>
+
+                                        <strong>
+                                            ${
+                                                isKa
+                                                    ? "რას ნიშნავს:"
+                                                    : "What it means:"
+                                            }
+                                        </strong>
+
+                                        ${
+                                            isKa
+                                                ? "მომხმარებელს შეუძლია პროდუქტების დამატება, რაოდენობის შეცვლა, წაშლა და შეკვეთის გადამოწმება."
+                                                : "Customers can add products, update quantities, remove items, and review their order before checkout."
+                                        }
+
+                                    </p>
+
+                                </div>
+
+                            </div>
+
+
+
+                            <div class="feature-item">
+
+                                <span class="feature-icon">
+                                    ✓
+                                </span>
+
+
+                                <div class="feature-text">
+
+                                    <strong>
+                                        ${
+                                            isKa
+                                                ? "შეკვეთის გაფორმება"
+                                                : "Checkout System"
+                                        }
+                                    </strong>
+
+
+                                    <p>
+
+                                        <strong>
+                                            ${
+                                                isKa
+                                                    ? "რას ნიშნავს:"
+                                                    : "What it means:"
+                                            }
+                                        </strong>
+
+                                        ${
+                                            isKa
+                                                ? "მარტივი და მოწესრიგებული checkout პროცესი, სადაც მომხმარებელი ავსებს საჭირო ინფორმაციას და ადასტურებს შეკვეთას."
+                                                : "A streamlined checkout flow where customers enter the required information and confirm their order."
+                                        }
+
+                                    </p>
+
+                                </div>
+
+                            </div>
+
+
+
+                            <div class="feature-item">
+
+                                <span class="feature-icon">
+                                    ✓
+                                </span>
+
+
+                                <div class="feature-text">
+
+                                    <strong>
+                                        ${
+                                            isKa
+                                                ? "გადახდის ინტეგრაცია"
+                                                : "Payment Integration"
+                                        }
+                                    </strong>
+
+
+                                    <p>
+
+                                        <strong>
+                                            ${
+                                                isKa
+                                                    ? "რას ნიშნავს:"
+                                                    : "What it means:"
+                                            }
+                                        </strong>
+
+                                        ${
+                                            isKa
+                                                ? "ონლაინ გადახდის შესაბამისი პროვაიდერის ინტეგრაცია, რათა მომხმარებელმა უსაფრთხოდ გადაიხადოს შეკვეთა."
+                                                : "Integration with the appropriate online payment provider so customers can securely pay for their orders."
+                                        }
+
+                                    </p>
+
+                                </div>
+
+                            </div>
+
+
+
+                            <div class="feature-item">
+
+                                <span class="feature-icon">
+                                    ✓
+                                </span>
+
+
+                                <div class="feature-text">
+
+                                    <strong>
+                                        ${
+                                            isKa
+                                                ? "შეკვეთების მართვა"
+                                                : "Order Management"
+                                        }
+                                    </strong>
+
+
+                                    <p>
+
+                                        <strong>
+                                            ${
+                                                isKa
+                                                    ? "რას ნიშნავს:"
+                                                    : "What it means:"
+                                            }
+                                        </strong>
+
+                                        ${
+                                            isKa
+                                                ? "შემომავალი შეკვეთების, მათი სტატუსებისა და მომხმარებლების მიერ შეძენილი პროდუქტების მართვის სისტემა."
+                                                : "A system for managing incoming orders, order statuses, and products purchased by customers."
+                                        }
+
+                                    </p>
+
+                                </div>
+
+                            </div>
+
+
+
+                            <div class="feature-item">
+
+                                <span class="feature-icon">
+                                    ✓
+                                </span>
+
+
+                                <div class="feature-text">
+
+                                    <strong>
+                                        ${
+                                            isKa
+                                                ? "მობილურზე ოპტიმიზებული მაღაზია"
+                                                : "Mobile-Optimized Store"
+                                        }
+                                    </strong>
+
+
+                                    <p>
+
+                                        <strong>
+                                            ${
+                                                isKa
+                                                    ? "რას ნიშნავს:"
+                                                    : "What it means:"
+                                            }
+                                        </strong>
+
+                                        ${
+                                            isKa
+                                                ? "ონლაინ მაღაზია სრულად ადაპტირებულია ტელეფონებისთვის, ტაბლეტებისთვის, ლეპტოპებისა და დესკტოპებისთვის."
+                                                : "The online store is fully responsive across phones, tablets, laptops, and desktop screens."
+                                        }
+
+                                    </p>
+
+                                </div>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+
+
+                    <div class="modal-section">
+
+                        <h3>
+                            🧩 ${
+                                isKa
+                                    ? "როგორ ვქმნით მაღაზიას"
+                                    : "How We Build Your Store"
+                            }
+                        </h3>
+
+
+                        <div class="feature-list">
+
+                            <div class="feature-item">
+
+                                <span class="feature-icon">
+                                    01
+                                </span>
+
+
+                                <div class="feature-text">
+
+                                    <strong>
+                                        ${
+                                            isKa
+                                                ? "მოთხოვნების განსაზღვრა"
+                                                : "Discovery & Architecture"
+                                        }
+                                    </strong>
+
+
+                                    <p>
+                                        ${
+                                            isKa
+                                                ? "ვადგენთ პროდუქტების სტრუქტურას, კატეგორიებს, მომხმარებლის გზას და საჭირო ფუნქციებს."
+                                                : "We define the product structure, categories, customer journey, and required functionality."
+                                        }
+                                    </p>
+
+                                </div>
+
+                            </div>
+
+
+
+                            <div class="feature-item">
+
+                                <span class="feature-icon">
+                                    02
+                                </span>
+
+
+                                <div class="feature-text">
+
+                                    <strong>
+                                        ${
+                                            isKa
+                                                ? "UI/UX დიზაინი"
+                                                : "UI/UX Design"
+                                        }
+                                    </strong>
+
+
+                                    <p>
+                                        ${
+                                            isKa
+                                                ? "ვქმნით თანამედროვე, მარტივ და კონვერსიაზე ორიენტირებულ მაღაზიის ინტერფეისს."
+                                                : "We create a modern, intuitive, and conversion-focused store interface."
+                                        }
+                                    </p>
+
+                                </div>
+
+                            </div>
+
+
+
+                            <div class="feature-item">
+
+                                <span class="feature-icon">
+                                    03
+                                </span>
+
+
+                                <div class="feature-text">
+
+                                    <strong>
+                                        ${
+                                            isKa
+                                                ? "დეველოპმენტი"
+                                                : "Development"
+                                        }
+                                    </strong>
+
+
+                                    <p>
+                                        ${
+                                            isKa
+                                                ? "დიზაინს ვაქცევთ ფუნქციურ, სწრაფ და responsive ონლაინ მაღაზიად."
+                                                : "We turn the approved design into a functional, fast, and responsive online store."
+                                        }
+                                    </p>
+
+                                </div>
+
+                            </div>
+
+
+
+                            <div class="feature-item">
+
+                                <span class="feature-icon">
+                                    04
+                                </span>
+
+
+                                <div class="feature-text">
+
+                                    <strong>
+                                        ${
+                                            isKa
+                                                ? "ინტეგრაციები"
+                                                : "Integrations"
+                                        }
+                                    </strong>
+
+
+                                    <p>
+                                        ${
+                                            isKa
+                                                ? "ვაერთიანებთ გადახდის, შეკვეთების და საჭირო გარე სერვისებს."
+                                                : "We integrate payment, order management, and required third-party services."
+                                        }
+                                    </p>
+
+                                </div>
+
+                            </div>
+
+
+
+                            <div class="feature-item">
+
+                                <span class="feature-icon">
+                                    05
+                                </span>
+
+
+                                <div class="feature-text">
+
+                                    <strong>
+                                        ${
+                                            isKa
+                                                ? "ტესტირება"
+                                                : "Testing"
+                                        }
+                                    </strong>
+
+
+                                    <p>
+                                        ${
+                                            isKa
+                                                ? "ვამოწმებთ კალათას, checkout-ს, გადახდებს, responsive დიზაინსა და ძირითად user flow-ებს."
+                                                : "We test the cart, checkout, payments, responsive behavior, and key user flows."
+                                        }
+                                    </p>
+
+                                </div>
+
+                            </div>
+
+
+
+                            <div class="feature-item">
+
+                                <span class="feature-icon">
+                                    06
+                                </span>
+
+
+                                <div class="feature-text">
+
+                                    <strong>
+                                        ${
+                                            isKa
+                                                ? "გაშვება და ჩაბარება"
+                                                : "Deployment & Launch"
+                                        }
+                                    </strong>
+
+
+                                    <p>
+                                        ${
+                                            isKa
+                                                ? "საბოლოო ოპტიმიზაციის შემდეგ მაღაზია განთავსდება სერვერზე და მზად იქნება მომხმარებლებისთვის."
+                                                : "After final optimization, the store is deployed and prepared for real customers."
+                                        }
+                                    </p>
+
+                                </div>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+
+
+                    <div class="modal-cta-box">
+
+                        <h4>
+                            ${
+                                isKa
+                                    ? "გსურთ ონლაინ გაყიდვების დაწყება?"
+                                    : "Ready to Sell Online?"
+                            }
+                        </h4>
+
+
+                        <p>
+                            ${
+                                isKa
+                                    ? "მომწერეთ თქვენი იდეისა და პროდუქციის შესახებ და ერთად განვსაზღვროთ თქვენი ონლაინ მაღაზიის საუკეთესო სტრუქტურა."
+                                    : "Tell me about your products and goals, and let's define the right structure for your online store."
+                            }
+                        </p>
+
+
+                        <a
+                            href="consult.html"
+                            class="modal-cta-btn"
+                        >
+                            ${
+                                isKa
+                                    ? "უფასო კონსულტაცია"
+                                    : "Get a Free Consultation"
+                            }
+                        </a>
+
+                    </div>
+
+                </div>
+
+            `
+
+        },
+
+
         premium: {
 
             title:
@@ -1162,8 +1576,8 @@ function getPlanDetails(lang) {
 
             description:
                 isKa
-                    ? "იდეალურია დიდი კომპანიებისთვის, ონლაინ მაღაზიებისა და რთული პროექტებისთვის."
-                    : "Perfect for large companies, e-commerce, and complex projects.",
+                    ? "მძლავრი, სრულმასშტაბიანი ვებ-გვერდი კომპანიებისა და დიდი პროექტებისთვის."
+                    : "A powerful, full-scale website for companies and larger projects.",
 
 
             btn_book:
@@ -1201,8 +1615,8 @@ function getPlanDetails(lang) {
                                     <strong>
                                         ${
                                             isKa
-                                                ? "CMS ინტეგრაცია"
-                                                : "CMS Integration"
+                                                ? "ყველაფერი Business-იდან"
+                                                : "Everything in Business"
                                         }
                                     </strong>
 
@@ -1219,8 +1633,50 @@ function getPlanDetails(lang) {
 
                                         ${
                                             isKa
-                                                ? "მართვის სისტემა, საიდანაც თავად შეძლებთ გვერდების დამატებასა და ტექსტების ცვლილებას."
-                                                : "A powerful back-end dashboard allowing you to add unlimited pages, manage blogs, and update content yourself."
+                                                ? "მოიცავს Business პაკეტის ყველა ფუნქციას და დამატებით უფრო ფართო შესაძლებლობებს."
+                                                : "Includes all Business package features plus a wider range of advanced capabilities."
+                                        }
+
+                                    </p>
+
+                                </div>
+
+                            </div>
+
+
+
+                            <div class="feature-item">
+
+                                <span class="feature-icon">
+                                    ✓
+                                </span>
+
+
+                                <div class="feature-text">
+
+                                    <strong>
+                                        ${
+                                            isKa
+                                                ? "კონტენტის მართვის სისტემა"
+                                                : "Content Management System"
+                                        }
+                                    </strong>
+
+
+                                    <p>
+
+                                        <strong>
+                                            ${
+                                                isKa
+                                                    ? "რას ნიშნავს:"
+                                                    : "What it means:"
+                                            }
+                                        </strong>
+
+                                        ${
+                                            isKa
+                                                ? "საიტის კონტენტის მართვის შესაძლებლობა ტექნიკური ცოდნის გარეშე."
+                                                : "A system that allows website content to be managed and updated without requiring technical knowledge."
                                         }
 
                                     </p>
@@ -1261,8 +1717,8 @@ function getPlanDetails(lang) {
 
                                         ${
                                             isKa
-                                                ? "ღრმა ტექნიკური ოპტიმიზაცია ძიების შედეგებში მაღალი პოზიციებისთვის."
-                                                : "Deep technical optimization and keyword structuring designed to push your site higher in search engine results."
+                                                ? "საიტის სტრუქტურისა და ტექნიკური ელემენტების უფრო ღრმა ოპტიმიზაცია საძიებო სისტემებისთვის."
+                                                : "Deeper optimization of your website structure and technical elements for search engines."
                                         }
 
                                     </p>
@@ -1285,7 +1741,7 @@ function getPlanDetails(lang) {
                                     <strong>
                                         ${
                                             isKa
-                                                ? "სრული წარმადობის ოპტიმიზაცია"
+                                                ? "წარმადობის ოპტიმიზაცია"
                                                 : "Performance Optimization"
                                         }
                                     </strong>
@@ -1303,8 +1759,8 @@ function getPlanDetails(lang) {
 
                                         ${
                                             isKa
-                                                ? "ფაილების შეკუმშვა Google-ის სიჩქარის მაღალი ქულის (90+) მისაღწევად."
-                                                : "Advanced image compression and code minification to guarantee top-tier speed scores (90+) on Google."
+                                                ? "საიტის ჩატვირთვისა და მუშაობის გაუმჯობესება ოპტიმიზირებული კოდითა და რესურსებით."
+                                                : "Improved loading speed and performance through optimized code and assets."
                                         }
 
                                     </p>
@@ -1345,8 +1801,8 @@ function getPlanDetails(lang) {
 
                                         ${
                                             isKa
-                                                ? "მიიღებთ დეტალურ სახელმძღვანელოს საიტის მართვისთვის."
-                                                : "You receive a comprehensive, easy-to-understand written guide on how to use and manage your new website."
+                                                ? "პროექტის ძირითადი ფუნქციებისა და გამოყენების წესების დოკუმენტაცია."
+                                                : "Documentation covering the main project features and usage instructions."
                                         }
 
                                     </p>
@@ -1369,8 +1825,8 @@ function getPlanDetails(lang) {
                                     <strong>
                                         ${
                                             isKa
-                                                ? "ანალიტიკა და მხარდაჭერა"
-                                                : "Analytics & Priority Support"
+                                                ? "ანალიტიკის ინტეგრაცია"
+                                                : "Analytics Integration"
                                         }
                                     </strong>
 
@@ -1387,8 +1843,8 @@ function getPlanDetails(lang) {
 
                                         ${
                                             isKa
-                                                ? "Google Analytics-ის გამართვა და პრიორიტეტული ტექნიკური დახმარება."
-                                                : "Integration of tracking tools (like Google Analytics) to monitor traffic, plus fast-tracked technical assistance from me."
+                                                ? "საიტის ვიზიტორებისა და მათი ქცევის შესახებ მონაცემების შეგროვებისა და ანალიზის შესაძლებლობა."
+                                                : "The ability to collect and analyze visitor and website usage data."
                                         }
 
                                     </p>
@@ -1406,179 +1862,71 @@ function getPlanDetails(lang) {
                     <div class="modal-section">
 
                         <h3>
-                            ⚙️ ${
+                            🎯 ${
                                 isKa
-                                    ? "სამუშაო პროცესი"
-                                    : "The Process"
+                                    ? "ვისთვის არის"
+                                    : "Perfect For"
                             }
                         </h3>
 
 
-                        <div class="process-steps">
+                        <div class="feature-list">
 
-                            <div class="step">
+                            <div class="feature-item">
 
-                                <span class="step-num">
-                                    1
+                                <span class="feature-icon">
+                                    ✓
                                 </span>
 
-                                <p>
+
+                                <div class="feature-text">
 
                                     <strong>
                                         ${
                                             isKa
-                                                ? "ანალიზი:"
-                                                : "Deep Discovery & Tech Stack:"
+                                                ? "დიდი კომპანიები"
+                                                : "Large Companies"
                                         }
                                     </strong>
 
-                                    ${
-                                        isKa
-                                            ? "CMS არქიტექტურისა და მონაცემთა ბაზის დაგეგმვა."
-                                            : "Defining your CMS architecture and complex database needs."
-                                    }
 
-                                </p>
+                                    <p>
+                                        ${
+                                            isKa
+                                                ? "კომპანიებისთვის, რომლებსაც სჭირდებათ ძლიერი და მასშტაბური ონლაინ-წარმოდგენა."
+                                                : "For companies that need a powerful and scalable online presence."
+                                        }
+                                    </p>
+
+                                </div>
 
                             </div>
 
 
 
-                            <div class="step">
+                            <div class="feature-item">
 
-                                <span class="step-num">
-                                    2
+                                <span class="feature-icon">
+                                    ✓
                                 </span>
 
-                                <p>
+
+                                <div class="feature-text">
 
                                     <strong>
-                                        ${
-                                            isKa
-                                                ? "UI/UX პროტოტიპი:"
-                                                : "Custom UI/UX & Prototyping:"
-                                        }
+                                        E-commerce
                                     </strong>
 
-                                    ${
-                                        isKa
-                                            ? "უნიკალური დიზაინ-სისტემის შექმნა."
-                                            : "Crafting a premium, unique design system tailored for your scale."
-                                    }
 
-                                </p>
-
-                            </div>
-
-
-
-                            <div class="step">
-
-                                <span class="step-num">
-                                    3
-                                </span>
-
-                                <p>
-
-                                    <strong>
+                                    <p>
                                         ${
                                             isKa
-                                                ? "Full-Stack დეველოპმენტი:"
-                                                : "Full-Stack Development:"
+                                                ? "ონლაინ ბიზნესებისთვის, რომლებსაც სჭირდებათ უფრო კომპლექსური ფუნქციონალი და ინტეგრაციები."
+                                                : "For online businesses that require more advanced functionality and integrations."
                                         }
-                                    </strong>
+                                    </p>
 
-                                    ${
-                                        isKa
-                                            ? "ინტერფეისისა და CMS-ის უსაფრთხო დაკავშირება."
-                                            : "Building the front-end interface and connecting the Headless CMS securely."
-                                    }
-
-                                </p>
-
-                            </div>
-
-
-
-                            <div class="step">
-
-                                <span class="step-num">
-                                    4
-                                </span>
-
-                                <p>
-
-                                    <strong>
-                                        ${
-                                            isKa
-                                                ? "ინტეგრაციები:"
-                                                : "Advanced Integrations:"
-                                        }
-                                    </strong>
-
-                                    ${
-                                        isKa
-                                            ? "Google Analytics-ისა და SEO-ს სრული გამართვა."
-                                            : "Setting up Google Analytics, tracking pixels, and advanced on-page SEO."
-                                    }
-
-                                </p>
-
-                            </div>
-
-
-
-                            <div class="step">
-
-                                <span class="step-num">
-                                    5
-                                </span>
-
-                                <p>
-
-                                    <strong>
-                                        ${
-                                            isKa
-                                                ? "QA ოპტიმიზაცია:"
-                                                : "Rigorous QA & Performance:"
-                                        }
-                                    </strong>
-
-                                    ${
-                                        isKa
-                                            ? "მაქსიმალური სიჩქარის ტესტირება Core Web Vitals-ზე."
-                                            : "Aggressive optimization to guarantee a 90+ score on Core Web Vitals."
-                                    }
-
-                                </p>
-
-                            </div>
-
-
-
-                            <div class="step">
-
-                                <span class="step-num">
-                                    6
-                                </span>
-
-                                <p>
-
-                                    <strong>
-                                        ${
-                                            isKa
-                                                ? "სწავლება:"
-                                                : "Training & Handover:"
-                                        }
-                                    </strong>
-
-                                    ${
-                                        isKa
-                                            ? "გაშვება, პრიორიტეტული მხარდაჭერა და დოკუმენტაცია."
-                                            : "Final launch, priority support setup, and providing custom documentation."
-                                    }
-
-                                </p>
+                                </div>
 
                             </div>
 
@@ -1593,8 +1941,8 @@ function getPlanDetails(lang) {
                         <h4>
                             ${
                                 isKa
-                                    ? "მზად ხართ მასშტაბირებისთვის?"
-                                    : "Ready to scale your business?"
+                                    ? "გჭირდებათ სრულმასშტაბიანი ვებ-პროექტი?"
+                                    : "Need a full-scale web project?"
                             }
                         </h4>
 
@@ -1602,8 +1950,8 @@ function getPlanDetails(lang) {
                         <p>
                             ${
                                 isKa
-                                    ? "დავგეგმოთ ციფრული სტრატეგია თქვენი გრძელვადიანი მიზნებისთვის."
-                                    : "Let's map out a custom digital strategy tailored precisely to your long-term goals."
+                                    ? "მოდით განვიხილოთ თქვენი მიზნები, მოთხოვნები და პროექტის მასშტაბი."
+                                    : "Let's discuss your goals, requirements, and project scope."
                             }
                         </p>
 
@@ -1625,6 +1973,411 @@ function getPlanDetails(lang) {
 
             `
 
+        },
+
+
+
+        custom: {
+
+            title:
+                isKa
+                    ? "🛠️ Custom პაკეტი"
+                    : "🛠️ Custom Package",
+
+
+            description:
+                isKa
+                    ? "სრულად ინდივიდუალურად შექმნილი ვებ-პროექტი თქვენი კონკრეტული მოთხოვნების მიხედვით."
+                    : "A fully custom web project built around your specific requirements.",
+
+
+            btn_book:
+                isKa
+                    ? "დავიწყოთ საუბარი"
+                    : "Let's Talk",
+
+
+            content: `
+
+                <div class="modal-grid">
+
+                    <div class="modal-section">
+
+                        <h3>
+                            ✨ ${
+                                isKa
+                                    ? "ფუნქციების ჩამონათვალი"
+                                    : "Feature Breakdown"
+                            }
+                        </h3>
+
+
+                        <div class="feature-list">
+
+                            <div class="feature-item">
+
+                                <span class="feature-icon">
+                                    ✓
+                                </span>
+
+
+                                <div class="feature-text">
+
+                                    <strong>
+                                        ${
+                                            isKa
+                                                ? "Figma დიზაინიდან ვებსაიტამდე"
+                                                : "Figma to Website"
+                                        }
+                                    </strong>
+
+
+                                    <p>
+
+                                        <strong>
+                                            ${
+                                                isKa
+                                                    ? "რას ნიშნავს:"
+                                                    : "What it means:"
+                                            }
+                                        </strong>
+
+                                        ${
+                                            isKa
+                                                ? "თქვენი არსებული დიზაინის ზუსტად და ფუნქციურად გადატანა რეალურ ვებსაიტში."
+                                                : "Turning your existing Figma design into a real, functional website while preserving the intended design."
+                                        }
+
+                                    </p>
+
+                                </div>
+
+                            </div>
+
+
+
+                            <div class="feature-item">
+
+                                <span class="feature-icon">
+                                    ✓
+                                </span>
+
+
+                                <div class="feature-text">
+
+                                    <strong>
+                                        ${
+                                            isKa
+                                                ? "ინდივიდუალური ფუნქციები"
+                                                : "Custom Features"
+                                        }
+                                    </strong>
+
+
+                                    <p>
+
+                                        <strong>
+                                            ${
+                                                isKa
+                                                    ? "რას ნიშნავს:"
+                                                    : "What it means:"
+                                            }
+                                        </strong>
+
+                                        ${
+                                            isKa
+                                                ? "ფუნქციები, რომლებიც კონკრეტულად თქვენი პროექტის საჭიროებებისთვის იქმნება."
+                                                : "Features developed specifically around the requirements of your project."
+                                        }
+
+                                    </p>
+
+                                </div>
+
+                            </div>
+
+
+
+                            <div class="feature-item">
+
+                                <span class="feature-icon">
+                                    ✓
+                                </span>
+
+
+                                <div class="feature-text">
+
+                                    <strong>
+                                        ${
+                                            isKa
+                                                ? "ინდივიდუალური UI/UX"
+                                                : "Custom UI/UX"
+                                        }
+                                    </strong>
+
+
+                                    <p>
+
+                                        <strong>
+                                            ${
+                                                isKa
+                                                    ? "რას ნიშნავს:"
+                                                    : "What it means:"
+                                            }
+                                        </strong>
+
+                                        ${
+                                            isKa
+                                                ? "უნიკალური ინტერფეისი და მომხმარებლის გამოცდილება, რომელიც თქვენს ბრენდს ერგება."
+                                                : "A unique interface and user experience tailored specifically to your brand."
+                                        }
+
+                                    </p>
+
+                                </div>
+
+                            </div>
+
+
+
+                            <div class="feature-item">
+
+                                <span class="feature-icon">
+                                    ✓
+                                </span>
+
+
+                                <div class="feature-text">
+
+                                    <strong>
+                                        ${
+                                            isKa
+                                                ? "კომპლექსური ინტეგრაციები"
+                                                : "Complex Integrations"
+                                        }
+                                    </strong>
+
+
+                                    <p>
+
+                                        <strong>
+                                            ${
+                                                isKa
+                                                    ? "რას ნიშნავს:"
+                                                    : "What it means:"
+                                            }
+                                        </strong>
+
+                                        ${
+                                            isKa
+                                                ? "გარე სერვისების, API-ების და სხვა სისტემების ინდივიდუალური ინტეგრაცია."
+                                                : "Custom integration of external services, APIs, and other systems."
+                                        }
+
+                                    </p>
+
+                                </div>
+
+                            </div>
+
+
+
+                            <div class="feature-item">
+
+                                <span class="feature-icon">
+                                    ✓
+                                </span>
+
+
+                                <div class="feature-text">
+
+                                    <strong>
+                                        ${
+                                            isKa
+                                                ? "ყველაფერი Premium-იდან"
+                                                : "Everything in Premium"
+                                        }
+                                    </strong>
+
+
+                                    <p>
+
+                                        <strong>
+                                            ${
+                                                isKa
+                                                    ? "რას ნიშნავს:"
+                                                    : "What it means:"
+                                            }
+                                        </strong>
+
+                                        ${
+                                            isKa
+                                                ? "Premium პაკეტის ყველა ძირითადი შესაძლებლობა დამატებული ინდივიდუალურ ფუნქციონალთან ერთად."
+                                                : "All major Premium package capabilities combined with custom functionality."
+                                        }
+
+                                    </p>
+
+                                </div>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+
+
+                    <div class="modal-section">
+
+                        <h3>
+                            🎯 ${
+                                isKa
+                                    ? "ვისთვის არის"
+                                    : "Perfect For"
+                            }
+                        </h3>
+
+
+                        <div class="feature-list">
+
+                            <div class="feature-item">
+
+                                <span class="feature-icon">
+                                    ✓
+                                </span>
+
+
+                                <div class="feature-text">
+
+                                    <strong>
+                                        ${
+                                            isKa
+                                                ? "სტარტაპები"
+                                                : "Startups"
+                                        }
+                                    </strong>
+
+
+                                    <p>
+                                        ${
+                                            isKa
+                                                ? "სტარტაპებისთვის, რომლებსაც სჭირდებათ უნიკალური ციფრული პროდუქტი."
+                                                : "For startups that need a unique digital product built around their idea."
+                                        }
+                                    </p>
+
+                                </div>
+
+                            </div>
+
+
+
+                            <div class="feature-item">
+
+                                <span class="feature-icon">
+                                    ✓
+                                </span>
+
+
+                                <div class="feature-text">
+
+                                    <strong>
+                                        ${
+                                            isKa
+                                                ? "უნიკალური პროექტები"
+                                                : "Unique Projects"
+                                        }
+                                    </strong>
+
+
+                                    <p>
+                                        ${
+                                            isKa
+                                                ? "პროექტებისთვის, რომლებიც სტანდარტულ ვებსაიტის პაკეტებში ვერ ჯდება."
+                                                : "For projects that don't fit into standard website packages."
+                                        }
+                                    </p>
+
+                                </div>
+
+                            </div>
+
+
+
+                            <div class="feature-item">
+
+                                <span class="feature-icon">
+                                    ✓
+                                </span>
+
+
+                                <div class="feature-text">
+
+                                    <strong>
+                                        ${
+                                            isKa
+                                                ? "თქვენი დიზაინები"
+                                                : "Your Designs"
+                                        }
+                                    </strong>
+
+
+                                    <p>
+                                        ${
+                                            isKa
+                                                ? "თუ უკვე გაქვთ დიზაინი და გჭირდებათ მისი პროფესიონალურად აწყობა."
+                                                : "For clients who already have a design and need it professionally developed."
+                                        }
+                                    </p>
+
+                                </div>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+
+
+                    <div class="modal-cta-box">
+
+                        <h4>
+                            ${
+                                isKa
+                                    ? "გაქვთ უნიკალური იდეა?"
+                                    : "Have a unique idea?"
+                            }
+                        </h4>
+
+
+                        <p>
+                            ${
+                                isKa
+                                    ? "მომიყევით თქვენს პროექტზე და ერთად განვსაზღვროთ მისი ტექნიკური და ვიზუალური მიმართულება."
+                                    : "Tell me about your project and let's define its technical and visual direction together."
+                            }
+                        </p>
+
+
+                        <a
+                            href="consult.html"
+                            class="modal-cta-btn"
+                        >
+                            ${
+                                isKa
+                                    ? "დავიწყოთ საუბარი"
+                                    : "Let's Talk"
+                            }
+                        </a>
+
+                    </div>
+
+                </div>
+
+            `
+
         }
 
     };
@@ -1633,10 +2386,9 @@ function getPlanDetails(lang) {
 
 
 
-// ინახავს ამჟამად გახსნილ პაკეტს
-let activeModalPlan = null;
-
-
+// ==========================================
+// Modal Rendering
+// ==========================================
 
 function renderModalContent(planType) {
 
@@ -1659,7 +2411,9 @@ function renderModalContent(planType) {
 
         modalBodyContent.innerHTML = `
 
-            <h2>
+            <h2
+                id="modal-title"
+            >
                 ${data.title}
             </h2>
 
@@ -1673,9 +2427,8 @@ function renderModalContent(planType) {
 
             <hr
                 style="
-                    margin: 20px 0;
-                    border: 0;
-                    border-top: 1px solid #eee;
+                    margin: 24px 0;
+                    opacity: .2;
                 "
             >
 
@@ -1687,9 +2440,9 @@ function renderModalContent(planType) {
                 href="cont.html"
                 class="primary-btn"
                 style="
-                    display: inline-block;
-                    margin-top: 20px;
-                    text-decoration: none;
+                    display:inline-flex;
+                    margin-top:24px;
+                    text-decoration:none;
                 "
             >
                 ${data.btn_book}
@@ -1709,6 +2462,10 @@ function renderModalContent(planType) {
 }
 
 
+
+// ==========================================
+// Details Buttons
+// ==========================================
 
 const detailsButtons =
     document.querySelectorAll(
@@ -1734,48 +2491,55 @@ const modalBodyContent =
     );
 
 
-
 if (
     modalOverlay &&
     detailsButtons.length > 0
 ) {
 
-    detailsButtons.forEach(button => {
+    detailsButtons.forEach(
+        button => {
 
-        button.addEventListener(
-            "click",
-            () => {
+            button.addEventListener(
+                "click",
+                event => {
 
-                const planType =
-                    button.getAttribute(
-                        "data-plan"
+                    event.preventDefault();
+
+                    event.stopPropagation();
+
+
+                    const planType =
+                        button.getAttribute(
+                            "data-plan"
+                        );
+
+
+                    renderModalContent(
+                        planType
                     );
 
 
-                renderModalContent(
-                    planType
-                );
+                    modalOverlay.classList.remove(
+                        "hidden"
+                    );
 
 
-                modalOverlay.classList.remove(
-                    "hidden"
-                );
-
-            }
-        );
-
-    });
+                    modalOverlay.setAttribute(
+                        "aria-hidden",
+                        "false"
+                    );
 
 
-    const closeModal = () => {
+                    document.body.classList.add(
+                        "modal-open"
+                    );
 
-        modalOverlay.classList.add(
-            "hidden"
-        );
+                }
+            );
 
-        activeModalPlan = null;
+        }
+    );
 
-    };
 
 
     if (closeModalBtn) {
@@ -1790,10 +2554,30 @@ if (
 
     modalOverlay.addEventListener(
         "click",
-        (e) => {
+        event => {
 
             if (
-                e.target === modalOverlay
+                event.target ===
+                modalOverlay
+            ) {
+
+                closeModal();
+
+            }
+
+        }
+    );
+
+
+    document.addEventListener(
+        "keydown",
+        event => {
+
+            if (
+                event.key === "Escape" &&
+                !modalOverlay.classList.contains(
+                    "hidden"
+                )
             ) {
 
                 closeModal();
@@ -1806,194 +2590,79 @@ if (
 }
 
 
+function closeModal() {
 
-// ==========================================
-// Mailto: საკონტაქტო ფორმის გაგზავნა
-// ==========================================
+    if (!modalOverlay) return;
 
-const contactForm =
-    document.getElementById(
-        "contact-form"
+
+    modalOverlay.classList.add(
+        "hidden"
     );
 
 
-if (contactForm) {
-
-    contactForm.addEventListener(
-        "submit",
-        function(event) {
-
-            event.preventDefault();
-
-
-            const name =
-                document.getElementById(
-                    "user_name"
-                ).value;
-
-
-            const email =
-                document.getElementById(
-                    "user_email"
-                ).value;
-
-
-            const message =
-                document.getElementById(
-                    "message"
-                ).value;
-
-
-            const myEmail =
-                "tornikedolidze04@gmail.com";
-
-
-            const subject =
-                encodeURIComponent(
-                    `New Project Inquiry from ${name}`
-                );
-
-
-            const body =
-                encodeURIComponent(
-
-                    `Name: ${name}\n` +
-                    `Email: ${email}\n\n` +
-                    `Message:\n${message}`
-
-                );
-
-
-            window.location.href =
-                `mailto:${myEmail}?subject=${subject}&body=${body}`;
-
-
-            contactForm.reset();
-
-        }
+    modalOverlay.setAttribute(
+        "aria-hidden",
+        "true"
     );
+
+
+    document.body.classList.remove(
+        "modal-open"
+    );
+
+
+    activeModalPlan = null;
 
 }
 
 
 
 // ==========================================
-// Translation Logic
+// Language State
+// ==========================================
+
+let currentLang =
+    localStorage.getItem(
+        "kokos-lang"
+    ) || "en";
+
+
+let activeModalPlan =
+    null;
+
+
+
+// ==========================================
+// Translation Object
 // ==========================================
 
 const translations = {
 
+    // ==========================================
+    // ENGLISH
+    // ==========================================
+
     en: {
 
-        // Navigation
+        nav_home:
+            "Home",
 
-        nav_about: "About",
+        nav_contact:
+            "Contact",
 
-        nav_services: "Services",
+        nav_services:
+            "Services",
 
-        nav_contact: "Contact",
-
-        nav_home: "Home",
-
-        nav_work: "Approach",
-
-        btn_back: "Back",
-
-
-
-        // Index Hero
-
-        hero_title:
-            "Hello, I am KOKO",
-
-        hero_subtitle:
-            "Frontend developer creating modern, responsive, and user-centric websites.",
-
-
-
-        // Services
-
-        service_web_title:
-            "Web Development",
-
-        service_web_desc:
-            "Creating modern, responsive, and high-performance websites.",
-
-        service_3d_title:
-            "3D Visualization",
-
-        service_3d_desc:
-            "Creating realistic 3D product models and immersive visualizations.",
-
-        service_3d_badge:
-            "reconstructing",
-
-
-
-        // Testimonials
-
-        testimonials_title:
-            "What Clients Say",
-
-        review_1:
-            '"Tornike completely transformed our online presence. The web interface he built is not only visually stunning but perfectly optimized. His frontend skills and attention to detail are on another level."',
-
-        review_2:
-            '"We needed hyper-realistic 3D models for our new product launch. Tornike delivered assets that looked better than real life. The lighting and textures were flawless, saving us thousands on photography."',
-
-        review_3:
-            '"Working with Tornike was a seamless experience. He translated our complex ideas into a responsive, pixel-perfect website in record time. His communication is as impressive as his coding."',
-
-        review_4:
-            '"Tornike optimized our web application, reducing load times by 60%. The UI is now incredibly fast, and our users are loving the seamless experience. Truly top-tier frontend optimization."',
-
-        review_5:
-            '"I wanted a modern, glassmorphism UI with complex interactions, and he nailed it perfectly. The CSS animations are buttery smooth and don\'t affect browser performance at all."',
-
-        review_6:
-            '"Finally, a frontend developer who understands mobile-first design! The website he built looks and works flawlessly on every device, browser, and screen size we tested."',
-
-        review_7:
-            '"Clean, maintainable, and highly scalable frontend architecture. Tornike stepped in and refactored our messy JavaScript into a beautifully structured, modern codebase."',
-
-
-        role_startup_founder:
-            "Tech Startup Founder",
-
-        role_product_manager:
-            "Product Manager",
-
-        role_creative_director:
-            "Creative Director",
-
-        role_tech_lead:
-            "Technical Lead",
-
-        role_uiux_designer:
-            "UI/UX Designer",
-
-        role_ecommerce_manager:
-            "E-commerce Manager",
-
-        role_software_engineer:
-            "Senior Software Engineer",
-
-
-
-        // Web Page
-
-        web_section_kicker:
-            "WEB DEVELOPMENT",
-
-        web_hero_title:
-            "Modern Websites <br> Built to Grow Your Business",
-
-        web_hero_desc:
-            "I create fast, responsive, and modern websites that combine clean design with reliable performance. Every project is crafted to help your business stand out online.",
+        btn_back:
+            "Back",
 
         btn_get_consultation:
             "GET A FREE CONSULTATION",
 
+
+        // ==========================================
+        // Pricing
+        // ==========================================
 
         pricing_title:
             "Choose the Right Package",
@@ -2001,6 +2670,10 @@ const translations = {
         pricing_subtitle:
             "Every website is built with performance, responsiveness, and clean design in mind.",
 
+
+        // ==========================================
+        // Plans
+        // ==========================================
 
         plan_starter_title:
             "🚀 Starter",
@@ -2026,6 +2699,16 @@ const translations = {
         plan_custom_sub:
             "Tailored to Your Needs",
 
+        plan_ecommerce_title:
+            "🛒 E-commerce",
+
+        plan_ecommerce_sub:
+            "Complete Online Store",
+
+
+        // ==========================================
+        // General Pricing Labels
+        // ==========================================
 
         lbl_included:
             "Included",
@@ -2042,18 +2725,32 @@ const translations = {
         val_project_scope:
             "Project Scope",
 
+
+        // ==========================================
+        // Buttons
+        // ==========================================
+
         btn_view_details:
             "View Details",
 
         btn_lets_talk:
             "Let's Talk",
 
+
+        // ==========================================
+        // Badge
+        // ==========================================
+
         badge_popular:
             "Most Popular",
 
+        badge_most_popular:
+            "Most Popular",
 
 
+        // ==========================================
         // Starter
+        // ==========================================
 
         feat_responsive:
             "Responsive Design",
@@ -2077,8 +2774,9 @@ const translations = {
             "Small Businesses",
 
 
-
+        // ==========================================
         // Business
+        // ==========================================
 
         feat_everything_starter:
             "Everything in Starter",
@@ -2105,8 +2803,9 @@ const translations = {
             "Agencies",
 
 
-
+        // ==========================================
         // Premium
+        // ==========================================
 
         feat_everything_business:
             "Everything in Business",
@@ -2124,7 +2823,7 @@ const translations = {
             "Documentation",
 
         feat_analytics:
-            "Analytics & Priority Support",
+            "Analytics",
 
         target_large_companies:
             "Large Companies",
@@ -2133,17 +2832,18 @@ const translations = {
             "E-commerce",
 
 
-
+        // ==========================================
         // Custom
+        // ==========================================
 
         feat_figma:
-            "Figma to Website",
+            "Figma Design",
 
         feat_custom_features:
             "Custom Features",
 
         feat_custom_uiux:
-            "Personalized UI/UX",
+            "Custom UI/UX",
 
         feat_complex_int:
             "Complex Integrations",
@@ -2158,465 +2858,82 @@ const translations = {
             "Unique Projects",
 
         target_your_designs:
-            "Everything at your designs",
+            "Your Designs",
 
 
+        // ==========================================
+        // E-commerce
+        // ==========================================
 
-        // Why KOKOS-LAB
+        feat_ecommerce_catalog:
+            "Product Catalog",
 
-        why_kicker:
-            "WHY KOKOS-LAB",
+        feat_ecommerce_cart:
+            "Shopping Cart",
 
-        why_title:
-            "A website should do more than simply exist.",
+        feat_ecommerce_checkout:
+            "Checkout System",
 
-        why_desc:
-            "It should communicate your value, guide your visitors, and make your business look as professional online as it is in real life.",
+        feat_ecommerce_payment:
+            "Payment Integration",
 
-        why_performance_title:
-            "Performance",
+        feat_ecommerce_orders:
+            "Order Management",
 
-        why_performance_desc:
-            "Fast-loading pages, optimized assets, responsive layouts, and clean front-end implementation.",
+        feat_ecommerce_mobile:
+            "Mobile-Optimized Store",
 
-        why_responsive_title:
-            "Responsive by Design",
+        target_online_shops:
+            "Online Shops",
 
-        why_responsive_desc:
-            "Your website is designed to work properly across phones, tablets, laptops, and desktop screens.",
+        target_product_brands:
+            "Product Brands",
 
+        target_retail_businesses:
+            "Retail Businesses",
 
-
-        // Process
-
-        process_kicker:
-            "THE PROCESS",
-
-        process_title:
-            "From idea to launch.",
-
-        process_discovery_title:
-            "Discovery",
-
-        process_discovery_desc:
-            "We discuss your business, goals, audience, references, and project requirements.",
-
-        process_structure_title:
-            "Structure",
-
-        process_structure_desc:
-            "We define the pages, content hierarchy, user flow, and visual direction.",
-
-        process_development_title:
-            "Development",
-
-        process_development_desc:
-            "The approved direction becomes a polished, responsive, and functional website.",
-
-        process_launch_title:
-            "Launch",
-
-        process_launch_desc:
-            "Final testing, optimization, deployment, and handover.",
-
-
-
-        // CTA
-
-        cta_kicker:
-            "READY TO START?",
-
-        cta_title:
-            "Let's build your website.",
-
-        cta_desc:
-            "Tell me about your project and I'll help you choose the right approach.",
-
-
-
-        // Home
-
-        home_eyebrow:
-            "KOKOS-LAB · DIGITAL STUDIO",
-
-        home_hero_title:
-            "Digital experiences<br>built to <span>stand out.</span>",
-
-        home_hero_desc:
-            "I build modern websites and create 3D product visuals that turn ideas into polished digital experiences.",
-
-        home_hero_primary:
-            "Explore Services",
-
-        home_hero_secondary:
-            "Start a Conversation",
-
-        home_person_name:
-            "Tornike Dolidze",
-
-        home_person_role:
-            "Developer · 3D Artist",
-
-        home_trust_note:
-            "Built with detail, performance, and purpose.",
-
-        home_services_kicker:
-            "WHAT I DO",
-
-        home_services_title:
-            "Two disciplines. One creative studio.",
-
-        home_services_desc:
-            "From the interface your customers use to the visuals they remember.",
-
-        home_web_long_desc:
-            "Modern, responsive, high-performance websites built around your goals, your content, and your audience.",
-
-        home_view_service:
-            "View service",
-
-        home_3d_badge:
-            "3D SERVICE",
-
-        home_3d_long_desc:
-            "Realistic product models and visualizations designed to present products before they ever reach the camera.",
-
-        home_talk_about_3d:
-            "Talk about your project",
-
-        home_position_kicker:
-            "WHY KOKOS-LAB",
-
-        home_position_title:
-            "Not just a finished screen. A finished experience.",
-
-        home_position_desc:
-            "Every project is approached as a complete experience — from the first idea and structure to the final responsive result.",
-
-        home_point_one_title:
-            "Purpose first",
-
-        home_point_one_desc:
-            "The structure starts with what the project needs to achieve.",
-
-        home_point_two_title:
-            "Clean execution",
-
-        home_point_two_desc:
-            "Responsive layouts, clean code, and attention to the small details.",
-
-        home_point_three_title:
-            "Direct collaboration",
-
-        home_point_three_desc:
-            "You work directly with the person building your project.",
-
-        home_process_kicker:
-            "THE APPROACH",
-
-        home_process_title:
-            "From idea to final result.",
-
-        home_process_one_title:
-            "Discovery",
-
-        home_process_one_desc:
-            "We discuss your business, goals, audience, references, and project requirements.",
-
-        home_process_two_title:
-            "Structure",
-
-        home_process_two_desc:
-            "We define the pages, content hierarchy, user flow, and visual direction.",
-
-        home_process_three_title:
-            "Development",
-
-        home_process_three_desc:
-            "The approved direction becomes a polished, responsive, and functional website.",
-
-        home_process_four_title:
-            "Launch",
-
-        home_process_four_desc:
-            "Final testing, optimization, deployment, and handover.",
-
-        home_cta_kicker:
-            "READY TO START?",
-
-        home_cta_title:
-            "Let's build something worth remembering.",
-
-        home_cta_desc:
-            "Tell me about your project and let's find the right direction.",
-
-        home_cta_button:
-            "Start a Conversation",
-
-
-
-        // Consultation
-
-        consult_kicker:
-            "FREE CONSULTATION",
-
-        consult_back:
-            "Back to Web Development",
-
-        consult_brand:
-            "KOKOS-LAB",
-
-        consult_title:
-            "Free Consultation",
-
-        consult_desc:
-            "Book a free, no-obligation call to discuss your project. Read the FAQs below to prepare, then reach out!",
-
-        faq_kicker:
-            "BEFORE WE START",
-
-        faq_main_title:
-            "Frequently Asked Questions",
-
-        faq_q1:
-            "How long does the consultation take?",
-
-        faq_a1:
-            "Usually between 15 to 30 minutes. We'll discuss your goals, target audience, and preferred design style.",
-
-        faq_q2:
-            "What should I prepare beforehand?",
-
-        faq_a2:
-            "Just a basic idea of what you want your website to achieve. If you have links to websites you like, that's a big plus!",
-
-        faq_q3:
-            "Is it really free?",
-
-        faq_a3:
-            "Yes! The initial consultation is 100% free to see if we are a good fit for your project.",
-
-        consult_contact_kicker:
-            "LET'S TALK",
-
-        consult_contact_ready:
-            "Ready to start? Contact me:",
-
-        consult_email_label:
-            "EMAIL",
-
-        consult_phone_label:
-            "PHONE",
-
-        consult_messaging_label:
-            "MESSAGING",
-
-        consult_messaging_value:
-            "WhatsApp / Telegram",
-
-
-
-        // Contact
-
-        cont_back_home:
-            "Back to Home",
-
-        cont_get_in_touch:
-            "GET IN TOUCH",
-
-        cont_talk_title:
-            "Let's talk <br><span>about your project</span>",
-
-        cont_talk_desc:
-            "Whether you have a specific project in mind or just want to explore options, I'm here to help you build something great.",
-
-        cont_create_title:
-            "Let's create <span>something.</span>",
-
-        cont_follow_connect:
-            "Follow & Connect",
-
-        cont_send_message:
-            "Send a Message",
-
-        cont_form_desc:
-            "Tell me a little about your project and I'll get back to you.",
-
-        cont_email_label:
-            "EMAIL",
-
-        cont_phone_label:
-            "PHONE",
-
-        cont_lbl_name:
-            "Your Name",
-
-        cont_lbl_email:
-            "Email Address",
-
-        cont_lbl_message:
-            "How can I help you?",
-
-        cont_btn_send:
-            "Send via Email",
-
-        cont_form_note:
-            "Your message will open directly in your email client.",
-
-        cont_placeholder_name:
-            "John Doe",
-
-        cont_placeholder_email:
-            "john@example.com",
-
-        cont_placeholder_message:
-            "Tell me about your project...",
-
-
-
-        // Footer
-
-        footer_rights:
-            "© 2026 KOKOS-LAB. All rights reserved.",
-
-        footer_contact:
-            "Contact",
-
-        footer_consultation:
-            "Consultation"
+         feat_ecommerce_admin: 
+            "Admin Panel",
 
     },
 
 
-
-    // =====================================================
+    // ==========================================
     // GEORGIAN
-    // =====================================================
+    // ==========================================
 
     ka: {
-
-        // Navigation
-
-        nav_about:
-            "ჩემ შესახებ",
-
-        nav_services:
-            "სერვისები",
-
-        nav_contact:
-            "კონტაქტი",
 
         nav_home:
             "მთავარი",
 
-        nav_work:
-            "მიდგომა",
+        nav_contact:
+            "კონტაქტი",
+
+        nav_services:
+            "სერვისები",
 
         btn_back:
             "უკან",
-
-
-
-        // Index Hero
-
-        hero_title:
-            "გამარჯობა, მე ვარ თორნიკე",
-
-        hero_subtitle:
-            "Front-end დეველოპერი, ვქმნი თანამედროვე, ადაპტირებად და მომხმარებელზე მორგებულ ვებსაიტებს.",
-
-
-
-        // Services
-
-        service_web_title:
-            "ვებ დეველოპმენტი",
-
-        service_web_desc:
-            "თანამედროვე, სწრაფი და ყველა მოწყობილობაზე მორგებული საიტების დამზადება.",
-
-        service_3d_title:
-            "3D ვიზუალიზაცია",
-
-        service_3d_desc:
-            "რეალისტური 3D პროდუქტის მოდელები და ინტერაქტიული ვიზუალიზაცია.",
-
-        service_3d_badge:
-            "რეკონსტრუქცია",
-
-
-
-        // Testimonials
-
-        testimonials_title:
-            "რას ამბობენ კლიენტები",
-
-        review_1:
-            '"თორნიკემ სრულიად შეცვალა ჩვენი ონლაინ იმიჯი. ვებ-ინტერფეისი, რომელიც მან შექმნა, არა მხოლოდ ვიზუალურად არის შთამბეჭდავი, არამედ იდეალურად ოპტიმიზირებულიც. მისი უნარები ახალ დონეზეა."',
-
-        review_2:
-            '"ახალი პროდუქტისთვის გვჭირდებოდა ჰიპერ-რეალისტური 3D მოდელები. თორნიკემ იმაზე უკეთესი შედეგი დადო, ვიდრე ველოდით. განათება და ტექსტურები უნაკლო იყო."',
-
-        review_3:
-            '"თორნიკესთან მუშაობა ძალიან კომფორტული იყო. მან ჩვენი რთული იდეები რეკორდულ დროში აქცია ადაპტირებად, პიქსელებამდე დახვეწილ ვებსაიტად."',
-
-        review_4:
-            '"თორნიკემ გააუმჯობესა ჩვენი ვებ-აპლიკაცია და ჩატვირთვის დრო 60%-ით შეამცირა. UI ახლა საოცრად სწრაფია. ნამდვილად უმაღლესი დონის ოპტიმიზაციაა."',
-
-        review_5:
-            '"მინდოდა თანამედროვე Glassmorphism დიზაინი რთული ინტერაქციებით და მან იდეალურად შეასრულა. CSS ანიმაციები ძალიან რბილია და ბრაუზერს საერთოდ არ ტვირთავს."',
-
-        review_6:
-            '"ბოლოს და ბოლოს ვიპოვეთ დეველოპერი, ვისაც კარგად ესმის mobile-first დიზაინი! საიტი იდეალურად მუშაობს ყველა მოწყობილობასა და ეკრანის ზომაზე."',
-
-        review_7:
-            '"სუფთა, მოწესრიგებული და მასშტაბირებადი არქიტექტურა. თორნიკემ ჩვენი არეული JavaScript კოდი გარდაქმნა ულამაზესად სტრუქტურირებულ ბაზად."',
-
-
-        role_startup_founder:
-            "ტექ სტარტაპის დამფუძნებელი",
-
-        role_product_manager:
-            "პროდუქტის მენეჯერი",
-
-        role_creative_director:
-            "კრეატიული დირექტორი",
-
-        role_tech_lead:
-            "ტექნიკური ლიდი",
-
-        role_uiux_designer:
-            "UI/UX დიზაინერი",
-
-        role_ecommerce_manager:
-            "E-commerce მენეჯერი",
-
-        role_software_engineer:
-            "უფროსი პროგრამული ინჟინერი",
-
-
-
-        // Web Page
-
-        web_section_kicker:
-            "ვებ დეველოპმენტი",
-
-        web_hero_title:
-            "თანამედროვე ვებსაიტები <br> თქვენი ბიზნესის გასაზრდელად",
-
-        web_hero_desc:
-            "ვქმნი სწრაფ, ადაპტირებად და თანამედროვე ვებსაიტებს, რომლებიც აერთიანებს დახვეწილ დიზაინსა და საიმედო წარმადობას. თითოეული პროექტი შექმნილია იმისთვის, რომ თქვენი ბიზნესი გამოირჩეოდეს ონლაინ სივრცეში.",
 
         btn_get_consultation:
             "უფასო კონსულტაცია",
 
 
+        // ==========================================
+        // Pricing
+        // ==========================================
+
         pricing_title:
             "აირჩიეთ თქვენთვის შესაფერისი პაკეტი",
 
         pricing_subtitle:
-            "თითოეული ვებსაიტი იქმნება მაღალი წარმადობის, ადაპტირებადობისა და სუფთა დიზაინის გათვალისწინებით.",
+            "ყველა ვებსაიტი იქმნება წარმადობის, ადაპტირებადობისა და სუფთა დიზაინის გათვალისწინებით.",
 
+
+        // ==========================================
+        // Plans
+        // ==========================================
 
         plan_starter_title:
             "🚀 Starter",
@@ -2642,6 +2959,16 @@ const translations = {
         plan_custom_sub:
             "თქვენს საჭიროებებზე მორგებული",
 
+        plan_ecommerce_title:
+            "🛒 E-commerce",
+
+        plan_ecommerce_sub:
+            "სრული ონლაინ მაღაზია",
+
+
+        // ==========================================
+        // General Pricing Labels
+        // ==========================================
 
         lbl_included:
             "პაკეტში შედის",
@@ -2658,18 +2985,32 @@ const translations = {
         val_project_scope:
             "პროექტის მოცულობაზე",
 
+
+        // ==========================================
+        // Buttons
+        // ==========================================
+
         btn_view_details:
             "დეტალურად",
 
         btn_lets_talk:
             "დავიწყოთ",
 
+
+        // ==========================================
+        // Badge
+        // ==========================================
+
         badge_popular:
             "ყველაზე პოპულარული",
 
+        badge_most_popular:
+            "ყველაზე მოთხოვნადი",
 
 
+        // ==========================================
         // Starter
+        // ==========================================
 
         feat_responsive:
             "ადაპტირებადი დიზაინი",
@@ -2693,8 +3034,9 @@ const translations = {
             "მცირე ბიზნესისთვის",
 
 
-
+        // ==========================================
         // Business
+        // ==========================================
 
         feat_everything_starter:
             "ყველაფერი Starter-იდან",
@@ -2721,8 +3063,9 @@ const translations = {
             "სააგენტოებისთვის",
 
 
-
+        // ==========================================
         // Premium
+        // ==========================================
 
         feat_everything_business:
             "ყველაფერი Business-იდან",
@@ -2749,8 +3092,9 @@ const translations = {
             "ონლაინ მაღაზიებისთვის",
 
 
-
+        // ==========================================
         // Custom
+        // ==========================================
 
         feat_figma:
             "Figma დიზაინის აწყობა",
@@ -2777,368 +3121,80 @@ const translations = {
             "ნებისმიერი დიზაინის მიხედვით",
 
 
+        // ==========================================
+        // E-commerce
+        // ==========================================
 
-        // Why KOKOS-LAB
+        feat_ecommerce_catalog:
+            "პროდუქტების კატალოგი",
 
-        why_kicker:
-            "რატომ KOKOS-LAB",
+        feat_ecommerce_cart:
+            "სავაჭრო კალათა",
 
-        why_title:
-            "ვებსაიტი მხოლოდ არსებობისთვის არ უნდა იყოს.",
+        feat_ecommerce_checkout:
+            "შეკვეთის გაფორმება",
 
-        why_desc:
-            "მან უნდა გადმოსცეს თქვენი ღირებულება, სწორად წარმართოს ვიზიტორი და ონლაინ სივრცეშიც ისეთივე პროფესიონალურად წარმოაჩინოს თქვენი ბიზნესი, როგორც რეალურ ცხოვრებაში.",
+        feat_ecommerce_payment:
+            "გადახდის ინტეგრაცია",
 
-        why_performance_title:
-            "წარმადობა",
+        feat_ecommerce_orders:
+            "შეკვეთების მართვა",
 
-        why_performance_desc:
-            "სწრაფი ჩატვირთვა, ოპტიმიზირებული რესურსები, ადაპტირებადი განლაგება და სუფთა front-end კოდი.",
+        feat_ecommerce_mobile:
+            "მობილურზე ოპტიმიზებული მაღაზია",
 
-        why_responsive_title:
-            "ადაპტირებული დიზაინი",
+        target_online_shops:
+            "ონლაინ მაღაზიებისთვის",
 
-        why_responsive_desc:
-            "ვებსაიტი შექმნილია ისე, რომ სწორად იმუშაოს ტელეფონებზე, ტაბლეტებზე, ლეპტოპებსა და დესკტოპებზე.",
+        target_product_brands:
+            "პროდუქტის ბრენდებისთვის",
 
+        target_retail_businesses:
+            "საცალო ბიზნესებისთვის",
 
-
-        // Process
-
-        process_kicker:
-            "პროცესი",
-
-        process_title:
-            "იდეიდან გაშვებამდე.",
-
-        process_discovery_title:
-            "კვლევა",
-
-        process_discovery_desc:
-            "განვიხილავთ თქვენს ბიზნესს, მიზნებს, აუდიტორიას, სასურველ მაგალითებსა და პროექტის მოთხოვნებს.",
-
-        process_structure_title:
-            "სტრუქტურა",
-
-        process_structure_desc:
-            "ვადგენთ გვერდებს, კონტენტის იერარქიას, მომხმარებლის გზას და ვიზუალურ მიმართულებას.",
-
-        process_development_title:
-            "დეველოპმენტი",
-
-        process_development_desc:
-            "დამტკიცებული მიმართულება გარდაიქმნება დახვეწილ, ადაპტირებად და ფუნქციურ ვებსაიტად.",
-
-        process_launch_title:
-            "გაშვება",
-
-        process_launch_desc:
-            "საბოლოო ტესტირება, ოპტიმიზაცია, განთავსება და პროექტის ჩაბარება.",
-
-
-
-        // CTA
-
-        cta_kicker:
-            "მზად ხართ დასაწყებად?",
-
-        cta_title:
-            "შევქმნათ თქვენი ვებსაიტი.",
-
-        cta_desc:
-            "მომიყევით თქვენი პროექტის შესახებ და დაგეხმარებით სწორი მიდგომის არჩევაში.",
-
-
-
-        // Home
-
-        home_eyebrow:
-            "KOKOS-LAB · ციფრული სტუდია",
-
-        home_hero_title:
-            "ციფრული გამოცდილებები<br>რომლებიც <span>გამოირჩევა.</span>",
-
-        home_hero_desc:
-            "ვქმნი თანამედროვე ვებსაიტებსა და 3D პროდუქტის ვიზუალებს, რომლებიც იდეებს დახვეწილ ციფრულ გამოცდილებად გარდაქმნის.",
-
-        home_hero_primary:
-            "სერვისების ნახვა",
-
-        home_hero_secondary:
-            "დავიწყოთ საუბარი",
-
-        home_person_name:
-            "თორნიკე დოლიძე",
-
-        home_person_role:
-            "დეველოპერი · 3D არტისტი",
-
-        home_trust_note:
-            "შექმნილი დეტალების, წარმადობისა და მიზნის გათვალისწინებით.",
-
-        home_services_kicker:
-            "რას ვაკეთებ",
-
-        home_services_title:
-            "ორი მიმართულება. ერთი კრეატიული სტუდია.",
-
-        home_services_desc:
-            "ინტერფეისიდან, რომელსაც თქვენი მომხმარებელი იყენებს, ვიზუალებამდე, რომლებიც მას დაამახსოვრდება.",
-
-        home_web_long_desc:
-            "თანამედროვე, ადაპტირებადი და მაღალი წარმადობის ვებსაიტები, რომლებიც თქვენს მიზნებზე, კონტენტსა და აუდიტორიაზეა მორგებული.",
-
-        home_view_service:
-            "სერვისის ნახვა",
-
-        home_3d_badge:
-            "3D სერვისი",
-
-        home_3d_long_desc:
-            "რეალისტური პროდუქტის მოდელები და ვიზუალიზაციები, რომლებიც პროდუქტს კამერის წინ გამოჩენამდეც წარმოაჩენს.",
-
-        home_talk_about_3d:
-            "განვიხილოთ თქვენი პროექტი",
-
-        home_position_kicker:
-            "რატომ KOKOS-LAB",
-
-        home_position_title:
-            "არა მხოლოდ დასრულებული ეკრანი. დასრულებული გამოცდილება.",
-
-        home_position_desc:
-            "თითოეულ პროექტს მთლიან გამოცდილებად ვუდგები — პირველი იდეიდან და სტრუქტურიდან საბოლოო ადაპტირებად შედეგამდე.",
-
-        home_point_one_title:
-            "მიზანი პირველ ადგილზე",
-
-        home_point_one_desc:
-            "სტრუქტურა იწყება იმით, თუ რისი მიღწევა სჭირდება პროექტს.",
-
-        home_point_two_title:
-            "სუფთა შესრულება",
-
-        home_point_two_desc:
-            "ადაპტირებადი განლაგება, სუფთა კოდი და ყურადღება მცირე დეტალების მიმართ.",
-
-        home_point_three_title:
-            "პირდაპირი თანამშრომლობა",
-
-        home_point_three_desc:
-            "პირდაპირ იმ ადამიანთან მუშაობთ, რომელიც თქვენს პროექტს ქმნის.",
-
-        home_process_kicker:
-            "მიდგომა",
-
-        home_process_title:
-            "იდეიდან საბოლოო შედეგამდე.",
-
-        home_process_one_title:
-            "კვლევა",
-
-        home_process_one_desc:
-            "განვიხილავთ თქვენს ბიზნესს, მიზნებს, აუდიტორიას, სასურველ მაგალითებსა და პროექტის მოთხოვნებს.",
-
-        home_process_two_title:
-            "სტრუქტურა",
-
-        home_process_two_desc:
-            "ვადგენთ გვერდებს, კონტენტის იერარქიას, მომხმარებლის გზას და ვიზუალურ მიმართულებას.",
-
-        home_process_three_title:
-            "დეველოპმენტი",
-
-        home_process_three_desc:
-            "დამტკიცებული მიმართულება გარდაიქმნება დახვეწილ, ადაპტირებად და ფუნქციურ ვებსაიტად.",
-
-        home_process_four_title:
-            "გაშვება",
-
-        home_process_four_desc:
-            "საბოლოო ტესტირება, ოპტიმიზაცია, განთავსება და პროექტის ჩაბარება.",
-
-        home_cta_kicker:
-            "მზად ხართ დასაწყებად?",
-
-        home_cta_title:
-            "შევქმნათ რაღაც, რაც დაამახსოვრდებათ.",
-
-        home_cta_desc:
-            "მომიყევით თქვენი პროექტის შესახებ და ერთად ვიპოვოთ სწორი მიმართულება.",
-
-        home_cta_button:
-            "დავიწყოთ საუბარი",
-
-
-
-        // Consultation
-
-        consult_kicker:
-            "უფასო კონსულტაცია",
-
-        consult_back:
-            "უკან ვებ დეველოპმენტზე",
-
-        consult_brand:
-            "KOKOS-LAB",
-
-        consult_title:
-            "უფასო კონსულტაცია",
-
-        consult_desc:
-            "დაჯავშნეთ უფასო ზარი თქვენი პროექტის განსახილველად. გაეცანით ხშირად დასმულ კითხვებს და დამიკავშირდით!",
-
-        faq_kicker:
-            "დაწყებამდე",
-
-        faq_main_title:
-            "ხშირად დასმული კითხვები",
-
-        faq_q1:
-            "რამდენ ხანს გრძელდება კონსულტაცია?",
-
-        faq_a1:
-            "ჩვეულებრივ 15-დან 30 წუთამდე. განვიხილავთ თქვენს მიზნებს, სამიზნე აუდიტორიას და დიზაინის სტილს.",
-
-        faq_q2:
-            "რა უნდა მოვამზადო წინასწარ?",
-
-        faq_a2:
-            "მხოლოდ ზოგადი იდეა იმისა, თუ რისი მიღწევა გსურთ საიტით. თუ მოგწონთ კონკრეტული საიტები, მათი ლინკების მომზადება დიდი პლუსი იქნება!",
-
-        faq_q3:
-            "მართლა უფასოა?",
-
-        faq_a3:
-            "დიახ! საწყისი კონსულტაცია 100%-ით უფასოა იმის დასადგენად, რამდენად შევესაბამებით თქვენს პროექტს.",
-
-        consult_contact_kicker:
-            "ვისაუბროთ",
-
-        consult_contact_ready:
-            "მზად ხართ დასაწყებად? დამიკავშირდით:",
-
-        consult_email_label:
-            "ელ. ფოსტა",
-
-        consult_phone_label:
-            "ტელეფონი",
-
-        consult_messaging_label:
-            "შეტყობინებები",
-
-        consult_messaging_value:
-            "WhatsApp / Telegram",
-
-
-
-        // Contact
-
-        cont_back_home:
-            "მთავარზე დაბრუნება",
-
-        cont_get_in_touch:
-            "დამიკავშირდით",
-
-        cont_talk_title:
-            "ვისაუბროთ <br><span>თქვენს პროექტზე</span>",
-
-        cont_talk_desc:
-            "გაქვთ კონკრეტული იდეა თუ უბრალოდ ვარიანტების განხილვა გსურთ, მე მზად ვარ დაგეხმაროთ რაღაც დიდებულის შექმნაში.",
-
-        cont_create_title:
-            "შევქმნათ <span>რაღაც განსაკუთრებული.</span>",
-
-        cont_follow_connect:
-            "გამომყევით და დამიკავშირდით",
-
-        cont_send_message:
-            "გამომიგზავნეთ შეტყობინება",
-
-        cont_form_desc:
-            "მომიყევით ცოტა თქვენი პროექტის შესახებ და დაგიკავშირდებით.",
-
-        cont_email_label:
-            "ელ. ფოსტა",
-
-        cont_phone_label:
-            "ტელეფონი",
-
-        cont_lbl_name:
-            "თქვენი სახელი",
-
-        cont_lbl_email:
-            "ელ. ფოსტის მისამართი",
-
-        cont_lbl_message:
-            "რით შემიძლია დაგეხმაროთ?",
-
-        cont_btn_send:
-            "გაგზავნა ელ.ფოსტით",
-
-        cont_form_note:
-            "თქვენი შეტყობინება პირდაპირ გაიხსნება თქვენს ელფოსტის პროგრამაში.",
-
-        cont_placeholder_name:
-            "მაგ. გიორგი",
-
-        cont_placeholder_email:
-            "მაგ. giorgi@example.com",
-
-        cont_placeholder_message:
-            "მომიყევით თქვენი პროექტის შესახებ...",
-
-
-
-        // Footer
-
-        footer_rights:
-            "© 2026 KOKOS-LAB. ყველა უფლება დაცულია.",
-
-        footer_contact:
-            "კონტაქტი",
-
-        footer_consultation:
-            "კონსულტაცია"
+            feat_ecommerce_admin: 
+            "ადმინ პანელი",
 
     }
 
 };
 
 
-
 // ==========================================
-// Current Language
-// ==========================================
-
-let currentLang =
-    localStorage.getItem("site_lang") || "ka";
-
-
-
-// ==========================================
-// Translation Function
+// Apply Translations
 // ==========================================
 
 function updateLanguage(lang) {
 
+    currentLang =
+        lang;
+
+
+    localStorage.setItem(
+        "kokos-lang",
+        lang
+    );
+
+
+    document.documentElement.lang =
+        lang === "ka"
+            ? "ka"
+            : "en";
+
+
+    const elements =
+        document.querySelectorAll(
+            "[data-i18n]"
+        );
+
+
     const dictionary =
-        translations[lang];
+        translations[lang] ||
+        translations.en;
 
 
-    if (!dictionary) {
-        return;
-    }
-
-
-
-    // -----------------------------------------
-    // Normal text / HTML translations
-    // -----------------------------------------
-
-    document
-        .querySelectorAll("[data-i18n]")
-        .forEach(element => {
+    elements.forEach(
+        element => {
 
             const key =
                 element.getAttribute(
@@ -3153,108 +3209,14 @@ function updateLanguage(lang) {
                 )
             ) {
 
-                const value =
+                element.textContent =
                     dictionary[key];
 
-
-                /*
-                 * If translation contains HTML,
-                 * preserve the HTML structure.
-                 */
-
-                if (
-                    value.includes("<br>") ||
-                    value.includes("<span>") ||
-                    value.includes("<b>")
-                ) {
-
-                    element.innerHTML =
-                        value;
-
-                } else {
-
-                    element.textContent =
-                        value;
-
-                }
-
             }
 
-        });
+        }
+    );
 
-
-
-    // -----------------------------------------
-    // Placeholder translations
-    // -----------------------------------------
-
-    document
-        .querySelectorAll(
-            "[data-i18n-placeholder]"
-        )
-        .forEach(element => {
-
-            const key =
-                element.getAttribute(
-                    "data-i18n-placeholder"
-                );
-
-
-            if (
-                Object.prototype.hasOwnProperty.call(
-                    dictionary,
-                    key
-                )
-            ) {
-
-                element.setAttribute(
-                    "placeholder",
-                    dictionary[key]
-                );
-
-            }
-
-        });
-
-
-
-    // -----------------------------------------
-    // ARIA label translations
-    // -----------------------------------------
-
-    document
-        .querySelectorAll(
-            "[data-i18n-aria-label]"
-        )
-        .forEach(element => {
-
-            const key =
-                element.getAttribute(
-                    "data-i18n-aria-label"
-                );
-
-
-            if (
-                Object.prototype.hasOwnProperty.call(
-                    dictionary,
-                    key
-                )
-            ) {
-
-                element.setAttribute(
-                    "aria-label",
-                    dictionary[key]
-                );
-
-            }
-
-        });
-
-
-
-    // -----------------------------------------
-    // Language button
-    // -----------------------------------------
 
     const langBtn =
         document.getElementById(
@@ -3265,24 +3227,21 @@ function updateLanguage(lang) {
     if (langBtn) {
 
         langBtn.textContent =
-            lang === "en"
-                ? "GE"
-                : "EN";
+            lang === "ka"
+                ? "EN"
+                : "GE";
 
     }
 
 
-
-    // -----------------------------------------
-    // Re-render active pricing modal
-    // -----------------------------------------
-
+    // თუ modal გახსნილია,
+    // ენის შეცვლისას მისი შიგთავსიც განახლდეს
     if (
-        typeof activeModalPlan !==
-            "undefined" &&
         activeModalPlan &&
-        typeof renderModalContent ===
-            "function"
+        modalOverlay &&
+        !modalOverlay.classList.contains(
+            "hidden"
+        )
     ) {
 
         renderModalContent(
@@ -3291,27 +3250,231 @@ function updateLanguage(lang) {
 
     }
 
+}
 
 
-    // -----------------------------------------
-    // Save language
-    // -----------------------------------------
 
-    localStorage.setItem(
-        "site_lang",
-        lang
+// ==========================================
+// Header / Navigation Helpers
+// ==========================================
+
+function setActiveNavigation() {
+
+    const currentPage =
+        window.location.pathname
+            .split("/")
+            .pop()
+            .toLowerCase();
+
+
+    document
+        .querySelectorAll(
+            ".nav-links a"
+        )
+        .forEach(link => {
+
+            const href =
+                link.getAttribute(
+                    "href"
+                );
+
+
+            if (!href) return;
+
+
+            const targetPage =
+                href
+                    .split("/")
+                    .pop()
+                    .toLowerCase();
+
+
+            if (
+                targetPage ===
+                currentPage
+            ) {
+
+                link.classList.add(
+                    "active"
+                );
+
+            } else {
+
+                link.classList.remove(
+                    "active"
+                );
+
+            }
+
+        });
+
+}
+
+
+setActiveNavigation();
+
+
+
+// ==========================================
+// Smooth Anchor Scrolling
+// ==========================================
+
+document
+    .querySelectorAll(
+        'a[href^="#"]'
+    )
+    .forEach(anchor => {
+
+        anchor.addEventListener(
+            "click",
+            event => {
+
+                const targetId =
+                    anchor
+                        .getAttribute("href");
+
+
+                if (
+                    !targetId ||
+                    targetId === "#"
+                ) {
+
+                    return;
+
+                }
+
+
+                const target =
+                    document.querySelector(
+                        targetId
+                    );
+
+
+                if (!target) return;
+
+
+                event.preventDefault();
+
+
+                target.scrollIntoView({
+                    behavior: "smooth",
+                    block: "start"
+                });
+
+            }
+        );
+
+    });
+
+
+
+// ==========================================
+// Intersection Observer
+// ==========================================
+
+const revealElements =
+    document.querySelectorAll(
+        ".pricing-card, .home-service-card, .process-card"
     );
 
 
+if (
+    "IntersectionObserver" in window
+) {
 
-    // -----------------------------------------
-    // Refresh icons
-    // -----------------------------------------
+    const revealObserver =
+        new IntersectionObserver(
+            entries => {
 
-    if (window.lucide) {
+                entries.forEach(
+                    entry => {
 
-        lucide.createIcons();
+                        if (
+                            entry.isIntersecting
+                        ) {
+
+                            entry.target.classList.add(
+                                "visible"
+                            );
+
+
+                            revealObserver.unobserve(
+                                entry.target
+                            );
+
+                        }
+
+                    }
+                );
+
+            },
+            {
+                threshold: 0.12
+            }
+        );
+
+
+    revealElements.forEach(
+        element => {
+
+            revealObserver.observe(
+                element
+            );
+
+        }
+    );
+
+} else {
+
+    revealElements.forEach(
+        element => {
+
+            element.classList.add(
+                "visible"
+            );
+
+        }
+    );
+
+}
+
+
+
+// ==========================================
+// Prevent accidental form resubmission
+// ==========================================
+
+window.addEventListener(
+    "pageshow",
+    event => {
+
+        if (
+            event.persisted
+        ) {
+
+            document
+                .querySelectorAll(
+                    "form"
+                )
+                .forEach(form => {
+
+                    form.reset();
+
+                });
+
+        }
 
     }
+);
+
+
+
+// ==========================================
+// Final Icon Refresh
+// ==========================================
+
+if (window.lucide) {
+
+    lucide.createIcons();
 
 }
