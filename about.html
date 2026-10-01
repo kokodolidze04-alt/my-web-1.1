@@ -1,0 +1,1501 @@
+```html
+<!DOCTYPE html>
+<html lang="ka">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+
+    <title>
+        About — KOKOS-LAB
+    </title>
+
+    <meta
+        name="description"
+        content="About Tornike Dolidze — developer, creative technologist, 3D artist, and researcher."
+    >
+
+    <meta
+        name="author"
+        content="Tornike Dolidze"
+    >
+
+    <meta
+        name="theme-color"
+        content="#050505"
+    >
+
+
+    <!-- =====================================================
+         FONTS
+    ====================================================== -->
+
+    <link
+        rel="preconnect"
+        href="https://fonts.googleapis.com"
+    >
+
+    <link
+        rel="preconnect"
+        href="https://fonts.gstatic.com"
+        crossorigin
+    >
+
+    <link
+        href="https://fonts.googleapis.com/css2?family=Noto+Sans+Georgian:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet"
+    >
+
+
+    <!-- =====================================================
+         STYLES
+    ====================================================== -->
+
+    <link
+        rel="stylesheet"
+        href="style.css"
+    >
+
+
+    <!-- =====================================================
+         ICONS
+    ====================================================== -->
+
+    <script
+        src="https://unpkg.com/lucide@latest"
+        defer
+    ></script>
+
+
+    <!-- =====================================================
+         MAIN JAVASCRIPT
+    ====================================================== -->
+
+    <script
+        src="script.js"
+        defer
+    ></script>
+
+</head>
+
+
+<body class="about-page">
+
+
+<!-- =====================================================
+     MATRIX BACKGROUND
+===================================================== -->
+
+<canvas
+    id="matrix-canvas"
+    aria-hidden="true"
+></canvas>
+
+
+<!-- =====================================================
+     NAVIGATION
+===================================================== -->
+
+<header class="navbar home-navbar">
+
+    <a
+        class="logo home-logo"
+        href="index.html"
+        aria-label="KOKOS-LAB home"
+    >
+        KOKOS-LAB
+    </a>
+
+
+    <nav
+        class="nav-links"
+        aria-label="Main Navigation"
+    >
+
+        <ul>
+
+            <li>
+                <a
+                    href="about.html"
+                    class="active"
+                    data-i18n="nav_about"
+                >
+                    About
+                </a>
+            </li>
+
+
+            <li>
+                <a
+                    href="index.html#services"
+                    data-i18n="nav_services"
+                >
+                    Services
+                </a>
+            </li>
+
+
+            <li>
+                <a
+                    href="index.html#work"
+                    data-i18n="nav_work"
+                >
+                    Approach
+                </a>
+            </li>
+
+
+            <li>
+                <a
+                    href="cont.html"
+                    data-i18n="nav_contact"
+                >
+                    Contact
+                </a>
+            </li>
+
+
+            <li>
+                <button
+                    id="lang-toggle"
+                    class="lang-btn"
+                    type="button"
+                >
+                    GE
+                </button>
+            </li>
+
+        </ul>
+
+    </nav>
+
+</header>
+
+
+
+<main>
+
+
+<!-- =====================================================
+     ABOUT HERO
+===================================================== -->
+
+<section class="about-hero home-hero">
+
+    <div
+        class="hero-glow hero-glow-one"
+        aria-hidden="true"
+    ></div>
+
+    <div
+        class="hero-glow hero-glow-two"
+        aria-hidden="true"
+    ></div>
+
+
+    <div class="about-hero-content home-hero-content">
+
+
+        <div class="hero-eyebrow">
+
+            <span class="eyebrow-dot"></span>
+
+            <span data-i18n="about_eyebrow">
+                KOKOS-LAB · ABOUT
+            </span>
+
+        </div>
+
+
+        <h1 data-i18n="about_hero_title">
+
+            Building across
+            <br>
+
+            <span>
+                disciplines.
+            </span>
+
+        </h1>
+
+
+        <p
+            class="home-hero-description"
+            data-i18n="about_hero_desc"
+        >
+            I explore the intersection of artificial intelligence,
+            software, 3D graphics, neuroscience, and creative technology.
+        </p>
+
+
+        <div class="about-hero-meta">
+
+            <div class="about-meta-item">
+
+                <span
+                    class="section-kicker"
+                    data-i18n="about_meta_name_label"
+                >
+                    NAME
+                </span>
+
+                <strong>
+                    Tornike Dolidze
+                </strong>
+
+            </div>
+
+
+            <div class="about-meta-divider"></div>
+
+
+            <div class="about-meta-item">
+
+                <span
+                    class="section-kicker"
+                    data-i18n="about_meta_focus_label"
+                >
+                    CURRENT FOCUS
+                </span>
+
+                <strong
+                    data-i18n="about_meta_focus"
+                >
+                    AI · Software · 3D
+                </strong>
+
+            </div>
+
+        </div>
+
+    </div>
+
+
+    <div
+        class="hero-orbit about-hero-orbit"
+        aria-hidden="true"
+    >
+
+        <div
+            class="orbit-ring orbit-ring-one"
+        ></div>
+
+        <div
+            class="orbit-ring orbit-ring-two"
+        ></div>
+
+        <div class="orbit-core">
+
+            <span>
+                AI
+            </span>
+
+            <span>
+                3D
+            </span>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+
+<!-- =====================================================
+     INTRODUCTION
+===================================================== -->
+
+<section
+    class="home-section about-introduction"
+>
+
+    <div class="home-section-heading">
+
+        <span
+            class="section-kicker"
+            data-i18n="about_intro_kicker"
+        >
+            ABOUT ME
+        </span>
+
+
+        <h2 data-i18n="about_intro_title">
+            A multidisciplinary
+            approach to technology.
+        </h2>
+
+
+        <p data-i18n="about_intro_desc">
+            My interests span technology, psychology,
+            artificial intelligence, visual computing,
+            and creative development.
+        </p>
+
+    </div>
+
+
+    <div class="about-introduction-grid">
+
+
+        <div class="about-introduction-main">
+
+            <p data-i18n="about_intro_text_1">
+                I am Tornike Dolidze, a 22-year-old developer
+                and creative technologist working across several
+                different fields of technology and research.
+            </p>
+
+
+            <p data-i18n="about_intro_text_2">
+                My academic background and technical interests
+                have led me toward projects that combine
+                software, artificial intelligence, visual
+                technologies, and human cognition.
+            </p>
+
+        </div>
+
+
+        <div class="about-introduction-side">
+
+            <span
+                class="about-side-number"
+            >
+                01
+            </span>
+
+            <span
+                data-i18n="about_intro_side"
+            >
+                Curious by nature.
+                Building by choice.
+            </span>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+
+<!-- =====================================================
+     EDUCATION
+===================================================== -->
+
+<section
+    class="home-section about-education"
+>
+
+    <div class="home-section-heading">
+
+        <span
+            class="section-kicker"
+            data-i18n="about_education_kicker"
+        >
+            EDUCATION
+        </span>
+
+
+        <h2 data-i18n="about_education_title">
+            The academic path
+            behind the work.
+        </h2>
+
+
+        <p data-i18n="about_education_desc">
+            A combination of social sciences,
+            psychology, and emerging technology.
+        </p>
+
+    </div>
+
+
+    <div class="about-education-list">
+
+
+        <!-- EDUCATION 01 -->
+
+        <article class="about-education-card">
+
+            <div class="about-card-number">
+                01
+            </div>
+
+
+            <div class="about-card-icon">
+
+                <i
+                    data-lucide="globe-2"
+                    aria-hidden="true"
+                ></i>
+
+            </div>
+
+
+            <div class="about-card-content">
+
+                <span
+                    class="section-kicker"
+                    data-i18n="education_1_label"
+                >
+                    BACHELOR'S DEGREE
+                </span>
+
+
+                <h3 data-i18n="education_1_title">
+                    International Relations
+                </h3>
+
+
+                <p data-i18n="education_1_desc">
+                    Academic background in international
+                    relations and global affairs.
+                </p>
+
+            </div>
+
+        </article>
+
+
+
+        <!-- EDUCATION 02 -->
+
+        <article class="about-education-card">
+
+            <div class="about-card-number">
+                02
+            </div>
+
+
+            <div class="about-card-icon">
+
+                <i
+                    data-lucide="brain"
+                    aria-hidden="true"
+                ></i>
+
+            </div>
+
+
+            <div class="about-card-content">
+
+                <span
+                    class="section-kicker"
+                    data-i18n="education_2_label"
+                >
+                    DOCTORATE
+                </span>
+
+
+                <h3 data-i18n="education_2_title">
+                    Psychology
+                </h3>
+
+
+                <p data-i18n="education_2_desc">
+                    Academic work focused on psychology,
+                    human behavior, and cognition.
+                </p>
+
+            </div>
+
+        </article>
+
+
+
+        <!-- EDUCATION 03 -->
+
+        <article
+            class="about-education-card about-education-current"
+        >
+
+            <div class="about-card-number">
+                03
+            </div>
+
+
+            <div class="about-card-icon">
+
+                <i
+                    data-lucide="brain-circuit"
+                    aria-hidden="true"
+                ></i>
+
+            </div>
+
+
+            <div class="about-card-content">
+
+                <span
+                    class="section-kicker"
+                    data-i18n="education_3_label"
+                >
+                    CURRENT PROGRAM
+                </span>
+
+
+                <h3 data-i18n="education_3_title">
+                    Neuroengineering
+                </h3>
+
+
+                <p data-i18n="education_3_desc">
+                    Currently studying the intersection
+                    of neuroscience and engineering.
+                </p>
+
+            </div>
+
+
+            <span class="about-current-indicator">
+                ●
+            </span>
+
+        </article>
+
+    </div>
+
+</section>
+
+
+
+<!-- =====================================================
+     CERTIFICATION
+===================================================== -->
+
+<section
+    class="home-section about-certification"
+>
+
+    <div class="home-section-heading">
+
+        <span
+            class="section-kicker"
+            data-i18n="about_certification_kicker"
+        >
+            CERTIFICATION
+        </span>
+
+
+        <h2 data-i18n="about_certification_title">
+            Visual technology
+            and 3D.
+        </h2>
+
+    </div>
+
+
+    <article class="about-certification-card">
+
+        <div class="service-card-topline">
+
+            <span class="service-number">
+                01
+            </span>
+
+            <i
+                data-lucide="arrow-up-right"
+                aria-hidden="true"
+            ></i>
+
+        </div>
+
+
+        <div class="service-card-icon">
+
+            <i
+                data-lucide="box"
+                aria-hidden="true"
+            ></i>
+
+        </div>
+
+
+        <span
+            class="section-kicker"
+            data-i18n="certification_label"
+        >
+            PROFESSIONAL CERTIFICATE
+        </span>
+
+
+        <h3 data-i18n="certification_title">
+            3D Graphics
+        </h3>
+
+
+        <p data-i18n="certification_desc">
+            Professional certification in 3D graphics
+            and digital visualization.
+        </p>
+
+    </article>
+
+</section>
+
+
+
+<!-- =====================================================
+     AREAS OF FOCUS
+===================================================== -->
+
+<section
+    class="home-section about-focus"
+>
+
+    <div class="home-section-heading">
+
+        <span
+            class="section-kicker"
+            data-i18n="about_focus_kicker"
+        >
+            AREAS OF FOCUS
+        </span>
+
+
+        <h2 data-i18n="about_focus_title">
+            Where curiosity
+            becomes projects.
+        </h2>
+
+
+        <p data-i18n="about_focus_desc">
+            The fields I am currently exploring,
+            developing, and combining.
+        </p>
+
+    </div>
+
+
+    <div class="home-service-grid about-focus-grid">
+
+
+        <!-- AI -->
+
+        <article class="home-service-card">
+
+            <div class="service-card-topline">
+
+                <span class="service-number">
+                    01
+                </span>
+
+                <i
+                    data-lucide="brain-circuit"
+                    aria-hidden="true"
+                ></i>
+
+            </div>
+
+
+            <div class="service-card-icon">
+
+                <i
+                    data-lucide="cpu"
+                    aria-hidden="true"
+                ></i>
+
+            </div>
+
+
+            <h3 data-i18n="focus_ai_title">
+                Artificial Intelligence
+            </h3>
+
+
+            <p data-i18n="focus_ai_desc">
+                Building and training local AI systems
+                and experimenting with generative models.
+            </p>
+
+        </article>
+
+
+
+        <!-- SOFTWARE -->
+
+        <article class="home-service-card">
+
+            <div class="service-card-topline">
+
+                <span class="service-number">
+                    02
+                </span>
+
+                <i
+                    data-lucide="code-2"
+                    aria-hidden="true"
+                ></i>
+
+            </div>
+
+
+            <div class="service-card-icon">
+
+                <i
+                    data-lucide="terminal"
+                    aria-hidden="true"
+                ></i>
+
+            </div>
+
+
+            <h3 data-i18n="focus_software_title">
+                Software Development
+            </h3>
+
+
+            <p data-i18n="focus_software_desc">
+                Developing applications,
+                tools, and digital products.
+            </p>
+
+        </article>
+
+
+
+        <!-- 3D -->
+
+        <article class="home-service-card">
+
+            <div class="service-card-topline">
+
+                <span class="service-number">
+                    03
+                </span>
+
+                <i
+                    data-lucide="box"
+                    aria-hidden="true"
+                ></i>
+
+            </div>
+
+
+            <div class="service-card-icon">
+
+                <i
+                    data-lucide="box"
+                    aria-hidden="true"
+                ></i>
+
+            </div>
+
+
+            <h3 data-i18n="focus_3d_title">
+                3D & Visualization
+            </h3>
+
+
+            <p data-i18n="focus_3d_desc">
+                Creating 3D assets, environments,
+                visualizations, and digital experiences.
+            </p>
+
+        </article>
+
+
+
+        <!-- GAMES -->
+
+        <article class="home-service-card">
+
+            <div class="service-card-topline">
+
+                <span class="service-number">
+                    04
+                </span>
+
+                <i
+                    data-lucide="gamepad-2"
+                    aria-hidden="true"
+                ></i>
+
+            </div>
+
+
+            <div class="service-card-icon">
+
+                <i
+                    data-lucide="gamepad-2"
+                    aria-hidden="true"
+                ></i>
+
+            </div>
+
+
+            <h3 data-i18n="focus_games_title">
+                Game Development
+            </h3>
+
+
+            <p data-i18n="focus_games_desc">
+                Creating original game concepts,
+                worlds, systems, and experiences.
+            </p>
+
+        </article>
+
+    </div>
+
+</section>
+
+
+
+<!-- =====================================================
+     CURRENT PROJECTS
+===================================================== -->
+
+<section
+    class="home-section about-projects"
+>
+
+    <div class="home-section-heading">
+
+        <span
+            class="section-kicker"
+            data-i18n="about_projects_kicker"
+        >
+            CURRENT PROJECTS
+        </span>
+
+
+        <h2 data-i18n="about_projects_title">
+            Ideas currently
+            taking shape.
+        </h2>
+
+
+        <p data-i18n="about_projects_desc">
+            Personal projects that are currently
+            being designed, developed, and explored.
+        </p>
+
+    </div>
+
+
+    <div class="about-project-list">
+
+
+        <!-- PROJECT 01 -->
+
+        <article class="about-project-card">
+
+            <div class="about-project-index">
+                01
+            </div>
+
+
+            <div class="about-project-main">
+
+                <span
+                    class="section-kicker"
+                    data-i18n="project_1_status"
+                >
+                    IN DEVELOPMENT
+                </span>
+
+
+                <h3>
+                    Local AI
+                </h3>
+
+
+                <p data-i18n="project_ai_desc">
+                    Building and training local
+                    artificial intelligence systems.
+                </p>
+
+            </div>
+
+
+            <div class="about-project-icon">
+
+                <i
+                    data-lucide="arrow-up-right"
+                    aria-hidden="true"
+                ></i>
+
+            </div>
+
+        </article>
+
+
+
+        <!-- PROJECT 02 -->
+
+        <article class="about-project-card">
+
+            <div class="about-project-index">
+                02
+            </div>
+
+
+            <div class="about-project-main">
+
+                <span
+                    class="section-kicker"
+                    data-i18n="project_2_status"
+                >
+                    IN DEVELOPMENT
+                </span>
+
+
+                <h3>
+                    PAPERS
+                </h3>
+
+
+                <p data-i18n="project_papers_desc">
+                    A modern document application
+                    designed for macOS.
+                </p>
+
+            </div>
+
+
+            <div class="about-project-icon">
+
+                <i
+                    data-lucide="arrow-up-right"
+                    aria-hidden="true"
+                ></i>
+
+            </div>
+
+        </article>
+
+
+
+        <!-- PROJECT 03 -->
+
+        <article class="about-project-card">
+
+            <div class="about-project-index">
+                03
+            </div>
+
+
+            <div class="about-project-main">
+
+                <span
+                    class="section-kicker"
+                    data-i18n="project_3_status"
+                >
+                    IN DEVELOPMENT
+                </span>
+
+
+                <h3>
+                    DREAMLAND
+                </h3>
+
+
+                <p data-i18n="project_dreamland_desc">
+                    An original game project focused
+                    on exploration, world building,
+                    and visual storytelling.
+                </p>
+
+            </div>
+
+
+            <div class="about-project-icon">
+
+                <i
+                    data-lucide="arrow-up-right"
+                    aria-hidden="true"
+                ></i>
+
+            </div>
+
+        </article>
+
+    </div>
+
+</section>
+
+
+
+<!-- =====================================================
+     FUTURE / GOALS
+===================================================== -->
+
+<section
+    class="home-section about-goals"
+>
+
+    <div class="about-goals-grid">
+
+
+        <div class="about-goals-heading">
+
+            <span
+                class="section-kicker"
+                data-i18n="about_goals_kicker"
+            >
+                FUTURE
+            </span>
+
+
+            <h2 data-i18n="about_goals_title">
+                Building at the
+                edge of disciplines.
+            </h2>
+
+        </div>
+
+
+        <div class="about-goals-content">
+
+            <p data-i18n="about_goals_desc">
+                My long-term goal is to explore the
+                relationship between artificial intelligence,
+                neuroscience, software, visual computing,
+                and creative technology.
+            </p>
+
+
+            <div class="about-goals-line">
+
+                <span></span>
+
+                <span
+                    data-i18n="about_goals_label"
+                >
+                    ALWAYS BUILDING
+                </span>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+
+<!-- =====================================================
+     AI & DEVELOPMENT
+===================================================== -->
+
+<section
+    class="home-section about-ai-development"
+>
+
+    <div class="home-section-heading">
+
+        <span
+            class="section-kicker"
+            data-i18n="about_ai_kicker"
+        >
+            AI & DEVELOPMENT
+        </span>
+
+
+        <h2 data-i18n="about_ai_title">
+            Programming with
+            artificial intelligence.
+        </h2>
+
+
+        <p data-i18n="about_ai_intro">
+            I see artificial intelligence as a development
+            partner that can accelerate the way software
+            is designed, written, tested, and improved.
+        </p>
+
+    </div>
+
+
+    <div class="about-ai-grid">
+
+
+        <!-- MAIN STATEMENT -->
+
+        <div class="about-ai-main">
+
+            <div class="about-ai-icon">
+
+                <i
+                    data-lucide="sparkles"
+                    aria-hidden="true"
+                ></i>
+
+            </div>
+
+
+            <span
+                class="section-kicker"
+                data-i18n="about_ai_main_label"
+            >
+                MY APPROACH
+            </span>
+
+
+            <h3 data-i18n="about_ai_main_title">
+                AI expands the
+                developer's capabilities.
+            </h3>
+
+
+            <p data-i18n="about_ai_main_text">
+                Used thoughtfully, AI can reduce repetitive
+                work, accelerate experimentation, help
+                identify problems, explain unfamiliar code,
+                and make it easier to explore different
+                technical solutions.
+            </p>
+
+        </div>
+
+
+
+        <!-- BENEFITS -->
+
+        <div class="about-ai-benefits">
+
+
+            <article class="about-ai-benefit">
+
+                <span class="about-ai-benefit-number">
+                    01
+                </span>
+
+
+                <div>
+
+                    <h3 data-i18n="ai_benefit_1_title">
+                        Faster Development
+                    </h3>
+
+
+                    <p data-i18n="ai_benefit_1_desc">
+                        AI can accelerate repetitive coding
+                        tasks and help turn ideas into working
+                        prototypes faster.
+                    </p>
+
+                </div>
+
+            </article>
+
+
+
+            <article class="about-ai-benefit">
+
+                <span class="about-ai-benefit-number">
+                    02
+                </span>
+
+
+                <div>
+
+                    <h3 data-i18n="ai_benefit_2_title">
+                        Better Exploration
+                    </h3>
+
+
+                    <p data-i18n="ai_benefit_2_desc">
+                        Different approaches, architectures,
+                        and solutions can be explored quickly
+                        before choosing the right direction.
+                    </p>
+
+                </div>
+
+            </article>
+
+
+
+            <article class="about-ai-benefit">
+
+                <span class="about-ai-benefit-number">
+                    03
+                </span>
+
+
+                <div>
+
+                    <h3 data-i18n="ai_benefit_3_title">
+                        Learning & Understanding
+                    </h3>
+
+
+                    <p data-i18n="ai_benefit_3_desc">
+                        AI can explain unfamiliar code,
+                        technologies, and concepts while
+                        supporting continuous learning.
+                    </p>
+
+                </div>
+
+            </article>
+
+
+
+            <article class="about-ai-benefit">
+
+                <span class="about-ai-benefit-number">
+                    04
+                </span>
+
+
+                <div>
+
+                    <h3 data-i18n="ai_benefit_4_title">
+                        Code Improvement
+                    </h3>
+
+
+                    <p data-i18n="ai_benefit_4_desc">
+                        Existing code can be reviewed,
+                        refactored, optimized, and improved
+                        with an additional layer of analysis.
+                    </p>
+
+                </div>
+
+            </article>
+
+        </div>
+
+    </div>
+
+
+    <div class="about-ai-note">
+
+        <i
+            data-lucide="terminal"
+            aria-hidden="true"
+        ></i>
+
+
+        <span data-i18n="about_ai_note">
+            AI assists the process — the developer
+            remains responsible for the architecture,
+            decisions, verification, and final result.
+        </span>
+
+    </div>
+
+</section>
+```
+
+
+
+<!-- =====================================================
+     EXPERIENCE
+===================================================== -->
+
+<section
+    class="home-section about-experience"
+>
+
+    <div class="home-section-heading">
+
+        <span
+            class="section-kicker"
+            data-i18n="about_experience_kicker"
+        >
+            EXPERIENCE
+        </span>
+
+        <h2 data-i18n="about_experience_title">
+            Turning ideas into
+            working digital products.
+        </h2>
+
+        <p data-i18n="about_experience_desc">
+            Practical experience working with clients,
+            primarily internationally, on websites and
+            existing digital products.
+        </p>
+
+    </div>
+
+
+    <div class="about-experience-card">
+
+        <div class="about-experience-top">
+
+            <div class="about-experience-icon">
+
+                <i
+                    data-lucide="code-2"
+                    aria-hidden="true"
+                ></i>
+
+            </div>
+
+
+            <span class="about-experience-number">
+                01
+            </span>
+
+        </div>
+
+
+        <div class="about-experience-content">
+
+            <span
+                class="section-kicker"
+                data-i18n="experience_label"
+            >
+                FREELANCE / INDEPENDENT WORK
+            </span>
+
+
+            <h3 data-i18n="experience_title">
+                Web Development & Code Improvement
+            </h3>
+
+
+            <p data-i18n="experience_desc">
+                I work with clients, primarily from
+                international markets, to build and improve
+                websites and digital products.
+            </p>
+
+
+            <p data-i18n="experience_desc_2">
+                My work includes developing websites from
+                the ground up, improving existing codebases,
+                refining functionality and structure,
+                fixing issues, and helping clients turn
+                their ideas into functional digital experiences.
+            </p>
+
+        </div>
+
+
+        <div class="about-experience-skills">
+
+            <span>HTML</span>
+
+            <span>CSS</span>
+
+            <span>JavaScript</span>
+
+            <span>Web Development</span>
+
+            <span>Code Improvement</span>
+
+        </div>
+
+    </div>
+
+</section>
+```
+
+
+<!-- =====================================================
+     FINAL CTA
+===================================================== -->
+
+<section class="home-final-cta about-final-cta">
+
+    <div>
+
+        <span
+            class="section-kicker"
+            data-i18n="about_cta_kicker"
+        >
+            KOKOS-LAB
+        </span>
+
+
+        <h2 data-i18n="about_cta_title">
+            Let's build
+            something meaningful.
+        </h2>
+
+
+        <p data-i18n="about_cta_desc">
+            Explore the projects or get in touch
+            to start something new.
+        </p>
+
+    </div>
+
+
+    <a
+        href="index.html"
+        class="secondary-btn"
+        data-i18n="about_cta_button"
+    >
+        Back to KOKOS-LAB
+    </a>
+
+</section>
+
+
+</main>
+
+
+
+<!-- =====================================================
+     FOOTER
+===================================================== -->
+
+<footer class="glass-footer">
+
+    <div class="footer-inner">
+
+        <p data-i18n="footer_rights">
+            © 2026 KOKOS-LAB.
+            All rights reserved.
+        </p>
+
+
+        <div class="footer-nav">
+
+            <a
+                href="index.html"
+                data-i18n="nav_home"
+            >
+                Home
+            </a>
+
+
+            <a
+                href="about.html"
+                data-i18n="nav_about"
+            >
+                About
+            </a>
+
+
+            <a
+                href="web.html"
+                data-i18n="nav_services"
+            >
+                Web Development
+            </a>
+
+
+            <a
+                href="cont.html"
+                data-i18n="nav_contact"
+            >
+                Contact
+            </a>
+
+        </div>
+
+    </div>
+
+</footer>
+
+
+</body>
+</html>
+```

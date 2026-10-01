@@ -2632,49 +2632,174 @@ let activeModalPlan =
 
 
 
-// ==========================================
-// Translation Object
-// ==========================================
-
 const translations = {
 
-    // ==========================================
+    // =====================================================
     // ENGLISH
-    // ==========================================
+    // =====================================================
 
     en: {
 
-        nav_home:
-            "Home",
+        // Navigation
+        nav_home: "Home",
+        nav_services: "Services",
+        nav_work: "Approach",
+        nav_contact: "Contact",
 
-        nav_contact:
-            "Contact",
+        // General
+        btn_back: "Back",
+        btn_get_consultation: "GET A FREE CONSULTATION",
+        btn_view_details: "View Details",
+        btn_lets_talk: "Let's Talk",
 
-        nav_services:
-            "Services",
+        // =====================================================
+        // HOME
+        // =====================================================
 
-        btn_back:
-            "Back",
+        home_eyebrow:
+            "KOKOS-LAB · DIGITAL STUDIO",
 
-        btn_get_consultation:
-            "GET A FREE CONSULTATION",
+        home_hero_title:
+            "Digital experiences built to stand out.",
 
+        home_hero_desc:
+            "I build modern websites and create 3D product visuals that turn ideas into polished digital experiences.",
 
-        // ==========================================
+        home_hero_primary:
+            "Explore Services",
+
+        home_hero_secondary:
+            "Start a Conversation",
+
+        home_person_name:
+            "Tornike Dolidze",
+
+        home_person_role:
+            "Developer · 3D Artist",
+
+        home_trust_note:
+            "Built with detail, performance, and purpose.",
+
+        home_services_kicker:
+            "WHAT I DO",
+
+        home_services_title:
+            "Two disciplines. One creative studio.",
+
+        home_services_desc:
+            "From the interface your customers use to the visuals they remember.",
+
+        service_web_title:
+            "Web Development",
+
+        home_web_long_desc:
+            "Modern, responsive, high-performance websites built around your goals, your content, and your audience.",
+
+        home_view_service:
+            "View service",
+
+        home_3d_badge:
+            "3D SERVICE",
+
+        service_3d_title:
+            "3D Visualization",
+
+        home_3d_long_desc:
+            "Realistic product models and visualizations designed to present products before they ever reach the camera.",
+
+        home_talk_about_3d:
+            "Talk about your project",
+
+        home_position_kicker:
+            "WHY KOKOS-LAB",
+
+        home_position_title:
+            "Not just a finished screen. A finished experience.",
+
+        home_position_desc:
+            "Every project is approached as a complete experience — from the first idea and structure to the final responsive result.",
+
+        home_point_one_title:
+            "Purpose first",
+
+        home_point_one_desc:
+            "The structure starts with what the project needs to achieve.",
+
+        home_point_two_title:
+            "Clean execution",
+
+        home_point_two_desc:
+            "Responsive layouts, clean code, and attention to the small details.",
+
+        home_point_three_title:
+            "Direct collaboration",
+
+        home_point_three_desc:
+            "You work directly with the person building your project.",
+
+        home_process_kicker:
+            "THE APPROACH",
+
+        home_process_title:
+            "From idea to final result.",
+
+        home_process_one_title:
+            "Discovery",
+
+        home_process_one_desc:
+            "We discuss your business, goals, audience, references, and project requirements.",
+
+        home_process_two_title:
+            "Structure",
+
+        home_process_two_desc:
+            "We define the pages, content hierarchy, user flow, and visual direction.",
+
+        home_process_three_title:
+            "Development",
+
+        home_process_three_desc:
+            "The approved direction becomes a polished, responsive, and functional website.",
+
+        home_process_four_title:
+            "Launch",
+
+        home_process_four_desc:
+            "Final testing, optimization, deployment, and handover.",
+
+        home_cta_kicker:
+            "READY TO START?",
+
+        home_cta_title:
+            "Let's build something worth remembering.",
+
+        home_cta_desc:
+            "Tell me about your project and let's find the right direction.",
+
+        home_cta_button:
+            "Start a Conversation",
+
+        // =====================================================
+        // WEB DEVELOPMENT
+        // =====================================================
+
+        web_section_kicker:
+            "WEB DEVELOPMENT",
+
+        web_hero_title:
+            "Modern Websites Built to Grow Your Business",
+
+        web_hero_desc:
+            "I create fast, responsive, and modern websites that combine clean design with reliable performance. Every project is crafted to help your business stand out online.",
+
         // Pricing
-        // ==========================================
-
         pricing_title:
             "Choose the Right Package",
 
         pricing_subtitle:
             "Every website is built with performance, responsiveness, and clean design in mind.",
 
-
-        // ==========================================
         // Plans
-        // ==========================================
-
         plan_starter_title:
             "🚀 Starter",
 
@@ -2705,11 +2830,7 @@ const translations = {
         plan_ecommerce_sub:
             "Complete Online Store",
 
-
-        // ==========================================
-        // General Pricing Labels
-        // ==========================================
-
+        // Pricing labels
         lbl_included:
             "Included",
 
@@ -2725,33 +2846,14 @@ const translations = {
         val_project_scope:
             "Project Scope",
 
-
-        // ==========================================
-        // Buttons
-        // ==========================================
-
-        btn_view_details:
-            "View Details",
-
-        btn_lets_talk:
-            "Let's Talk",
-
-
-        // ==========================================
-        // Badge
-        // ==========================================
-
+        // Buttons / badges
         badge_popular:
             "Most Popular",
 
         badge_most_popular:
             "Most Popular",
 
-
-        // ==========================================
         // Starter
-        // ==========================================
-
         feat_responsive:
             "Responsive Design",
 
@@ -2773,11 +2875,7 @@ const translations = {
         target_small_biz:
             "Small Businesses",
 
-
-        // ==========================================
         // Business
-        // ==========================================
-
         feat_everything_starter:
             "Everything in Starter",
 
@@ -2791,7 +2889,7 @@ const translations = {
             "Google Maps",
 
         feat_seo:
-            "SEO Optimization",
+            "SEO",
 
         target_restaurants:
             "Restaurants",
@@ -2802,16 +2900,12 @@ const translations = {
         target_agencies:
             "Agencies",
 
-
-        // ==========================================
         // Premium
-        // ==========================================
-
         feat_everything_business:
             "Everything in Business",
 
         feat_cms:
-            "CMS Integration",
+            "Content Management System",
 
         feat_adv_seo:
             "Advanced SEO",
@@ -2823,7 +2917,7 @@ const translations = {
             "Documentation",
 
         feat_analytics:
-            "Analytics",
+            "Analytics Integration",
 
         target_large_companies:
             "Large Companies",
@@ -2831,13 +2925,9 @@ const translations = {
         target_ecommerce:
             "E-commerce",
 
-
-        // ==========================================
         // Custom
-        // ==========================================
-
         feat_figma:
-            "Figma Design",
+            "Figma to Website",
 
         feat_custom_features:
             "Custom Features",
@@ -2860,11 +2950,7 @@ const translations = {
         target_your_designs:
             "Your Designs",
 
-
-        // ==========================================
         // E-commerce
-        // ==========================================
-
         feat_ecommerce_catalog:
             "Product Catalog",
 
@@ -2883,6 +2969,9 @@ const translations = {
         feat_ecommerce_mobile:
             "Mobile-Optimized Store",
 
+        feat_ecommerce_admin:
+            "Admin Panel",
+
         target_online_shops:
             "Online Shops",
 
@@ -2892,49 +2981,374 @@ const translations = {
         target_retail_businesses:
             "Retail Businesses",
 
-         feat_ecommerce_admin: 
-            "Admin Panel",
+        // Why KOKOS-LAB
+        why_kicker:
+            "WHY KOKOS-LAB",
 
+        why_title:
+            "A website should do more than simply exist.",
+
+        why_desc:
+            "It should communicate your value, guide your visitors, and make your business look as professional online as it is in real life.",
+
+        why_performance_title:
+            "Performance",
+
+        why_performance_desc:
+            "Fast-loading pages, optimized assets, responsive layouts, and clean front-end implementation.",
+
+        why_responsive_title:
+            "Responsive by Design",
+
+        why_responsive_desc:
+            "Your website is designed to work properly across phones, tablets, laptops, and desktop screens.",
+
+        // Web process
+        process_kicker:
+            "THE PROCESS",
+
+        process_title:
+            "From idea to launch.",
+
+        process_discovery_title:
+            "Discovery",
+
+        process_discovery_desc:
+            "We discuss your business, goals, audience, references, and project requirements.",
+
+        process_structure_title:
+            "Structure",
+
+        process_structure_desc:
+            "We define the pages, content hierarchy, user flow, and visual direction.",
+
+        process_development_title:
+            "Development",
+
+        process_development_desc:
+            "The approved direction becomes a polished, responsive, and functional website.",
+
+        process_launch_title:
+            "Launch",
+
+        process_launch_desc:
+            "Final testing, optimization, deployment, and handover.",
+
+        // Web CTA
+        cta_kicker:
+            "READY TO START?",
+
+        cta_title:
+            "Let's build your website.",
+
+        cta_desc:
+            "Tell me about your project and I'll help you choose the right approach.",
+
+        // =====================================================
+        // CONSULTATION
+        // =====================================================
+
+        consult_back:
+            "Back to Web Development",
+
+        consult_kicker:
+            "FREE CONSULTATION",
+
+        consult_title:
+            "Free Consultation",
+
+        consult_desc:
+            "Book a free, no-obligation call to discuss your project. Read the FAQs below to prepare, then reach out!",
+
+        consult_brand:
+            "KOKOS-LAB",
+
+        faq_kicker:
+            "BEFORE WE START",
+
+        faq_main_title:
+            "Frequently Asked Questions",
+
+        faq_q1:
+            "How long does the consultation take?",
+
+        faq_a1:
+            "Usually between 15 to 30 minutes. We'll discuss your goals, target audience, and preferred design style.",
+
+        faq_q2:
+            "What should I prepare beforehand?",
+
+        faq_a2:
+            "Just a basic idea of what you want your website to achieve. If you have links to websites you like, that's a big plus!",
+
+        faq_q3:
+            "Is it really free?",
+
+        faq_a3:
+            "Yes! The initial consultation is 100% free to see if we are a good fit for your project.",
+
+        consult_contact_kicker:
+            "LET'S TALK",
+
+        consult_contact_ready:
+            "Ready to start? Contact me:",
+
+        consult_email_label:
+            "EMAIL",
+
+        consult_phone_label:
+            "PHONE",
+
+        consult_messaging_label:
+            "MESSAGING",
+
+        consult_messaging_value:
+            "WhatsApp / Telegram",
+
+        // =====================================================
+        // CONTACT
+        // =====================================================
+
+        cont_back_home:
+            "Back to Home",
+
+        cont_get_in_touch:
+            "GET IN TOUCH",
+
+        cont_talk_title:
+            "Let's talk about your project",
+
+        cont_talk_desc:
+            "Whether you have a specific project in mind or just want to explore options, I'm here to help you build something great.",
+
+        cont_create_title:
+            "Let's create something.",
+
+        cont_email_label:
+            "EMAIL",
+
+        cont_phone_label:
+            "PHONE",
+
+        cont_follow_connect:
+            "Follow & Connect",
+
+        cont_send_message:
+            "Send a Message",
+
+        cont_form_desc:
+            "Tell me a little about your project and I'll get back to you.",
+
+        cont_lbl_name:
+            "Your Name",
+
+        cont_lbl_email:
+            "Email Address",
+
+        cont_lbl_message:
+            "How can I help you?",
+
+        cont_btn_send:
+            "Send via Email",
+
+        cont_form_note:
+            "Your message will open directly in your email client.",
+
+        // =====================================================
+        // FOOTER
+        // =====================================================
+
+        footer_rights:
+            "© 2026 KOKOS-LAB. All rights reserved.",
+
+        footer_consultation:
+            "Consultation",
+
+        footer_contact:
+            "Contact"
     },
 
 
-    // ==========================================
+    // =====================================================
     // GEORGIAN
-    // ==========================================
+    // =====================================================
 
     ka: {
 
+        // Navigation
         nav_home:
             "მთავარი",
-
-        nav_contact:
-            "კონტაქტი",
 
         nav_services:
             "სერვისები",
 
+        nav_work:
+            "მიდგომა",
+
+        nav_contact:
+            "კონტაქტი",
+
+        // General
         btn_back:
             "უკან",
 
         btn_get_consultation:
             "უფასო კონსულტაცია",
 
+        btn_view_details:
+            "დეტალურად",
 
-        // ==========================================
+        btn_lets_talk:
+            "დავიწყოთ საუბარი",
+
+        // =====================================================
+        // HOME
+        // =====================================================
+
+        home_eyebrow:
+            "KOKOS-LAB · ციფრული სტუდია",
+
+        home_hero_title:
+            "ციფრული გამოცდილებები, რომლებიც გამორჩეულად იქმნება.",
+
+        home_hero_desc:
+            "ვქმნი თანამედროვე ვებსაიტებსა და 3D პროდუქტის ვიზუალებს, რომლებიც იდეებს დახვეწილ ციფრულ გამოცდილებად გარდაქმნის.",
+
+        home_hero_primary:
+            "სერვისების ნახვა",
+
+        home_hero_secondary:
+            "დავიწყოთ საუბარი",
+
+        home_person_name:
+            "თორნიკე დოლიძე",
+
+        home_person_role:
+            "დეველოპერი · 3D არტისტი",
+
+        home_trust_note:
+            "შექმნილი დეტალების, წარმადობისა და მიზნის გათვალისწინებით.",
+
+        home_services_kicker:
+            "რას ვაკეთებ",
+
+        home_services_title:
+            "ორი მიმართულება. ერთი კრეატიული სტუდია.",
+
+        home_services_desc:
+            "ინტერფეისიდან, რომელსაც თქვენი მომხმარებლები იყენებენ, ვიზუალებამდე, რომლებიც მათ ახსოვთ.",
+
+        service_web_title:
+            "ვებ დეველოპმენტი",
+
+        home_web_long_desc:
+            "თანამედროვე, ადაპტირებადი და მაღალი წარმადობის ვებსაიტები, შექმნილი თქვენი მიზნების, კონტენტისა და აუდიტორიის გათვალისწინებით.",
+
+        home_view_service:
+            "სერვისის ნახვა",
+
+        home_3d_badge:
+            "3D სერვისი",
+
+        service_3d_title:
+            "3D ვიზუალიზაცია",
+
+        home_3d_long_desc:
+            "რეალისტური პროდუქტის მოდელები და ვიზუალიზაციები, რომლებიც საშუალებას გაძლევთ პროდუქტი კამერის წინ გამოჩენამდე წარმოადგინოთ.",
+
+        home_talk_about_3d:
+            "ისაუბრეთ თქვენს პროექტზე",
+
+        home_position_kicker:
+            "რატომ KOKOS-LAB",
+
+        home_position_title:
+            "არა მხოლოდ დასრულებული ეკრანი. დასრულებული გამოცდილება.",
+
+        home_position_desc:
+            "თითოეული პროექტი განიხილება როგორც სრული გამოცდილება — პირველი იდეიდან და სტრუქტურიდან საბოლოო ადაპტირებად შედეგამდე.",
+
+        home_point_one_title:
+            "მიზანი პირველ ადგილზე",
+
+        home_point_one_desc:
+            "სტრუქტურა იწყება იმით, თუ რისი მიღწევა უნდა შეძლოს პროექტმა.",
+
+        home_point_two_title:
+            "სუფთა შესრულება",
+
+        home_point_two_desc:
+            "ადაპტირებადი განლაგება, სუფთა კოდი და ყურადღება უმცირეს დეტალებზეც კი.",
+
+        home_point_three_title:
+            "პირდაპირი თანამშრომლობა",
+
+        home_point_three_desc:
+            "თქვენ პირდაპირ იმ ადამიანთან მუშაობთ, რომელიც თქვენს პროექტს ქმნის.",
+
+        home_process_kicker:
+            "მიდგომა",
+
+        home_process_title:
+            "იდეიდან საბოლოო შედეგამდე.",
+
+        home_process_one_title:
+            "კვლევა",
+
+        home_process_one_desc:
+            "ვიხილავთ თქვენს ბიზნესს, მიზნებს, აუდიტორიას, მაგალითებსა და პროექტის მოთხოვნებს.",
+
+        home_process_two_title:
+            "სტრუქტურა",
+
+        home_process_two_desc:
+            "განვსაზღვრავთ გვერდებს, კონტენტის იერარქიას, მომხმარებლის გზასა და ვიზუალურ მიმართულებას.",
+
+        home_process_three_title:
+            "დეველოპმენტი",
+
+        home_process_three_desc:
+            "დამტკიცებული მიმართულება გარდაიქმნება დახვეწილ, ადაპტირებად და ფუნქციურ ვებსაიტად.",
+
+        home_process_four_title:
+            "გაშვება",
+
+        home_process_four_desc:
+            "საბოლოო ტესტირება, ოპტიმიზაცია, განთავსება და პროექტის ჩაბარება.",
+
+        home_cta_kicker:
+            "მზად ხართ დასაწყებად?",
+
+        home_cta_title:
+            "შევქმნათ რაღაც, რაც დამახსოვრებას იმსახურებს.",
+
+        home_cta_desc:
+            "მომიყევით თქვენი პროექტის შესახებ და ერთად ვიპოვოთ სწორი მიმართულება.",
+
+        home_cta_button:
+            "დავიწყოთ საუბარი",
+
+        // =====================================================
+        // WEB DEVELOPMENT
+        // =====================================================
+
+        web_section_kicker:
+            "ვებ დეველოპმენტი",
+
+        web_hero_title:
+            "თანამედროვე ვებსაიტები თქვენი ბიზნესის ზრდისთვის",
+
+        web_hero_desc:
+            "ვქმნი სწრაფ, ადაპტირებად და თანამედროვე ვებსაიტებს, რომლებიც სუფთა დიზაინსა და საიმედო წარმადობას აერთიანებს. თითოეული პროექტი შექმნილია იმისთვის, რომ თქვენი ბიზნესი ონლაინ სივრცეში გამორჩეული გახდეს.",
+
         // Pricing
-        // ==========================================
-
         pricing_title:
             "აირჩიეთ თქვენთვის შესაფერისი პაკეტი",
 
         pricing_subtitle:
             "ყველა ვებსაიტი იქმნება წარმადობის, ადაპტირებადობისა და სუფთა დიზაინის გათვალისწინებით.",
 
-
-        // ==========================================
         // Plans
-        // ==========================================
-
         plan_starter_title:
             "🚀 Starter",
 
@@ -2965,11 +3379,7 @@ const translations = {
         plan_ecommerce_sub:
             "სრული ონლაინ მაღაზია",
 
-
-        // ==========================================
-        // General Pricing Labels
-        // ==========================================
-
+        // Pricing labels
         lbl_included:
             "პაკეტში შედის",
 
@@ -2985,33 +3395,13 @@ const translations = {
         val_project_scope:
             "პროექტის მოცულობაზე",
 
-
-        // ==========================================
-        // Buttons
-        // ==========================================
-
-        btn_view_details:
-            "დეტალურად",
-
-        btn_lets_talk:
-            "დავიწყოთ",
-
-
-        // ==========================================
-        // Badge
-        // ==========================================
-
         badge_popular:
             "ყველაზე პოპულარული",
 
         badge_most_popular:
             "ყველაზე მოთხოვნადი",
 
-
-        // ==========================================
         // Starter
-        // ==========================================
-
         feat_responsive:
             "ადაპტირებადი დიზაინი",
 
@@ -3028,27 +3418,23 @@ const translations = {
             "ფრილანსერებისთვის",
 
         target_personal:
-            "პირადი საიტებისთვის",
+            "პირადი ვებსაიტებისთვის",
 
         target_small_biz:
-            "მცირე ბიზნესისთვის",
+            "მცირე ბიზნესებისთვის",
 
-
-        // ==========================================
         // Business
-        // ==========================================
-
         feat_everything_starter:
-            "ყველაფერი Starter-იდან",
+            "Starter-ის ყველა ფუნქცია",
 
         feat_gallery:
-            "ფოტო/ვიდეო გალერეა",
+            "გალერეა",
 
         feat_themes:
-            "მუქი და განათებული თემები",
+            "მუქი და ნათელი თემები",
 
         feat_maps:
-            "Google Maps ინტეგრაცია",
+            "Google Maps",
 
         feat_seo:
             "SEO ოპტიმიზაცია",
@@ -3062,54 +3448,46 @@ const translations = {
         target_agencies:
             "სააგენტოებისთვის",
 
-
-        // ==========================================
         // Premium
-        // ==========================================
-
         feat_everything_business:
-            "ყველაფერი Business-იდან",
+            "Business-ის ყველა ფუნქცია",
 
         feat_cms:
-            "CMS ინტეგრაცია (მართვის სისტემა)",
+            "კონტენტის მართვის სისტემა",
 
         feat_adv_seo:
             "გაფართოებული SEO",
 
         feat_perf_opt:
-            "სრული წარმადობის ოპტიმიზაცია",
+            "წარმადობის ოპტიმიზაცია",
 
         feat_docs:
-            "მართვის დოკუმენტაცია",
+            "დოკუმენტაცია",
 
         feat_analytics:
-            "ანალიტიკა და პრიორიტეტული მხარდაჭერა",
+            "ანალიტიკის ინტეგრაცია",
 
         target_large_companies:
             "დიდი კომპანიებისთვის",
 
         target_ecommerce:
-            "ონლაინ მაღაზიებისთვის",
+            "E-commerce პროექტებისთვის",
 
-
-        // ==========================================
         // Custom
-        // ==========================================
-
         feat_figma:
-            "Figma დიზაინის აწყობა",
+            "Figma-დან ვებსაიტამდე",
 
         feat_custom_features:
-            "ინდივიდუალური ფუნქციონალი",
+            "მორგებული ფუნქციები",
 
         feat_custom_uiux:
-            "პერსონალიზებული UI/UX",
+            "მორგებული UI/UX",
 
         feat_complex_int:
-            "რთული ინტეგრაციები",
+            "კომპლექსური ინტეგრაციები",
 
         feat_everything_premium:
-            "ყველაფერი Premium-იდან",
+            "Premium-ის ყველა ფუნქცია",
 
         target_startups:
             "სტარტაპებისთვის",
@@ -3118,13 +3496,9 @@ const translations = {
             "უნიკალური პროექტებისთვის",
 
         target_your_designs:
-            "ნებისმიერი დიზაინის მიხედვით",
+            "თქვენი დიზაინის მიხედვით",
 
-
-        // ==========================================
         // E-commerce
-        // ==========================================
-
         feat_ecommerce_catalog:
             "პროდუქტების კატალოგი",
 
@@ -3132,7 +3506,7 @@ const translations = {
             "სავაჭრო კალათა",
 
         feat_ecommerce_checkout:
-            "შეკვეთის გაფორმება",
+            "შეკვეთის გაფორმების სისტემა",
 
         feat_ecommerce_payment:
             "გადახდის ინტეგრაცია",
@@ -3143,6 +3517,9 @@ const translations = {
         feat_ecommerce_mobile:
             "მობილურზე ოპტიმიზებული მაღაზია",
 
+        feat_ecommerce_admin:
+            "ადმინისტრაციული პანელი",
+
         target_online_shops:
             "ონლაინ მაღაზიებისთვის",
 
@@ -3152,11 +3529,192 @@ const translations = {
         target_retail_businesses:
             "საცალო ბიზნესებისთვის",
 
-            feat_ecommerce_admin: 
-            "ადმინ პანელი",
+        // Why KOKOS-LAB
+        why_kicker:
+            "რატომ KOKOS-LAB",
 
+        why_title:
+            "ვებსაიტი უბრალოდ არსებობაზე მეტს უნდა აკეთებდეს.",
+
+        why_desc:
+            "მან უნდა გადმოსცეს თქვენი ღირებულება, სწორად წარმართოს ვიზიტორები და თქვენი ბიზნესი ონლაინ ისეთივე პროფესიონალურად წარმოაჩინოს, როგორიც რეალურად არის.",
+
+        why_performance_title:
+            "წარმადობა",
+
+        why_performance_desc:
+            "სწრაფად ჩატვირთვადი გვერდები, ოპტიმიზებული რესურსები, ადაპტირებადი განლაგება და სუფთა front-end იმპლემენტაცია.",
+
+        why_responsive_title:
+            "ადაპტირებადი დიზაინი",
+
+        why_responsive_desc:
+            "ვებსაიტი შექმნილია იმისთვის, რომ სწორად იმუშაოს ტელეფონებზე, ტაბლეტებზე, ლეპტოპებსა და დესკტოპებზე.",
+
+        // Web process
+        process_kicker:
+            "პროცესი",
+
+        process_title:
+            "იდეიდან გაშვებამდე.",
+
+        process_discovery_title:
+            "კვლევა",
+
+        process_discovery_desc:
+            "ვიხილავთ თქვენს ბიზნესს, მიზნებს, აუდიტორიას, მაგალითებსა და პროექტის მოთხოვნებს.",
+
+        process_structure_title:
+            "სტრუქტურა",
+
+        process_structure_desc:
+            "განვსაზღვრავთ გვერდებს, კონტენტის იერარქიას, მომხმარებლის გზასა და ვიზუალურ მიმართულებას.",
+
+        process_development_title:
+            "დეველოპმენტი",
+
+        process_development_desc:
+            "დამტკიცებული მიმართულება გარდაიქმნება დახვეწილ, ადაპტირებად და ფუნქციურ ვებსაიტად.",
+
+        process_launch_title:
+            "გაშვება",
+
+        process_launch_desc:
+            "საბოლოო ტესტირება, ოპტიმიზაცია, განთავსება და პროექტის ჩაბარება.",
+
+        // Web CTA
+        cta_kicker:
+            "მზად ხართ დასაწყებად?",
+
+        cta_title:
+            "შევქმნათ თქვენი ვებსაიტი.",
+
+        cta_desc:
+            "მომიყევით თქვენი პროექტის შესახებ და დაგეხმარებით სწორი მიდგომის არჩევაში.",
+
+        // =====================================================
+        // CONSULTATION
+        // =====================================================
+
+        consult_back:
+            "ვებ დეველოპმენტზე დაბრუნება",
+
+        consult_kicker:
+            "უფასო კონსულტაცია",
+
+        consult_title:
+            "უფასო კონსულტაცია",
+
+        consult_desc:
+            "დაჯავშნეთ უფასო, ვალდებულების გარეშე კონსულტაცია თქვენი პროექტის განსახილველად. მომზადებისთვის გაეცანით ხშირად დასმულ კითხვებს და შემდეგ დამიკავშირდით.",
+
+        consult_brand:
+            "KOKOS-LAB",
+
+        faq_kicker:
+            "დაწყებამდე",
+
+        faq_main_title:
+            "ხშირად დასმული კითხვები",
+
+        faq_q1:
+            "რამდენ ხანს გრძელდება კონსულტაცია?",
+
+        faq_a1:
+            "ჩვეულებრივ 15-დან 30 წუთამდე. განვიხილავთ თქვენს მიზნებს, სამიზნე აუდიტორიასა და სასურველ დიზაინის სტილს.",
+
+        faq_q2:
+            "რა უნდა მოვამზადო წინასწარ?",
+
+        faq_a2:
+            "მხოლოდ ძირითადი წარმოდგენა იმაზე, თუ რისი მიღწევა გსურთ თქვენი ვებსაიტით. თუ გაქვთ თქვენთვის სასურველი ვებსაიტების ბმულები, ეს დიდი პლუსია.",
+
+        faq_q3:
+            "ნამდვილად უფასოა?",
+
+        faq_a3:
+            "დიახ! საწყისი კონსულტაცია 100%-ით უფასოა, რათა გავარკვიოთ, რამდენად შევეფერებით ერთმანეთს თქვენი პროექტისთვის.",
+
+        consult_contact_kicker:
+            "დავიწყოთ საუბარი",
+
+        consult_contact_ready:
+            "მზად ხართ დასაწყებად? დამიკავშირდით:",
+
+        consult_email_label:
+            "ელფოსტა",
+
+        consult_phone_label:
+            "ტელეფონი",
+
+        consult_messaging_label:
+            "მესენჯერი",
+
+        consult_messaging_value:
+            "WhatsApp / Telegram",
+
+        // =====================================================
+        // CONTACT
+        // =====================================================
+
+        cont_back_home:
+            "მთავარზე დაბრუნება",
+
+        cont_get_in_touch:
+            "დაგვიკავშირდით",
+
+        cont_talk_title:
+            "მოდი, ვისაუბროთ თქვენს პროექტზე",
+
+        cont_talk_desc:
+            "გაქვთ კონკრეტული პროექტის იდეა ან უბრალოდ გსურთ შესაძლებლობების განხილვა? დაგეხმარებით რაიმე მნიშვნელოვანის შექმნაში.",
+
+        cont_create_title:
+            "მოდი, შევქმნათ რაღაც.",
+
+        cont_email_label:
+            "ელფოსტა",
+
+        cont_phone_label:
+            "ტელეფონი",
+
+        cont_follow_connect:
+            "გამომყევით და დამიკავშირდით",
+
+        cont_send_message:
+            "შეტყობინების გაგზავნა",
+
+        cont_form_desc:
+            "მომიყევით ცოტა რამ თქვენი პროექტის შესახებ და დაგიკავშირდებით.",
+
+        cont_lbl_name:
+            "თქვენი სახელი",
+
+        cont_lbl_email:
+            "ელფოსტის მისამართი",
+
+        cont_lbl_message:
+            "როგორ შემიძლია დაგეხმაროთ?",
+
+        cont_btn_send:
+            "გაგზავნა ელფოსტით",
+
+        cont_form_note:
+            "თქვენი შეტყობინება პირდაპირ თქვენს ელფოსტის პროგრამაში გაიხსნება.",
+
+        // =====================================================
+        // FOOTER
+        // =====================================================
+
+        footer_rights:
+            "© 2026 KOKOS-LAB. ყველა უფლება დაცულია.",
+
+        footer_consultation:
+            "კონსულტაცია",
+
+        footer_contact:
+            "კონტაქტი"
     }
-
 };
 
 
