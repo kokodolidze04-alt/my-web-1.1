@@ -2334,7 +2334,7 @@ const translations = {
             "KOKOS-LAB · ABOUT",
 
         about_hero_title:
-            "Building across<br><span>disciplines.</span>",
+            "At the intersection of <span>various fields .</span>",
 
         about_hero_desc:
             "I explore the intersection of artificial intelligence, software, 3D graphics, neuroscience, and creative technology.",
@@ -3139,7 +3139,7 @@ const translations = {
             "KOKOS-LAB · ჩემ შესახებ",
 
         about_hero_title:
-            "ვქმნი სხვადასხვა<br><span>დისციპლინის გადაკვეთაზე.</span>",
+            "სხვადასხვა<br><span>სფეროს გადაკვეთაზე.</span>",
 
         about_hero_desc:
             "ვიკვლევ ხელოვნური ინტელექტის, პროგრამული უზრუნველყოფის, 3D გრაფიკის, ნეირომეცნიერებისა და კრეატიული ტექნოლოგიების გადაკვეთას.",
