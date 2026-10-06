@@ -4750,6 +4750,381 @@ p {
 }
 
 
+
+/* =========================================================
+   COURSES PAGE SPECIFIC STYLES
+   Hero Intro, Bento Grid, Paragraph Layouts & Final Project
+========================================================= */
+
+/* ---------------------------------------------------------
+   1. HERO INTRO SECTION
+--------------------------------------------------------- */
+.course-hero-header {
+    max-width: 880px;
+    margin-top: 35px;
+    margin-bottom: 50px;
+}
+
+.course-hero-header h1 {
+    font-size: clamp(36px, 5.5vw, 62px);
+    line-height: 1.08;
+    letter-spacing: -0.04em;
+    margin-bottom: 22px;
+    font-weight: 600;
+}
+
+.course-hero-header h1 span {
+    color: var(--accent);
+    text-shadow: 0 0 35px rgba(0, 240, 255, 0.22);
+}
+
+.course-hero-desc {
+    font-size: 15px;
+    line-height: 1.85;
+    color: var(--text-soft);
+    letter-spacing: 0.01em;
+    max-width: 820px;
+}
+
+/* ---------------------------------------------------------
+   HOME SECTION HEADING (FIXED CENTERING)
+--------------------------------------------------------- */
+.home-section-heading {
+    width: 100% !important;
+    max-width: 800px;
+    margin-left: auto !important;
+    margin-right: auto !important;
+    display: flex !important;
+    flex-direction: column !important;
+    align-items: center !important;
+    justify-content: center !important;
+    text-align: center !important;
+}
+
+.home-section-heading h2,
+.home-section-heading p,
+.home-section-heading .section-kicker {
+    text-align: center !important;
+    margin-left: auto !important;
+    margin-right: auto !important;
+    width: 100%;
+}
+
+
+/* ---------------------------------------------------------
+   2. BENTO GRID (WHY BLENDER / PERSPECTIVE CARDS)
+--------------------------------------------------------- */
+.blender-info-grid {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 22px;
+    margin-bottom: 70px;
+}
+
+.blender-info-card {
+    position: relative;
+    padding: 34px 28px;
+    border-radius: var(--radius-md);
+    background: linear-gradient(
+        145deg,
+        rgba(255, 255, 255, 0.045),
+        rgba(255, 255, 255, 0.012)
+    );
+    border: 1px solid var(--border);
+    backdrop-filter: blur(16px);
+    -webkit-backdrop-filter: blur(16px);
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    transition: transform var(--transition), border-color var(--transition), background var(--transition);
+}
+
+.blender-info-card:hover {
+    transform: translateY(-5px);
+    border-color: rgba(0, 240, 255, 0.3);
+    background: linear-gradient(
+        145deg,
+        rgba(255, 255, 255, 0.065),
+        rgba(255, 255, 255, 0.018)
+    );
+}
+
+/* Highlighted Income Card */
+.highlight-income-card {
+    border-color: rgba(0, 240, 255, 0.25);
+    background: linear-gradient(
+        145deg,
+        rgba(0, 240, 255, 0.07),
+        rgba(255, 255, 255, 0.012)
+    );
+    box-shadow: 0 10px 40px rgba(0, 240, 255, 0.05);
+}
+
+.blender-card-icon {
+    width: 50px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid var(--border);
+    border-radius: 14px;
+    background: rgba(255, 255, 255, 0.035);
+    margin-bottom: 22px;
+    color: var(--accent);
+    flex-shrink: 0;
+}
+
+.blender-card-icon svg {
+    width: 23px;
+    height: 23px;
+}
+
+.blender-info-card h3 {
+    font-size: 20px;
+    line-height: 1.25;
+    margin-bottom: 14px;
+    color: #fff;
+    letter-spacing: -0.025em;
+    font-weight: 600;
+}
+
+.blender-info-card p {
+    font-size: 13px;
+    line-height: 1.8;
+    color: var(--text-soft);
+}
+
+
+/* ---------------------------------------------------------
+   3. COURSES PRICING GRID & TOPICS LIST
+--------------------------------------------------------- */
+.course-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    max-width: 1000px;
+    margin: 0 auto;
+    gap: 24px;
+}
+
+.course-card {
+    background: linear-gradient(
+        145deg,
+        rgba(255, 255, 255, 0.04),
+        rgba(255, 255, 255, 0.01)
+    );
+    border: 1px solid var(--border);
+    border-radius: var(--radius-lg);
+    padding: 32px 28px;
+}
+
+.course-topics-list {
+    list-style: none;
+    counter-reset: course-counter;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    margin-top: 12px;
+}
+
+.course-topics-list li {
+    counter-increment: course-counter;
+    position: relative;
+    padding-left: 28px;
+    color: var(--text-soft);
+    font-size: 13px;
+    line-height: 1.6;
+}
+
+.course-topics-list li::before {
+    content: counter(course-counter) ".";
+    position: absolute;
+    left: 0;
+    top: 0;
+    color: var(--accent);
+    font-weight: 700;
+    font-size: 13px;
+}
+
+.course-badge-note {
+    display: block;
+    margin-top: 6px;
+    color: var(--accent);
+    font-size: 11px;
+    font-weight: 500;
+    opacity: 0.85;
+}
+
+.course-btn {
+    text-decoration: none;
+    text-align: center;
+    margin-top: 15px;
+}
+
+.primary-course-btn {
+    background: var(--accent);
+    color: #001014;
+    border-color: var(--accent);
+    font-weight: 700;
+}
+
+.primary-course-btn:hover {
+    background: #72f7ff;
+    box-shadow: 0 0 28px rgba(0, 240, 255, 0.35);
+}
+
+
+/* ---------------------------------------------------------
+   4. FINAL PROJECT & CERTIFICATION SECTION
+--------------------------------------------------------- */
+.final-project-section {
+    max-width: 1000px;
+    margin: 80px auto 40px;
+    padding: 48px 40px;
+    border-radius: var(--radius-lg);
+    background: linear-gradient(
+        145deg,
+        rgba(0, 240, 255, 0.05),
+        rgba(255, 255, 255, 0.015)
+    );
+    border: 1px solid rgba(0, 240, 255, 0.2);
+    box-shadow: 0 15px 50px rgba(0, 240, 255, 0.04);
+}
+
+.final-project-badge {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    padding: 6px 14px;
+    border-radius: 100px;
+    background: rgba(0, 240, 255, 0.08);
+    border: 1px solid rgba(0, 240, 255, 0.25);
+    color: var(--accent);
+    font-size: 10px;
+    font-weight: 700;
+    letter-spacing: 0.12em;
+    margin-bottom: 20px;
+}
+
+.final-project-badge svg {
+    width: 14px;
+    height: 14px;
+}
+
+.final-project-header h2 {
+    font-size: clamp(26px, 4vw, 38px);
+    line-height: 1.15;
+    margin-bottom: 16px;
+    letter-spacing: -0.03em;
+}
+
+.final-project-header h2 span {
+    color: var(--accent);
+    text-shadow: 0 0 25px rgba(0, 240, 255, 0.2);
+}
+
+.final-project-header p {
+    font-size: 14px;
+    line-height: 1.8;
+    color: var(--text-soft);
+    max-width: 820px;
+    margin-bottom: 40px;
+}
+
+.final-project-grid {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 20px;
+    border-top: 1px solid var(--border);
+    padding-top: 35px;
+}
+
+.final-step-card {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+}
+
+.final-step-card .step-num {
+    position: absolute;
+    top: 0;
+    right: 0;
+    font-size: 12px;
+    font-weight: 700;
+    color: var(--accent);
+    opacity: 0.5;
+}
+
+.final-step-card .step-icon {
+    width: 42px;
+    height: 42px;
+    border-radius: 12px;
+    background: rgba(255, 255, 255, 0.035);
+    border: 1px solid var(--border);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--accent);
+    margin-bottom: 18px;
+}
+
+.final-step-card .step-icon svg {
+    width: 20px;
+    height: 20px;
+}
+
+.final-step-card h3 {
+    font-size: 17px;
+    margin-bottom: 10px;
+    color: #fff;
+    letter-spacing: -0.02em;
+}
+
+.final-step-card p {
+    font-size: 12px;
+    line-height: 1.7;
+    color: var(--text-soft);
+}
+
+
+/* ---------------------------------------------------------
+   5. RESPONSIVE DESIGN (TABLET & MOBILE)
+--------------------------------------------------------- */
+@media (max-width: 1024px) {
+    .blender-info-grid {
+        grid-template-columns: 1fr;
+        gap: 18px;
+    }
+
+    .blender-info-card {
+        padding: 28px 22px;
+    }
+}
+
+@media (max-width: 850px) {
+    .final-project-section {
+        padding: 32px 24px;
+    }
+
+    .final-project-grid {
+        grid-template-columns: 1fr;
+        gap: 30px;
+    }
+}
+
+@media (max-width: 768px) {
+    .course-hero-header h1 {
+        font-size: 34px;
+    }
+
+    .course-hero-desc {
+        font-size: 14px;
+        line-height: 1.75;
+    }
+
+    .course-grid {
+        grid-template-columns: 1fr;
+    }
+}
+
 /* =========================================================
    27. TABLET
 ========================================================= */

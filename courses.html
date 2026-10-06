@@ -1,0 +1,303 @@
+<!DOCTYPE html>
+<html lang="ka">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title data-i18n="courses_page_title">KOKOS-LAB | 3D Courses</title>
+    <meta name="description" content="3D Modeling and Sculpting courses by KOKOS-LAB. Learn Blender from scratch to professional level.">
+    <meta name="author" content="Tornike Dolidze">
+    <meta name="theme-color" content="#050505">
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Georgian:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+    <!-- Styles -->
+    <link rel="stylesheet" href="style.css">
+
+    <!-- Icons & Main JS -->
+    <script src="https://unpkg.com/lucide@latest" defer></script>
+    <script src="script.js" defer></script>
+</head>
+
+<body class="courses-page">
+
+    <canvas id="matrix-canvas" aria-hidden="true"></canvas>
+
+    <!-- =====================================================
+         NAVIGATION
+    ===================================================== -->
+    <header class="navbar">
+        <a href="index.html" class="logo" aria-label="KOKOS-LAB Home">
+            KOKOS-LAB
+        </a>
+
+        <nav class="nav-links" aria-label="Main Navigation">
+            <ul>
+                <li><a href="index.html" data-i18n="nav_home">Home</a></li>
+                <li><a href="web.html" data-i18n="nav_services">Services</a></li>
+                <li><a href="about.html" data-i18n="nav_about">About</a></li>
+                <li><a href="cont.html" data-i18n="nav_contact">Contact</a></li>
+                <li>
+                    <button id="lang-toggle" class="lang-btn" type="button">GE</button>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- =====================================================
+         MAIN CONTENT
+    ===================================================== -->
+    <main class="contact-page-main">
+        <div class="contact-container">
+
+            <!-- Back Button -->
+            <a href="index.html" class="back-btn">
+                <i data-lucide="arrow-left" aria-hidden="true"></i>
+                <span data-i18n="btn_back">Back</span>
+            </a>
+
+            <!-- HERO INTRO SECTION -->
+            <div class="contact-page-header course-hero-header">
+                <span class="section-kicker" data-i18n="course_kicker">EDUCATION & MENTORSHIP</span>
+                <h1 data-i18n="course_hero_title">
+                    დაეუფლე <span>3D სამყაროს</span> და გახდი გლობალური ინდუსტრიის ნაწილი
+                </h1>
+                <p class="course-hero-desc" data-i18n="course_hero_desc">
+                    3D გრაფიკა უკვე დიდი ხანია გასცდა უბრალო ჰობის ფარგლებს და თანამედროვე ციფრული ეკონომიკის ერთ-ერთ ყველაზე მოთხოვნად მიმართულებად იქცა. Blender-ი არის XXI საუკუნის ყველაზე სწრაფად მზარდი 3D ინსტრუმენტი, რომელიც გაძლევს სრულ თავისუფლებას — შექმნა ციფრული სამყაროები, პერსონაჟები, პროდუქციის ვიზუალიზაციები და თამაშის ასეტები. ჩვენი სასწავლო პროგრამა შექმნილია იმისათვის, რომ ნულიდან პრაქტიკულ შედეგამდე მიგიყვანოს, ჩამოგიყალიბოს სწორი ტექნიკური აზროვნება და მოგამზადოს რეალურ პროექტებზე მუშაობისთვის.
+                </p>
+            </div>
+
+            <!-- BENTO GRID INFO CARDS -->
+            <section class="blender-info-grid">
+
+                <!-- Card 1: What is Blender -->
+                <article class="glass-card-style blender-info-card">
+                    <div class="blender-card-icon">
+                        <i data-lucide="box" aria-hidden="true"></i>
+                    </div>
+                    <h3 data-i18n="blender_card1_title">რატომ სწორედ Blender?</h3>
+                    <p data-i18n="blender_card1_desc">
+                        Blender-ი დღესდღეობით ინდუსტრიის უდავო რევოლუციონერია. ის სრულიად უფასო, ღია კოდის მქონე ეკოსისტემაა, რომელსაც მსოფლიოს წამყვანი სტუდიები (მათ შორის Ubisoft, Epic Games და AWS) აქტიურად უჭერენ მხარს და იყენებენ. პროგრამა ერთ სივრცეში აერთიანებს პოლიგონურ მოდელირებას, ციფრულ სკულპტინგს, ტექსტურირებას, ანიმაციასა და რეალურ დროში რენდერინგს (EEVEE & Cycles). Blender-ის ცოდნა ნიშნავს იმას, რომ შენ არ ხარ შეზღუდული ფასიანი ლიცენზიებით და გაქვს წვდომა უსაზღვრო შემოქმედებით რესურსთან.
+                    </p>
+                </article>
+
+                <!-- Card 2: Industry & Perspectives -->
+                <article class="glass-card-style blender-info-card">
+                    <div class="blender-card-icon">
+                        <i data-lucide="gamepad-2" aria-hidden="true"></i>
+                    </div>
+                    <h3 data-i18n="blender_card2_title">უზარმაზარი გამოყენების სფერო</h3>
+                    <p data-i18n="blender_card2_desc">
+                        3D არტისტის პროფესია მხოლოდ თამაშების შექმნით არ შემოიფარგლება. დღეს 3D სპეციალისტები სასიცოცხლოდ მნიშვნელოვანნი არიან Game Development-ში, კინოინდუსტრიასა და VFX-ში, პროდუქტის სარეკლამო ვიზუალიზაციაში (Motion Design), არქიტექტურასა და ინტერიერის დიზაინში, 3D ბეჭდვასა და Metaverse / AR-VR ტექნოლოგიებში. ნებისმიერი ბრენდი, რომელსაც სურს პროდუქტი კამერით გადაღების გარეშე, იდეალურ ვიზუალურ ფორმაში წარმოაჩინოს, ეძებს 3D დიზაინერს.
+                    </p>
+                </article>
+
+                <!-- Card 3: Income & Freelancing -->
+                <article class="glass-card-style blender-info-card highlight-income-card">
+                    <div class="blender-card-icon">
+                        <i data-lucide="trending-up" aria-hidden="true"></i>
+                    </div>
+                    <h3 data-i18n="blender_card3_title">მაღალი ანაზღაურება & გლობალური ფრილანსი</h3>
+                    <p data-i18n="blender_card3_desc">
+                        3D გრაფიკა წარმოადგენს ერთ-ერთ ყველაზე მაღალანაზღაურებად სფეროს დისტანციურ ბაზარზე. რადგან ციფრულ პროდუქტებს საზღვრები არ აქვს, შენ არ ხარ შეზღუდული ლოკალური ბაზრით. კურსის განმავლობაში შექმნილი ხარისხიანი პორტფოლიოთი შეგიძლია პირდაპირ გამოხვიდე საერთაშორისო პლატფორმებზე (Upwork, Fiverr, ArtStation, CGITrader) და იმუშაო ამერიკულ თუ ევროპულ კომპანიებთან, სადაც საათობრივი ანაზღაურება $25-დან $75-მდე მერყეობს.
+                    </p>
+                </article>
+
+            </section>
+
+            <!-- SECTION HEADING FOR COURSES -->
+            <div class="home-section-heading" style="margin-top: 90px; text-align: center;">
+                <span class="section-kicker" data-i18n="course_select_kicker">CHOOSE YOUR PATH</span>
+                <h2 data-i18n="course_section_title">აირჩიე შენი სასწავლო პროგრამა</h2>
+                <p data-i18n="course_section_desc">
+                    ჩვენი კურსები ორიენტირებულია 100%-ით პრაქტიკულ ცოდნაზე. აირჩიე შენთვის სასურველი ინტენსივობა და დაიწყე სწავლა.
+                </p>
+            </div>
+
+            <!-- COURSES GRID -->
+            <div class="pricing-grid course-grid">
+
+                <!-- COURSE 01 (12 პუნქტი) -->
+                <article class="pricing-card course-card">
+                    <div class="card-header toggle-header">
+                        <div>
+                            <span class="service-number" style="display:block;margin-bottom:8px;">01</span>
+                            <h3 data-i18n="course_1_title">მოდელირების საფუძვლები</h3>
+                            <p data-i18n="course_1_duration">10-ლექცია · კვირაში 2 შეხვედრა</p>
+                        </div>
+                        <i data-lucide="box" class="toggle-icon" aria-hidden="true"></i>
+                    </div>
+
+                    <div class="card-body" style="display: flex;">
+                        <div class="card-section">
+                            <h4 data-i18n="course_includes_title">რას ისწავლი:</h4>
+                            <ol class="course-topics-list">
+                                <li data-i18n="course_1_p1">Blender-ის ინსტალაცია, ინტერფეისის მორგება და დამხმარე Add-on-ების გააქტიურება</li>
+                                <li data-i18n="course_1_p2">3D სივრცეში ნავიგაცია, ობიექტების შემოტანა, ტრანსფორმაციები და Pivot Point-ები</li>
+                                <li data-i18n="course_1_p3">Low-Poly მოდელირების საბაზისო და გაფართოებული ინსტრუმენტები (Extrude, Inset, Bevel, Loop Cut)</li>
+                                <li data-i18n="course_1_p4">პოლიგონური ტოპოლოგიის საფუძვლები და სწორი კუთხეების (Quads vs N-Gons) მართვა</li>
+                                <li data-i18n="course_1_p5">მოდიფიკატორების (Modifiers) სისტემა: Mirror, Subdivision Surface, Boolean და Array</li>
+                                <li data-i18n="course_1_p6">ტექსტურირებისა და PBR მასალების საფუძვლები (Principled BSDF, Roughness, Metallic)</li>
+                                <li data-i18n="course_1_p7">UV Unwrapping-ის პრინციპები და ტექსტურული რუკების სწორად გაშლა</li>
+                                <li data-i18n="course_1_p8">სტუდიური განათების აწყობა (3-Point Lighting) და სცენის ატმოსფეროს შექმნა</li>
+                                <li data-i18n="course_1_p9">კამერასთან მუშაობა: Focal Length, Depth of Field და კადრირების კომპოზიცია</li>
+                                <li data-i18n="course_1_p10">EEVEE და Cycles რენდერ-ძრავების პარამეტრები და მათი სწორი შერჩევა</li>
+                                <li data-i18n="course_1_p11">საბოლოო მაღალი რეზოლუციის სურათის რენდერინგი და პოსტ-პროცესი (Compositor)</li>
+                                <li data-i18n="course_1_p12">პირველი პორტფოლიო პროექტის მომზადება და ექსპორტი (FBX/OBJ) სხვა პროგრამებისთვის</li>
+                            </ol>
+                        </div>
+
+                        <div class="price">
+                            <span>ღირებულება</span>
+                            <strong>499 ₾</strong>
+                            <small class="course-badge-note" data-i18n="course_1_cert">კურსის ბოლოს გაიცემა სერტიფიკატი</small>
+                        </div>
+
+                        <a href="cont.html" class="details-btn course-btn" data-i18n="course_btn_register">
+                            კურსზე რეგისტრაცია
+                        </a>
+                    </div>
+                </article>
+
+                <!-- COURSE 02 (22 პუნქტი) -->
+                <article class="pricing-card course-card popular-card">
+                    <div class="card-header toggle-header">
+                        <div>
+                            <span class="service-number" style="display:block;margin-bottom:8px;">02</span>
+                            <h3 data-i18n="course_2_title">მოდელირება + სკულპტინგი</h3>
+                            <p data-i18n="course_2_duration">12-ლექცია · კვირაში 3 შეხვედრა</p>
+                        </div>
+                        <div class="card-header-right">
+                            <span class="popular-badge" data-i18n="course_2_badge">PRO COURSE</span>
+                            <i data-lucide="sparkles" class="toggle-icon" aria-hidden="true"></i>
+                        </div>
+                    </div>
+
+                    <div class="card-body" style="display: flex;">
+                        <div class="card-section">
+                            <h4 data-i18n="course_includes_title">რას ისწავლი:</h4>
+                            <ol class="course-topics-list">
+                                <li data-i18n="course_2_p1">Blender-ის სრული გარემოს გამართვა და პროფესიონალური Workflow-ს აწყობა</li>
+                                <li data-i18n="course_2_p2">ობიექტების შემოტანა, კომპოზიცია და პროპორციების ზუსტი ბლოკაუტი (Blocking out)</li>
+                                <li data-i18n="course_2_p3">Hard-Surface მოდელირების კომპლექსური ტექნიკები რთული ფორმებისთვის</li>
+                                <li data-i18n="course_2_p4">Subdivision Surface მოდელირება და დამხმარე წიბოების (Supporting Loops) მართვა</li>
+                                <li data-i18n="course_2_p5">სკულპტირების (Sculpting Mode) ინსტრუმენტების, ფუნჯებისა და Dyntopo-ს სიღრმისეული მიმოხილვა</li>
+                                <li data-i18n="course_2_p6">ორგანული ფორმების, პერსონაჟების ან დეტალიზებული ობიექტების ციფრული სკულპტინგი</li>
+                                <li data-i18n="course_2_p7">Remesh ტექნოლოგიები და სკულპტის მომზადება რეტოპოლოგიისთვის</li>
+                                <li data-i18n="course_2_p8">პროფესიონალური Retopology (High-Poly-დან Low-Poly მოდელის მიღება)</li>
+                                <li data-i18n="course_2_p9">კომპლექსური UV Unwrapping, Seam-ების სწორად გადანაწილება და UV Packing</li>
+                                <li data-i18n="course_2_p10">Baking პროცესი: High-Poly დეტალების გადატანა Low-Poly-ზე (Normal Map, AO, Curvature)</li>
+                                <li data-i18n="course_2_p11">PBR ტექსტურირების საბაზისო და გაფართოებული კვანძები (Shader Nodes)</li>
+                                <li data-i18n="course_2_p12">Procedural ტექსტურების შექმნა მხოლოდ ნოდების გამოყენებით (Noise, Voronoi, Bump)</li>
+                                <li data-i18n="course_2_p13">სინათლისა და ატმოსფერული ეფექტების (Volumetrics, Fog, HDRI) პროფესიონალური აწყობა</li>
+                                <li data-i18n="course_2_p14">შუქ-ჩრდილების, არეკვლებისა და რთული მასალების (Glass, Subsurface Scattering) დამუშავება</li>
+                                <li data-i18n="course_2_p15">ჰიბრიდული 3D სცენების აწყობა და გარემოს (Environment Design) დეტალიზაცია</li>
+                                <li data-i18n="course_2_p16">კამერების ანიმაცია და კადრირების კინემატოგრაფიული პრინციპები</li>
+                                <li data-i18n="course_2_p17">Particle System & Geometry Nodes-ის შესავალი (ბალახი, ხეები, დუბლირება)</li>
+                                <li data-i18n="course_2_p18">Cycles Render Engine-ის ოპტიმიზაცია და Noise-ის შემცირება (Denoising)</li>
+                                <li data-i18n="course_2_p19">Compositor-ში პოსტ-პროდუქცია: Color Grading, Glare, Depth Map და ეფექტები</li>
+                                <li data-i18n="course_2_p20">საბოლოო მაღალი ხარისხის 3D რენდერი და Cinematic ვიდეო/სურათის გამოსვლა</li>
+                                <li data-i18n="course_2_p21">3D მოდელების მომზადება Game-Engine-ებისთვის (Unreal Engine / Unity) ან 3D ბეჭდვისთვის</li>
+                                <li data-i18n="course_2_p22">საერთაშორისო პორტფოლიოს (ArtStation/Behance) აწყობა და ფრილანს პლატფორმების სტრატეგია</li>
+                            </ol>
+                        </div>
+
+                        <div class="price">
+                            <span>ღირებულება</span>
+                            <strong>799 ₾</strong>
+                            <small class="course-badge-note" data-i18n="course_2_cert">სერტიფიკატი + რეკომენდაციის წერილი</small>
+                        </div>
+
+                        <a href="cont.html" class="details-btn course-btn primary-course-btn" data-i18n="course_btn_register">
+                            კურსზე რეგისტრაცია
+                        </a>
+                    </div>
+                </article>
+
+            </div>
+
+            <!-- =====================================================
+                 FINAL PROJECT & CERTIFICATION BLOCK
+            ===================================================== -->
+            <section class="final-project-section glass-card-style">
+
+                <div class="final-project-header">
+                    <div class="final-project-badge">
+                        <i data-lucide="award" aria-hidden="true"></i>
+                        <span data-i18n="final_project_badge">CERTIFICATION STEP</span>
+                    </div>
+
+                    <h2 data-i18n="final_project_title">
+                        1-კვირიანი <span>ფინალური პროექტი</span> & სერტიფიცირება
+                    </h2>
+
+                    <p data-i18n="final_project_desc">
+                        კურსის თეორიული და პრაქტიკული ეტაპის დასრულების შემდეგ, თითოეული სტუდენტი იღებს ინდივიდუალურ 1-კვირიან ფინალურ დავალებას. ეს არის რეალური პრაქტიკული გამოცდა, სადაც გამოიყენებთ კურსის განმავლობაში შეძენილ ყველა ტექნიკასა და უნარს.
+                    </p>
+                </div>
+
+                <div class="final-project-grid">
+
+                    <!-- Step 1 -->
+                    <article class="final-step-card">
+                        <span class="step-num">01</span>
+                        <div class="step-icon">
+                            <i data-lucide="file-text" aria-hidden="true"></i>
+                        </div>
+                        <h3 data-i18n="final_step_1_title">დავალების მიღება</h3>
+                        <p data-i18n="final_step_1_desc">
+                            იღებთ ინდივიდუალურ ტექნიკურ დავალებას (Briefing), სადაც განსაზღვრულია პროექტის თემატიკა, მოთხოვნები და ჩაბარების ვადები.
+                        </p>
+                    </article>
+
+                    <!-- Step 2 -->
+                    <article class="final-step-card">
+                        <span class="step-num">02</span>
+                        <div class="step-icon">
+                            <i data-lucide="layers" aria-hidden="true"></i>
+                        </div>
+                        <h3 data-i18n="final_step_2_title">1-კვირიანი სამუშაო პროცესი</h3>
+                        <p data-i18n="final_step_2_desc">
+                            7 დღის განმავლობაში დამოუკიდებლად მუშაობთ პროექტზე (მოდელირება, ტექსტურირება, განათება, რენდერი) მენტორის პერიოდული მხარდაჭერით.
+                        </p>
+                    </article>
+
+                    <!-- Step 3 -->
+                    <article class="final-step-card">
+                        <span class="step-num">03</span>
+                        <div class="step-icon">
+                            <i data-lucide="check-circle-2" aria-hidden="true"></i>
+                        </div>
+                        <h3 data-i18n="final_step_3_title">შეფასება & სერტიფიკატი</h3>
+                        <p data-i18n="final_step_3_desc">
+                            პროექტის წარმატებით დაცვის შემდეგ გადმოგეცემათ KOKOS-LAB-ის ოფიციალური სერტიფიკატი და ნამუშევარი ემატება თქვენს პირად პორტფოლიოს.
+                        </p>
+                    </article>
+
+                </div>
+
+            </section>
+
+        </div>
+    </main>
+
+    <!-- =====================================================
+         FOOTER
+    ===================================================== -->
+    <footer class="glass-footer">
+        <div class="footer-inner">
+            <p data-i18n="footer_rights">© 2026 KOKOS-LAB. All rights reserved.</p>
+            <div class="footer-nav">
+                <a href="index.html" data-i18n="nav_home">Home</a>
+                <a href="web.html" data-i18n="nav_services">Services</a>
+                <a href="cont.html" data-i18n="nav_contact">Contact</a>
+            </div>
+        </div>
+    </footer>
+
+</body>
+</html>

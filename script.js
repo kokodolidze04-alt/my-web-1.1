@@ -2985,7 +2985,117 @@ const translations = {
             "Let's build your website.",
 
         cta_desc:
-            "Tell me about your project and I'll help you choose the right approach."
+            "Tell me about your project and I'll help you choose the right approach.",
+
+courses_page_title: "KOKOS-LAB | 3D Courses",
+course_kicker: "EDUCATION & MENTORSHIP",
+course_section_title: "3D Modeling Courses",
+course_section_desc: "Learn 3D graphics, modeling, and sculpting from scratch to professional level.",
+course_includes_title: "What you will learn:",
+course_btn_register: "Enroll in Course",
+
+course_1_title: "Modeling Basics",
+course_1_duration: "10 Lectures · 2 Meetings per week",
+course_1_p1: "Installing Blender & setting up helper components",
+course_1_p2: "Importing objects & utilizing workspace tools",
+course_1_p3: "Applying essential modeling tools",
+course_1_p4: "Fundamentals of texturing & materials",
+course_1_p5: "Working with camera principles & framing",
+course_1_p6: "Final project rendering & output",
+course_1_cert: "Certificate issued upon completion",
+
+course_2_title: "Modeling + Sculpting",
+course_2_duration: "12 Lectures · 3 Meetings per week",
+course_2_badge: "PRO COURSE",
+course_2_p1: "Installing Blender & setting up helper components",
+course_2_p2: "Importing objects & utilizing workspace tools",
+course_2_p3: "Applying essential modeling tools",
+course_2_p4: "Fundamentals of texturing & materials",
+course_2_p5: "Working with camera principles & framing",
+course_2_p6: "Core principles of 3D Sculpting",
+course_2_p7: "Lighting, shadows & atmospheric work",
+course_2_p8: "Constructing complex hybrid scenes",
+course_2_p9: "Composition setup & high-end final rendering",
+course_2_cert: "Certificate + Recommendation Letter",
+
+// COURSES PAGE TRANSLATIONS
+        courses_page_title: "KOKOS-LAB | 3D Courses",
+        course_kicker: "EDUCATION & MENTORSHIP",
+        course_hero_title: "Master the <span>3D World</span> & Become Part of a Global Industry",
+        course_hero_desc: "3D graphics has long evolved beyond a simple hobby into one of the most in-demand fields of the modern digital economy. Blender is the fastest-growing 3D tool of the 21st century, giving you ultimate creative freedom to build digital worlds, characters, product visualizations, and game assets. Our curriculum is designed to guide you from absolute zero to practical, real-world results, instilling the right technical mindset to prepare you for commercial projects.",
+
+        // BENTO GRID CARDS
+        blender_card1_title: "Why Choose Blender?",
+        blender_card1_desc: "Blender is an indisputable game-changer in the industry today. It is a completely free, open-source ecosystem backed and used by world-leading studios including Ubisoft, Epic Games, and AWS. The software seamlessly unifies polygonal modeling, digital sculpting, texturing, animation, and real-time rendering (EEVEE & Cycles) under one roof. Master Blender and you operate free from expensive licenses with access to infinite creative tools.",
+
+        blender_card2_title: "Vast Industry Applications",
+        blender_card2_desc: "The career of a 3D artist goes far beyond game development. Today, 3D specialists are vital across Game Dev, Film & VFX, Product Commercials (Motion Design), Architectural Visualization, 3D Printing, and Metaverse/AR-VR technologies. Any brand looking to showcase products in pristine visual detail without expensive camera setups relies heavily on skilled 3D designers.",
+
+        blender_card3_title: "High Income & Global Freelancing",
+        blender_card3_desc: "3D graphics remains one of the highest-paying remote careers globally. Since digital assets know no borders, you aren't restricted to your local market. Armed with a solid portfolio built during this course, you can directly launch onto international platforms like Upwork, Fiverr, ArtStation, and CGITrader, working with US and European clients where hourly rates range from $25 to $75+.",
+
+        course_select_kicker: "CHOOSE YOUR PATH",
+        course_section_title: "Select Your Training Program",
+        course_section_desc: "Our courses are 100% focused on practical knowledge and real project workflows. Choose your preferred intensity and start building.",
+        course_includes_title: "What you will learn:",
+        course_btn_register: "Enroll in Course",
+
+        // COURSE 01 (12 POINTS)
+        course_1_title: "Modeling Basics",
+        course_1_duration: "10 Lectures · 2 Meetings per week",
+        course_1_cert: "Certificate issued upon completion",
+        course_1_p1: "Installing Blender, customizing workspace UI, and activating essential Add-ons",
+        course_1_p2: "3D space navigation, object imports, transformations, and Pivot Point control",
+        course_1_p3: "Core & advanced Low-Poly modeling tools (Extrude, Inset, Bevel, Loop Cut)",
+        course_1_p4: "Polygonal topology fundamentals and mesh cleanliness (Quads vs N-Gons)",
+        course_1_p5: "Modifier Stack system: Mirror, Subdivision Surface, Boolean, and Array",
+        course_1_p6: "Texturing & PBR material basics (Principled BSDF, Roughness, Metallic)",
+        course_1_p7: "UV Unwrapping principles, Seams management, and proper Texture Mapping",
+        course_1_p8: "Studio lighting setup (3-Point Lighting) and scene atmosphere creation",
+        course_1_p9: "Working with cameras: Focal Length, Depth of Field, and cinematic framing",
+        course_1_p10: "EEVEE & Cycles render engines configuration and selection strategy",
+        course_1_p11: "Final high-resolution image rendering and post-processing in Compositor",
+        course_1_p12: "First portfolio project preparation and multi-format export (FBX/OBJ)",
+
+        // COURSE 02 (22 POINTS)
+        course_2_title: "Modeling + Sculpting",
+        course_2_duration: "12 Lectures · 3 Meetings per week",
+        course_2_badge: "PRO COURSE",
+        course_2_cert: "Certificate + Recommendation Letter",
+        course_2_p1: "Setting up a professional Blender production environment and workflow",
+        course_2_p2: "Object importing, composition, and accurate proportion blocking (Blocking out)",
+        course_2_p3: "Complex Hard-Surface modeling techniques for detailed assets",
+        course_2_p4: "Subdivision Surface modeling and supporting loops topology control",
+        course_2_p5: "In-depth Sculpting Mode overview, custom brushes, and Dyntopo usage",
+        course_2_p6: "Digital sculpting of organic shapes, characters, or highly detailed assets",
+        course_2_p7: "Remesh technologies and sculpt mesh preparation for retopology",
+        course_2_p8: "Professional Retopology workflow (converting High-Poly to clean Low-Poly)",
+        course_2_p9: "Complex UV Unwrapping, proper Seam distribution, and UV Packing optimization",
+        course_2_p10: "Texture Baking process: Baking Normal Maps, AO, and Curvature maps",
+        course_2_p11: "Basic & advanced PBR texturing nodes in the Shader Editor",
+        course_2_p12: "Creating fully procedural textures using Node groups (Noise, Voronoi, Bump)",
+        course_2_p13: "Professional lighting setup & atmospheric effects (Volumetrics, Fog, HDRI)",
+        course_2_p14: "Advanced lighting, reflections, and complex shaders (Glass, Subsurface Scattering)",
+        course_2_p15: "Constructing hybrid 3D scenes and detailed Environment Design",
+        course_2_p16: "Camera animation and cinematic camera movement techniques",
+        course_2_p17: "Introduction to Particle Systems & Geometry Nodes (Foliage, Instancing)",
+        course_2_p18: "Cycles Render Engine optimization, sampling, and Denoising techniques",
+        course_2_p19: "Post-production in Compositor: Color Grading, Glare, Depth Maps & FX",
+        course_2_p20: "Final high-end 3D rendering and cinematic video/image export",
+        course_2_p21: "Preparing 3D assets for Game Engines (Unreal Engine / Unity) or 3D Printing",
+        course_2_p22: "Building an international portfolio (ArtStation/Behance) and freelancing strategy",
+
+        // FINAL PROJECT & CERTIFICATION
+        final_project_badge: "CERTIFICATION STEP",
+        final_project_title: "1-Week <span>Final Project</span> & Certification",
+        final_project_desc: "Upon completing the theoretical and practical modules of the course, every student receives an individual 1-week final assignment. This serves as a real-world exam where you will apply all the techniques and skills acquired during the course.",
+        final_step_1_title: "Brief & Assignment",
+        final_step_1_desc: "You receive an individual project brief detailing requirements, creative direction, technical specs, and delivery deadlines.",
+        final_step_2_title: "1-Week Execution",
+        final_step_2_desc: "Over 7 days, you independently build your project (modeling, texturing, lighting, rendering) with periodic mentor check-ins.",
+        final_step_3_title: "Evaluation & Certificate",
+        final_step_3_desc: "Upon successful review, you are awarded the official KOKOS-LAB Certificate and the project becomes a highlighted piece in your personal portfolio."
+
     },
 
 
@@ -3790,7 +3900,119 @@ const translations = {
             "შევქმნათ შენი ვებსაიტი.",
 
         cta_desc:
-            "მომიყევი შენი პროექტის შესახებ და დაგეხმარები სწორი მიმართულების არჩევაში."
+            "მომიყევი შენი პროექტის შესახებ და დაგეხმარები სწორი მიმართულების არჩევაში.",
+
+
+            courses_page_title: "KOKOS-LAB | 3D კურსები",
+course_kicker: "სწავლება და მენტორობა",
+course_section_title: "3D მოდელირების კურსები",
+course_section_desc: "შეისწავლეთ 3D გრაფიკა, მოდელირება და სკულპტინგი ნულიდან პროფესიონალ დონემდე.",
+course_includes_title: "რას ისწავლი:",
+course_btn_register: "კურსზე რეგისტრაცია",
+
+course_1_title: "მოდელირების საფუძვლები",
+course_1_duration: "10-ლექცია · კვირაში 2 შეხვედრა",
+course_1_p1: "Blender-ის ინსტალაცია და დამხმარე კომპონენტების დაყენება",
+course_1_p2: "ობიექტების შემოტანა და მათზე ხელსაწყოების გამოყენება",
+course_1_p3: "მოდელირების ინსტრუმენტების გამოყენება",
+course_1_p4: "ტექსტურირების საბაზისო ელემენტები",
+course_1_p5: "კამერასთან მუშაობის პრინციპები",
+course_1_p6: "პროექტის საბოლოო რენდერი",
+course_1_cert: "კურსის ბოლოს გაიცემა სერტიფიკატი",
+
+course_2_title: "მოდელირება + სკულპტინგი",
+course_2_duration: "12-ლექცია · კვირაში 3 შეხვედრა",
+course_2_badge: "PRO კურსი",
+course_2_p1: "Blender-ის ინსტალაცია და დამხმარე კომპონენტების დაყენება",
+course_2_p2: "ობიექტების შემოტანა და მათზე ხელსაწყოების გამოყენება",
+course_2_p3: "მოდელირების ინსტრუმენტების გამოყენება",
+course_2_p4: "ტექსტურირების საბაზისო ელემენტები",
+course_2_p5: "კამერასთან მუშაობის პრინციპები",
+course_2_p6: "სკულპტირების პრინციპები",
+course_2_p7: "შუქ-ჩრდილებზე მუშაობა",
+course_2_p8: "ჰიბრიდული სცენების აწყობა",
+course_2_p9: "კომპოზიციის აწყობა და საბოლოო რენდერი",
+course_2_cert: "სერტიფიკატი + რეკომენდაციის წერილი",
+
+// COURSES PAGE TRANSLATIONS
+        courses_page_title: "KOKOS-LAB | 3D კურსები",
+        course_kicker: "სწავლება და მენტორობა",
+        course_hero_title: "დაეუფლე <span>3D სამყაროს</span> და გახდი გლობალური ინდუსტრიის ნაწილი",
+        course_hero_desc: "3D გრაფიკა უკვე დიდი ხანია გასცდა უბრალო ჰობის ფარგლებს და თანამედროვე ციფრული ეკონომიკის ერთ-ერთ ყველაზე მოთხოვნად მიმართულებად იქცა. Blender-ი არის XXI საუკუნის ყველაზე სწრაფად მზარდი 3D ინსტრუმენტი, რომელიც გაძლევს სრულ თავისუფლებას — შექმნა ციფრული სამყაროები, პერსონაჟები, პროდუქციის ვიზუალიზაციები და თამაშის ასეტები. ჩვენი სასწავლო პროგრამა შექმნილია იმისათვის, რომ ნულიდან პრაქტიკულ შედეგამდე მიგიყვანოს, ჩამოგიყალიბოს სწორი ტექნიკური აზროვნება და მოგამზადოს რეალურ პროექტებზე მუშაობისთვის.",
+
+        // BENTO GRID CARDS
+        blender_card1_title: "რატომ სწორედ Blender?",
+        blender_card1_desc: "Blender-ი დღესდღეობით ინდუსტრიის უდავო რევოლუციონერია. ის სრულიად უფასო, ღია კოდის მქონე ეკოსისტემაა, რომელსაც მსოფლიოს წამყვანი სტუდიები (მათ შორის Ubisoft, Epic Games და AWS) აქტიურად უჭერენ მხარს და იყენებენ. პროგრამა ერთ სივრცეში აერთიანებს პოლიგონურ მოდელირებას, ციფრულ სკულპტინგს, ტექსტურირებას, ანიმაციასა და რეალურ დროში რენდერინგს (EEVEE & Cycles). Blender-ის ცოდნა ნიშნავს იმას, რომ შენ არ ხარ შეზღუდული ფასიანი ლიცენზიებით და გაქვს წვდომა უსაზღვრო შემოქმედებით რესურსთან.",
+
+        blender_card2_title: "უზარმაზარი გამოყენების სფერო",
+        blender_card2_desc: "3D არტისტის პროფესია მხოლოდ თამაშების შექმნით არ შემოიფარგლება. დღეს 3D სპეციალისტები სასიცოცხლოდ მნიშვნელოვანნი არიან Game Development-ში, კინოინდუსტრიასა და VFX-ში, პროდუქტის სარეკლამო ვიზუალიზაციაში (Motion Design), არქიტექტურასა და ინტერიერის დიზაინში, 3D ბეჭდვასა და Metaverse / AR-VR ტექნოლოგიებში. ნებისმიერი ბრენდი, რომელსაც სურს პროდუქტი კამერით გადაღების გარეშე, იდეალურ ვიზუალურ ფორმაში წარმოაჩინოს, ეძებს 3D დიზაინერს.",
+
+        blender_card3_title: "მაღალი ანაზღაურება & გლობალური ფრილანსი",
+        blender_card3_desc: "3D გრაფიკა წარმოადგენს ერთ-ერთ ყველაზე მაღალანაზღაურებად სფეროს დისტანციურ ბაზარზე. რადგან ციფრულ პროდუქტებს საზღვრები არ აქვს, შენ არ ხარ შეზღუდული ლოკალური ბაზრით. კურსის განმავლობაში შექმნილი ხარისხიანი პორტფოლიოლით შეგიძლია პირდაპირ გამოხვიდე საერთაშორისო პლატფორმებზე (Upwork, Fiverr, ArtStation, CGITrader) და იმუშაო ამერიკულ თუ ევროპულ კომპანიებთან, სადაც საათობრივი ანაზღაურება $25-დან $75-მდე მერყეობს.",
+
+        course_select_kicker: "აირჩიე მიმართულება",
+        course_section_title: "აირჩიე შენი სასწავლო პროგრამა",
+        course_section_desc: "ჩვენი კურსები ორიენტირებულია 100%-ით პრაქტიკულ ცოდნაზე. აირჩიე შენთვის სასურველი ინტენსივობა და დაიწყე სწავლა.",
+        course_includes_title: "რას ისწავლი:",
+        course_btn_register: "კურსზე რეგისტრაცია",
+
+        // COURSE 01 (12 POINTS)
+        course_1_title: "მოდელირების საფუძვლები",
+        course_1_duration: "10-ლექცია · კვირაში 2 შეხვედრა",
+        course_1_cert: "კურსის ბოლოს გაიცემა სერტიფიკატი",
+        course_1_p1: "Blender-ის ინსტალაცია, ინტერფეისის მორგება და დამხმარე Add-on-ების გააქტიურება",
+        course_1_p2: "3D სივრცეში ნავიგაცია, ობიექტების შემოტანა, ტრანსფორმაციები და Pivot Point-ები",
+        course_1_p3: "Low-Poly მოდელირების საბაზისო და გაფართოებული ინსტრუმენტები (Extrude, Inset, Bevel, Loop Cut)",
+        course_1_p4: "პოლიგონური ტოპოლოგიის საფუძვლები და სწორი კუთხეების (Quads vs N-Gons) მართვა",
+        course_1_p5: "მოდიფიკატორების (Modifiers) სისტემა: Mirror, Subdivision Surface, Boolean და Array",
+        course_1_p6: "ტექსტურირებისა და PBR მასალების საფუძვლები (Principled BSDF, Roughness, Metallic)",
+        course_1_p7: "UV Unwrapping-ის პრინციპები და ტექსტურული რუკების სწორად გაშლა",
+        course_1_p8: "სტუდიური განათების აწყობა (3-Point Lighting) და სცენის ატმოსფეროს შექმნა",
+        course_1_p9: "კამერასთან მუშაობა: Focal Length, Depth of Field და კადრირების კომპოზიცია",
+        course_1_p10: "EEVEE და Cycles რენდერ-ძრავების პარამეტრები და მათი სწორი შერჩევა",
+        course_1_p11: "საბოლოო მაღალი რეზოლუციის სურათის რენდერინგი და პოსტ-პროცესი (Compositor)",
+        course_1_p12: "პირველი პორტფოლიო პროექტის მომზადება და ექსპორტი (FBX/OBJ) სხვა პროგრამებისთვის",
+
+        // COURSE 02 (22 POINTS)
+        course_2_title: "მოდელირება + სკულპტინგი",
+        course_2_duration: "12-ლექცია · კვირაში 3 შეხვედრა",
+        course_2_badge: "PRO კურსი",
+        course_2_cert: "სერტიფიკატი + რეკომენდაციის წერილი",
+        course_2_p1: "Blender-ის სრული გარემოს გამართვა და პროფესიონალური Workflow-ს აწყობა",
+        course_2_p2: "ობიექტების შემოტანა, კომპოზიცია და პროპორციების ზუსტი ბლოკაუტი (Blocking out)",
+        course_2_p3: "Hard-Surface მოდელირების კომპლექსური ტექნიკები რთული ფორმებისთვის",
+        course_2_p4: "Subdivision Surface მოდელირება და დამხმარე წიბოების (Supporting Loops) მართვა",
+        course_2_p5: "სკულპტირების (Sculpting Mode) ინსტრუმენტების, ფუნჯებისა და Dyntopo-ს სიღრმისეული მიმოხილვა",
+        course_2_p6: "ორგანული ფორმების, პერსონაჟების ან დეტალიზებული ობიექტების ციფრული სკულპტინგი",
+        course_2_p7: "Remesh ტექნოლოგიები და სკულპტის მომზადება რეტოპოლოგიისთვის",
+        course_2_p8: "პროფესიონალური Retopology (High-Poly-დან Low-Poly მოდელის მიღება)",
+        course_2_p9: "კომპლექსური UV Unwrapping, Seam-ების სწორად გადანაწილება და UV Packing",
+        course_2_p10: "Baking პროცესი: High-Poly დეტალების გადატანა Low-Poly-ზე (Normal Map, AO, Curvature)",
+        course_2_p11: "PBR ტექსტურირების საბაზისო და გაფართოებული კვანძები (Shader Nodes)",
+        course_2_p12: "Procedural ტექსტურების შექმნა მხოლოდ ნოდების გამოყენებით (Noise, Voronoi, Bump)",
+        course_2_p13: "სინათლისა და ატმოსფერული ეფექტების (Volumetrics, Fog, HDRI) პროფესიონალური აწყობა",
+        course_2_p14: "შუქ-ჩრდილების, არეკვლებისა და რთული მასალების (Glass, Subsurface Scattering) დამუშავება",
+        course_2_p15: "ჰიბრიდული 3D სცენების აწყობა და გარემოს (Environment Design) დეტალიზაცია",
+        course_2_p16: "კამერების ანიმაცია და კადრირების კინემატოგრაფიული პრინციპები",
+        course_2_p17: "Particle System & Geometry Nodes-ის შესავალი (ბალახი, ხეები, დუბლირება)",
+        course_2_p18: "Cycles Render Engine-ის ოპტიმიზაცია და Noise-ის შემცირება (Denoising)",
+        course_2_p19: "Compositor-ში პოსტ-პროდუქცია: Color Grading, Glare, Depth Map და ეფექტები",
+        course_2_p20: "საბოლოო მაღალი ხარისხის 3D რენდერი და Cinematic ვიდეო/სურათის გამოსვლა",
+        course_2_p21: "3D მოდელების მომზადება Game-Engine-ებისთვის (Unreal Engine / Unity) ან 3D ბეჭდვისთვის",
+        course_2_p22: "საერთაშორისო პორტფოლიოს (ArtStation/Behance) აწყობა და ფრილანს პლატფორმების სტრატეგია",
+
+        // FINAL PROJECT & CERTIFICATION
+        final_project_badge: "სერტიფიცირების ეტაპი",
+        final_project_title: "1-კვირიანი <span>ფინალური პროექტი</span> & სერტიფიცირება",
+        final_project_desc: "კურსის თეორიული და პრაქტიკული ეტაპის დასრულების შემდეგ, თითოეული სტუდენტი იღებს ინდივიდუალურ 1-კვირიან ფინალურ დავალებას. ეს არის რეალური პრაქტიკული გამოცდა, სადაც გამოიყენებთ კურსის განმავლობაში შეძენილ ყველა ტექნიკასა და უნარს.",
+        final_step_1_title: "დავალების მიღება",
+        final_step_1_desc: "იღებთ ინდივიდუალურ ტექნიკურ დავალებას (Briefing), სადაც განსაზღვრულია პროექტის თემატიკა, მოთხოვნები და ჩაბარების ვადები.",
+        final_step_2_title: "1-კვირიანი სამუშაო პროცესი",
+        final_step_2_desc: "7 დღის განმავლობაში დამოუკიდებლად მუშაობთ პროექტზე (მოდელირება, ტექსტურირება, განათება, რენდერი) მენტორის პერიოდული მხარდაჭერით.",
+        final_step_3_title: "შეფასება & სერტიფიკატი",
+        final_step_3_desc: "პროექტის წარმატებით დაცვის შემდეგ გადმოგეცემათ KOKOS-LAB-ის ოფიციალური სერტიფიკატი და ნამუშევარი ემატება თქვენს პირად პორტფოლიოს."
+
+
     }
 };
 
