@@ -1,0 +1,31 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="512" height="512" viewBox="0 0 512 512" fill="none">
+  <defs>
+    <linearGradient id="bg" x1="60" y1="40" x2="455" y2="480" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#07121F"/>
+      <stop offset="1" stop-color="#02060C"/>
+    </linearGradient>
+    <linearGradient id="cyan" x1="95" y1="145" x2="245" y2="365" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#8CFBFF"/>
+      <stop offset=".45" stop-color="#00D9FF"/>
+      <stop offset="1" stop-color="#087BFF"/>
+    </linearGradient>
+    <linearGradient id="white" x1="300" y1="140" x2="420" y2="370" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#FFFFFF"/>
+      <stop offset="1" stop-color="#BDEBFF"/>
+    </linearGradient>
+    <filter id="glow" x="-40%" y="-40%" width="180%" height="180%">
+      <feGaussianBlur stdDeviation="7" result="blur"/>
+      <feMerge><feMergeNode in="blur"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+  </defs>
+  <rect x="16" y="16" width="480" height="480" rx="112" fill="url(#bg)" stroke="#06354D" stroke-width="3"/>
+  <rect x="17.5" y="17.5" width="477" height="477" rx="110.5" stroke="#00CFFF" stroke-opacity=".72" stroke-width="3"/>
+  <path d="M105 166 L218 256 L105 346" stroke="#006C9D" stroke-width="36" stroke-linecap="round" stroke-linejoin="round" opacity=".65" filter="url(#glow)"/>
+  <path d="M105 166 L218 256 L105 346" stroke="url(#cyan)" stroke-width="28" stroke-linecap="round" stroke-linejoin="round"/>
+  <path d="M105 166 L218 256 L105 346" stroke="#B9FFFF" stroke-opacity=".85" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+  <rect x="184" y="366" width="108" height="25" rx="7" fill="#0079B8" opacity=".55" filter="url(#glow)"/>
+  <rect x="184" y="366" width="108" height="25" rx="7" fill="url(#cyan)" stroke="#7DF8FF" stroke-width="2.5"/>
+  <path d="M324 157 V355 M324 258 L411 157 M324 258 L411 355" stroke="#006B9B" stroke-width="36" stroke-linecap="round" stroke-linejoin="round" opacity=".6" filter="url(#glow)"/>
+  <path d="M324 157 V355 M324 258 L411 157 M324 258 L411 355" stroke="url(#white)" stroke-width="28" stroke-linecap="round" stroke-linejoin="round"/>
+  <path d="M324 157 V355 M324 258 L411 157 M324 258 L411 355" stroke="#FFFFFF" stroke-opacity=".95" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>
