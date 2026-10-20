@@ -3094,8 +3094,94 @@ course_2_cert: "Certificate + Recommendation Letter",
         final_step_2_title: "1-Week Execution",
         final_step_2_desc: "Over 7 days, you independently build your project (modeling, texturing, lighting, rendering) with periodic mentor check-ins.",
         final_step_3_title: "Evaluation & Certificate",
-        final_step_3_desc: "Upon successful review, you are awarded the official KOKOS-LAB Certificate and the project becomes a highlighted piece in your personal portfolio."
+        final_step_3_desc: "Upon successful review, you are awarded the official KOKOS-LAB Certificate and the project becomes a highlighted piece in your personal portfolio.",
 
+
+        // SOFTWARE DEVELOPER OPPORTUNITY
+
+        opportunity_eyebrow:
+            "SOFTWARE DEVELOPMENT · OPEN TO OPPORTUNITIES",
+
+        opportunity_title:
+            "Let's build products that solve real problems.",
+
+        opportunity_intro:
+            "I'm looking to collaborate with a company as a Software Developer, contributing to the development of new products, the improvement of existing systems, and the creation of software tailored to real business needs.",
+
+        opportunity_card1_title:
+            "Build new products",
+
+        opportunity_card1_text:
+            "Develop applications and digital products from the ground up, from the initial concept to a working solution.",
+
+        opportunity_card2_title:
+            "Improve existing systems",
+
+        opportunity_card2_text:
+            "Extend existing products, improve functionality, resolve technical problems, and make software more effective.",
+
+        opportunity_card3_title:
+            "Turn workflows into software",
+
+        opportunity_card3_text:
+            "Identify repetitive tasks and business needs that can be addressed through practical, purpose-built applications.",
+
+        opportunity_card4_title:
+            "Solve technical challenges",
+
+        opportunity_card4_text:
+            "Analyze technical problems, explore different approaches, and develop reliable solutions that improve the product and the overall user experience.",
+
+        opportunity_approach_label:
+            "HOW I APPROACH DEVELOPMENT",
+
+        opportunity_approach_title:
+            "Understand the problem. Build the right solution.",
+
+        opportunity_approach_text:
+            "My approach starts with understanding the actual problem, the people who will use the product, and the outcome the business needs. From there, I focus on building, testing, and improving a solution that serves its purpose.",
+
+        opportunity_workstyle_label:
+            "PREFERRED WORKING MODEL",
+
+        opportunity_workstyle_title:
+            "A balance between office and remote work.",
+
+        opportunity_workstyle_text:
+            "I prefer a hybrid working model that combines working from home with in-person collaboration at the office. This allows me to focus independently while staying connected with the team and contributing directly when collaboration matters.",
+
+        opportunity_tag1:
+            "Hybrid work",
+
+        opportunity_tag2:
+            "Team collaboration",
+
+        opportunity_tag3:
+            "Continuous learning",
+
+        opportunity_cta_title:
+            "Have a product in mind?",
+
+        opportunity_cta_text:
+            "Let's discuss your team's needs and how I could contribute.",
+
+        opportunity_cta_contact:
+            "Discuss an opportunity",
+
+        opportunity_cta_projects:
+            "Explore my projects",
+
+            
+opportunity_process_label:
+    "DEVELOPMENT PROCESS",
+
+opportunity_process_title:
+    "Build. Research. Test. Improve.",
+
+opportunity_process_text:
+    "I use AI-assisted development tools to support research, explore solutions, accelerate workflows, and evaluate different approaches. I test functionality, verify results, identify issues, and review quality before considering a development stage complete. Development doesn't stop at the initial release — I continue refining functionality, fixing issues, and introducing improvements through ongoing testing and updates.",
+
+        
     },
 
 
@@ -3276,7 +3362,7 @@ course_2_cert: "Certificate + Recommendation Letter",
             "მე ვარ თორნიკე დოლიძე, 22 წლის დეველოპერი და კრეატიული ტექნოლოგი, რომელიც ტექნოლოგიისა და კვლევის რამდენიმე მიმართულებაზე მუშაობს.",
 
         about_intro_text_2:
-            "ჩემმა აკადემიურმა გამოცდილებამ და ტექნიკურმა ინტერესებმა მიმიყვანა პროექტებამდე, რომლებიც პროგრამულ უზრუნველყოფას, ხელოვნურ ინტელექტს, ვიზუალურ ტექნოლოგიებსა და ადამიანის კოგნიციას აერთიანებს.",
+            "ჩემმა მისწრაფებებმა,  გამოცდილებამ და ტექნიკურმა ინტერესებმა მიმიყვანა პროექტებამდე, რომლებიც პროგრამულ უზრუნველყოფას, ხელოვნურ ინტელექტს, ვიზუალურ ტექნოლოგიებსა და ადამიანის კოგნიციას აერთიანებს.",
 
         about_education_kicker:
             "განათლება",
@@ -3360,7 +3446,7 @@ course_2_cert: "Certificate + Recommendation Letter",
             "თამაშების დეველოპმენტი",
 
         focus_games_desc:
-            "ორიგინალური თამაშების იდეების, სამყაროების, სისტემებისა და გამოცდილებების შექმნა.",
+            "ღია სამყაროს თამაშების იდეების, სამყაროების, სისტემებისა და გამოცდილებების შექმნა.",
 
         about_projects_kicker:
             "მიმდინარე პროექტები",
@@ -4010,7 +4096,92 @@ course_2_cert: "სერტიფიკატი + რეკომენდა�
         final_step_2_title: "1-კვირიანი სამუშაო პროცესი",
         final_step_2_desc: "7 დღის განმავლობაში დამოუკიდებლად მუშაობთ პროექტზე (მოდელირება, ტექსტურირება, განათება, რენდერი) მენტორის პერიოდული მხარდაჭერით.",
         final_step_3_title: "შეფასება & სერტიფიკატი",
-        final_step_3_desc: "პროექტის წარმატებით დაცვის შემდეგ გადმოგეცემათ KOKOS-LAB-ის ოფიციალური სერტიფიკატი და ნამუშევარი ემატება თქვენს პირად პორტფოლიოს."
+        final_step_3_desc: "პროექტის წარმატებით დაცვის შემდეგ გადმოგეცემათ KOKOS-LAB-ის ოფიციალური სერტიფიკატი და ნამუშევარი ემატება თქვენს პირად პორტფოლიოს.",
+
+
+        // SOFTWARE DEVELOPER OPPORTUNITY
+
+        opportunity_eyebrow:
+            "პროგრამული უზრუნველყოფის დეველოპმენტი · ვეძებ თანამშრომლობის შესაძლებლობებს",
+
+        opportunity_title:
+            "შევქმნათ პროდუქტები, რომლებიც რეალურ პრობლემებს აგვარებს.",
+
+        opportunity_intro:
+            "ვეძებ კომპანიასთან თანამშრომლობის შესაძლებლობას Software Developer-ის პოზიციაზე, სადაც წვლილს შევიტან ახალი პროდუქტების შექმნაში, არსებული სისტემების გაუმჯობესებასა და რეალურ ბიზნესსაჭიროებებზე მორგებული პროგრამული გადაწყვეტილებების შემუშავებაში.",
+
+        opportunity_card1_title:
+            "ახალი პროდუქტების შექმნა",
+
+        opportunity_card1_text:
+            "აპლიკაციებისა და ციფრული პროდუქტების ნულიდან შექმნა — საწყისი იდეიდან ფუნქციურ გადაწყვეტამდე.",
+
+        opportunity_card2_title:
+            "არსებული სისტემების გაუმჯობესება",
+
+        opportunity_card2_text:
+            "არსებული პროდუქტების განვითარება, ფუნქციონალის გაუმჯობესება, ტექნიკური პრობლემების გამოსწორება და პროგრამული უზრუნველყოფის ეფექტიანობის გაზრდა.",
+
+        opportunity_card3_title:
+            "სამუშაო პროცესების გაციფრულება",
+
+        opportunity_card3_text:
+            "განმეორებადი ამოცანებისა და ბიზნესსაჭიროებების გამოვლენა, რომელთა მოგვარებაც პრაქტიკული, კონკრეტულ მიზანზე მორგებული აპლიკაციებით შეიძლება.",
+
+        opportunity_card4_title:
+            "ტექნიკური გამოწვევების გადაჭრა",
+
+        opportunity_card4_text:
+            "ტექნიკური პრობლემების გაანალიზება, სხვადასხვა მიდგომის განხილვა და საიმედო გადაწყვეტილებების შემუშავება, რომლებიც პროდუქტსა და მომხმარებლის გამოცდილებას აუმჯობესებს.",
+
+        opportunity_approach_label:
+            "ჩემი მიდგომა დეველოპმენტისადმი",
+
+        opportunity_approach_title:
+            "გავიგოთ პრობლემა. შევქმნათ სწორი გადაწყვეტა.",
+
+        opportunity_approach_text:
+            "ჩემი მიდგომა იწყება რეალური პრობლემის, პროდუქტის მომხმარებლებისა და ბიზნესის მიზნების გააზრებით. ამის შემდეგ ყურადღებას ვამახვილებ ისეთი გადაწყვეტის შექმნაზე, ტესტირებასა და გაუმჯობესებაზე, რომელიც დასახულ მიზანს ემსახურება.",
+
+        opportunity_workstyle_label:
+            "სასურველი სამუშაო ფორმატი",
+
+        opportunity_workstyle_title:
+            "ბალანსი ოფისსა და დისტანციურ მუშაობას შორის.",
+
+        opportunity_workstyle_text:
+            "უპირატესობას ჰიბრიდულ სამუშაო ფორმატს ვანიჭებ, რომელიც სახლიდან მუშაობასა და ოფისში გუნდთან პირისპირ თანამშრომლობას აერთიანებს. ეს მაძლევს შესაძლებლობას, დამოუკიდებლად კონცენტრირებულად ვიმუშაო და ამავდროულად, გუნდთან აქტიური კომუნიკაცია და საჭირო საკითხებზე უშუალო თანამშრომლობა შევინარჩუნო.",
+
+        opportunity_tag1:
+            "ჰიბრიდული მუშაობა",
+
+        opportunity_tag2:
+            "გუნდური თანამშრომლობა",
+
+        opportunity_tag3:
+            "უწყვეტი განვითარება",
+
+        opportunity_cta_title:
+            "გაქვთ პროდუქტის იდეა?",
+
+        opportunity_cta_text:
+            "განვიხილოთ თქვენი გუნდის საჭიროებები და ის, თუ როგორ შემიძლია წვლილის შეტანა.",
+
+        opportunity_cta_contact:
+            "განვიხილოთ თანამშრომლობა",
+
+        opportunity_cta_projects:
+            "ჩემი პროექტების ნახვა",
+
+            
+opportunity_process_label:
+    "დეველოპმენტის პროცესი",
+
+opportunity_process_title:
+    "შექმნა. კვლევა. ტესტირება. გაუმჯობესება.",
+
+opportunity_process_text:
+    "დეველოპმენტის პროცესში ვიყენებ ხელოვნური ინტელექტის დამხმარე ინსტრუმენტებს კვლევის ჩასატარებლად, შესაძლო გადაწყვეტილებების შესასწავლად, სამუშაო პროცესის დასაჩქარებლად და სხვადასხვა მიდგომის შესაფასებლად. ფუნქციონალს ვტესტავ, შედეგებს ვამოწმებ, ვავლენ ხარვეზებს და ხარისხს ვაფასებ, სანამ განვითარების კონკრეტულ ეტაპს დასრულებულად მივიჩნევ. ჩემი მუშაობა საწყისი ვერსიის შექმნით არ სრულდება — პროექტს ეტაპობრივად ვაუმჯობესებ, ვასწორებ პრობლემებს და ახალი ტესტირებებისა და განახლებების საშუალებით ვავითარებ.",
 
 
     }
