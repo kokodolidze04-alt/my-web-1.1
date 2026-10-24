@@ -3181,11 +3181,161 @@ opportunity_process_title:
 opportunity_process_text:
     "I use AI-assisted development tools to support research, explore solutions, accelerate workflows, and evaluate different approaches. I test functionality, verify results, identify issues, and review quality before considering a development stage complete. Development doesn't stop at the initial release — I continue refining functionality, fixing issues, and introducing improvements through ongoing testing and updates.",
 
-        
+
+    
+project_live_status:
+    "LIVE DEMO",
+
+project_development_status:
+    "IN DEVELOPMENT",
+
+project_businessos_title:
+    "BusinessOS",
+
+project_businessos_desc:
+    "A business management platform for organizing employees, projects, tasks, and workflows.",
+
+project_papers_title:
+    "PAPERS",
+
+project_papers_desc:
+    "A modern macOS writing application focused on page-based editing and a refined user experience.",
+
+project_dreamland_title:
+    "DREAMLAND",
+
+project_dreamland_desc:
+    "An original game concept centered on exploration, world building, and visual storytelling.",
+
+project_open_demo:
+    "Open Live Demo",
+
+project_preview_soon:
+    "Project Preview Coming Soon",
+
+project_papers_preview:
+    "A focused writing experience.",
+
+project_dreamland_preview:
+    "A world waiting to be explored.",
+
+    
+    project_live_status:
+    "LIVE DEMO",
+
+project_development_status:
+    "IN DEVELOPMENT",
+
+project_businessos_title:
+    "BusinessOS",
+
+project_businessos_desc:
+    "A business management platform for organizing employees, projects, tasks, and workflows.",
+
+project_aurelia_title:
+    "AURELIA — Fine Jewelry",
+
+project_aurelia_desc:
+    "An elegant jewelry storefront featuring product discovery, search and filtering, product details, shopping cart interactions, and a demo checkout experience.",
+
+project_dreamland_title:
+    "DREAMLAND",
+
+project_dreamland_desc:
+    "An original game concept centered on exploration, world building, and visual storytelling.",
+
+project_open_demo:
+    "Open Live Demo",
+
+project_preview_soon:
+    "Project Preview Coming Soon",
+
+project_aurelia_preview:
+    "Fine Jewelry · Timeless Elegance",
+
+project_dreamland_preview:
+    "A world waiting to be explored.",
+
+
     },
 
 
     ka: {
+
+project_live_status:
+    "ცოცხალი დემო",
+
+project_development_status:
+    "დამუშავების პროცესში",
+
+project_businessos_title:
+    "BusinessOS",
+
+project_businessos_desc:
+    "ბიზნესის მართვის პლატფორმა თანამშრომლების, პროექტების, ამოცანებისა და სამუშაო პროცესების ორგანიზებისთვის.",
+
+project_aurelia_title:
+    "AURELIA — ძვირფასეულობა",
+
+project_aurelia_desc:
+    "დახვეწილი საიუველირო მაღაზია პროდუქციის დათვალიერების, ძიებისა და ფილტრაციის, დეტალური აღწერების, კალათისა და დემო შეკვეთის გაფორმების ფუნქციებით.",
+
+project_dreamland_title:
+    "DREAMLAND",
+
+project_dreamland_desc:
+    "ორიგინალური თამაშის კონცეფცია, რომელიც კვლევაზე, სამყაროს შექმნასა და ვიზუალურ თხრობაზეა ორიენტირებული.",
+
+project_open_demo:
+    "დემო ვერსიის გახსნა",
+
+project_preview_soon:
+    "პროექტის პრევიუ მალე",
+
+project_aurelia_preview:
+    "ძვირფასეულობა · მარადიული ელეგანტურობა",
+
+project_dreamland_preview:
+    "სამყარო, რომელიც კვლევას ელოდება.",
+
+
+project_live_status:
+    "ცოცხალი დემო",
+
+project_development_status:
+    "დამუშავების პროცესში",
+
+project_businessos_title:
+    "BusinessOS",
+
+project_businessos_desc:
+    "ბიზნესის მართვის პლატფორმა თანამშრომლების, პროექტების, ამოცანებისა და სამუშაო პროცესების ორგანიზებისთვის.",
+
+project_papers_title:
+    "PAPERS",
+
+project_papers_desc:
+    "თანამედროვე macOS აპლიკაცია დოკუმენტების გვერდებად რედაქტირებისა და კომფორტული წერისთვის.",
+
+project_dreamland_title:
+    "DREAMLAND",
+
+project_dreamland_desc:
+    "ორიგინალური თამაშის კონცეფცია, რომელიც კვლევაზე, სამყაროს შექმნასა და ვიზუალურ თხრობაზეა ორიენტირებული.",
+
+project_open_demo:
+    "დემო ვერსიის გახსნა",
+
+project_preview_soon:
+    "პროექტის პრევიუ მალე",
+
+project_papers_preview:
+    "წერისთვის შექმნილი გარემო.",
+
+project_dreamland_preview:
+    "სამყარო, რომელიც კვლევას ელოდება.",
+
+
 
         nav_home: "მთავარი",
         nav_about: "ჩემ შესახებ",

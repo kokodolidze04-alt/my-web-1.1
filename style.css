@@ -5391,6 +5391,496 @@ p {
 }
 
 
+
+
+/* =====================================================
+   SELECTED PROJECTS — BUSINESSOS / PAPERS / DREAMLAND
+===================================================== */
+
+.selected-projects-grid {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 22px;
+    align-items: stretch;
+}
+
+.selected-projects-grid .about-project-card {
+    min-width: 0;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+    padding: 0;
+    border: 1px solid var(--border);
+    border-radius: var(--radius-lg);
+    background: linear-gradient(
+        145deg,
+        rgba(255,255,255,0.055),
+        rgba(255,255,255,0.018)
+    );
+    transition:
+        transform var(--transition),
+        border-color var(--transition),
+        background var(--transition);
+}
+
+.selected-projects-grid a.about-project-card {
+    color: inherit;
+    text-decoration: none;
+}
+
+.selected-projects-grid .about-project-card:hover {
+    transform: translateY(-5px);
+    border-color: var(--accent-border);
+    background: rgba(255,255,255,0.045);
+}
+
+.selected-projects-grid .featured-project-card {
+    grid-column: 1 / -1;
+    display: grid;
+    grid-template-columns: minmax(0, 1.2fr) minmax(280px, 0.8fr);
+}
+
+.project-preview {
+    position: relative;
+    min-height: 270px;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    isolation: isolate;
+}
+
+.project-preview-businessos {
+    align-items: stretch;
+    justify-content: flex-start;
+    background:
+        radial-gradient(
+            circle at 85% 10%,
+            rgba(0,240,255,0.14),
+            transparent 35%
+        ),
+        #0a0d12;
+    padding: 16px;
+}
+
+.project-preview-topbar {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    min-height: 28px;
+    padding-bottom: 14px;
+    border-bottom: 1px solid rgba(255,255,255,0.09);
+}
+
+.project-window-dot {
+    width: 6px;
+    height: 6px;
+    border-radius: 50%;
+    background: #545d68;
+}
+
+.project-preview-label {
+    margin-left: 10px;
+    color: #84919f;
+    font-size: 8px;
+    letter-spacing: 0.12em;
+}
+
+.project-preview-content {
+    flex: 1;
+    min-height: 190px;
+    display: grid;
+    grid-template-columns: 36px minmax(0, 1fr);
+    gap: 15px;
+    padding-top: 16px;
+}
+
+.project-preview-sidebar {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 13px;
+    padding: 7px 0;
+    border-right: 1px solid rgba(255,255,255,0.07);
+}
+
+.project-sidebar-logo {
+    width: 24px;
+    height: 24px;
+    display: grid;
+    place-items: center;
+    border-radius: 7px;
+    background: var(--accent);
+    color: #001014;
+    font-size: 12px;
+    font-weight: 800;
+}
+
+.project-sidebar-line {
+    width: 17px;
+    height: 4px;
+    border-radius: 5px;
+    background: rgba(255,255,255,0.13);
+}
+
+.project-sidebar-line.active {
+    background: var(--accent);
+}
+
+.project-preview-dashboard {
+    min-width: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 14px;
+    padding: 4px 4px 12px 0;
+}
+
+.project-preview-heading {
+    display: flex;
+    justify-content: space-between;
+    gap: 12px;
+}
+
+.project-preview-heading span:first-child {
+    width: 36%;
+    height: 9px;
+    border-radius: 5px;
+    background: rgba(255,255,255,0.75);
+}
+
+.project-preview-heading span:last-child {
+    width: 18%;
+    height: 9px;
+    border-radius: 5px;
+    background: rgba(0,240,255,0.6);
+}
+
+.project-preview-metrics {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 8px;
+}
+
+.project-preview-metrics span {
+    height: 52px;
+    border: 1px solid rgba(255,255,255,0.08);
+    border-radius: 8px;
+    background: rgba(255,255,255,0.035);
+}
+
+.project-preview-panels {
+    flex: 1;
+    display: grid;
+    grid-template-columns: 1.5fr 1fr;
+    gap: 8px;
+}
+
+.project-preview-panels span {
+    min-height: 65px;
+    border: 1px solid rgba(255,255,255,0.08);
+    border-radius: 8px;
+    background: rgba(255,255,255,0.025);
+}
+
+.project-preview-chart {
+    background:
+        linear-gradient(
+            160deg,
+            transparent 48%,
+            rgba(0,240,255,0.45) 49%,
+            transparent 51%
+        ),
+        rgba(255,255,255,0.025) !important;
+}
+
+.project-preview-overlay {
+    position: absolute;
+    inset: 0;
+    z-index: 3;
+    display: grid;
+    place-items: center;
+    background: rgba(3,8,12,0.6);
+    opacity: 0;
+    transition: opacity var(--transition);
+}
+
+.featured-project-card:hover .project-preview-overlay,
+.featured-project-card:focus-visible .project-preview-overlay {
+    opacity: 1;
+}
+
+.project-preview-open {
+    display: inline-flex;
+    align-items: center;
+    gap: 9px;
+    padding: 12px 16px;
+    border: 1px solid var(--accent-border);
+    border-radius: 12px;
+    background: rgba(0,240,255,0.1);
+    color: var(--accent);
+    font-size: 12px;
+    font-weight: 700;
+}
+
+.project-preview-open svg {
+    width: 16px;
+    height: 16px;
+}
+
+.about-project-main {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 25px;
+}
+
+.project-card-meta {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 10px;
+    margin-bottom: 22px;
+}
+
+.project-card-number {
+    color: #777;
+    font-size: 10px;
+    font-weight: 700;
+    letter-spacing: 0.12em;
+}
+
+.project-status-live,
+.project-status-development {
+    display: inline-flex;
+    align-items: center;
+    gap: 7px;
+    padding: 6px 9px;
+    border: 1px solid var(--border);
+    border-radius: 100px;
+    font-size: 8px;
+    font-weight: 700;
+    letter-spacing: 0.08em;
+}
+
+.project-status-live {
+    color: #77f3c0;
+    border-color: rgba(119,243,192,0.2);
+    background: rgba(119,243,192,0.06);
+}
+
+.project-status-live::before {
+    content: "";
+    width: 5px;
+    height: 5px;
+    border-radius: 50%;
+    background: #77f3c0;
+}
+
+.project-status-development {
+    color: #aaa;
+    background: rgba(255,255,255,0.025);
+}
+
+.about-project-main h3 {
+    margin-bottom: 12px;
+    font-size: clamp(22px, 2.3vw, 30px);
+    line-height: 1.2;
+    letter-spacing: -0.035em;
+}
+
+.about-project-main > p {
+    margin-bottom: 22px;
+    color: var(--text-soft);
+    font-size: 12px;
+    line-height: 1.8;
+}
+
+.project-tech-stack {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 7px;
+    margin-top: auto;
+    margin-bottom: 22px;
+}
+
+.project-tech-stack span {
+    padding: 6px 9px;
+    border: 1px solid var(--border);
+    border-radius: 8px;
+    color: #aaa;
+    font-size: 9px;
+}
+
+.project-card-footer {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 12px;
+    padding-top: 17px;
+    border-top: 1px solid var(--border);
+    color: var(--accent);
+    font-size: 11px;
+    font-weight: 700;
+}
+
+.project-card-footer svg {
+    width: 17px;
+    height: 17px;
+    flex-shrink: 0;
+    transition: transform var(--transition);
+}
+
+.featured-project-card:hover .project-card-footer svg {
+    transform: translate(3px, -3px);
+}
+
+.project-card-footer-muted {
+    color: #777;
+}
+
+.project-preview-papers {
+    gap: 17px;
+    background:
+        radial-gradient(
+            circle at 50% 35%,
+            rgba(255,255,255,0.10),
+            transparent 40%
+        ),
+        #111116;
+    color: #f5f5f5;
+}
+
+.project-concept-icon {
+    width: 65px;
+    height: 65px;
+    display: grid;
+    place-items: center;
+    border: 1px solid rgba(255,255,255,0.15);
+    border-radius: 19px;
+    background: rgba(255,255,255,0.055);
+    box-shadow: 0 20px 60px rgba(0,0,0,0.25);
+}
+
+.project-concept-icon svg {
+    width: 29px;
+    height: 29px;
+}
+
+.project-concept-wordmark,
+.dreamland-wordmark {
+    font-size: 18px;
+    font-weight: 700;
+    letter-spacing: 0.18em;
+}
+
+.project-concept-caption {
+    color: #999;
+    font-size: 10px;
+    text-align: center;
+}
+
+.project-preview-dreamland {
+    gap: 14px;
+    background:
+        radial-gradient(
+            circle at 50% 35%,
+            rgba(126,99,255,0.24),
+            transparent 38%
+        ),
+        #0d0b16;
+    color: #eee9ff;
+}
+
+.dreamland-orbit {
+    position: absolute;
+    top: 38%;
+    left: 50%;
+    border: 1px solid rgba(172,150,255,0.25);
+    border-radius: 50%;
+    transform: translate(-50%, -50%);
+    pointer-events: none;
+}
+
+.dreamland-orbit-one {
+    width: 180px;
+    height: 180px;
+}
+
+.dreamland-orbit-two {
+    width: 125px;
+    height: 125px;
+    border-color: rgba(255,255,255,0.15);
+}
+
+.dreamland-core {
+    z-index: 1;
+    width: 62px;
+    height: 62px;
+    display: grid;
+    place-items: center;
+    border: 1px solid rgba(172,150,255,0.4);
+    border-radius: 50%;
+    background: rgba(126,99,255,0.12);
+    color: #c5b6ff;
+}
+
+.dreamland-core svg {
+    width: 26px;
+    height: 26px;
+}
+
+.dreamland-wordmark,
+.project-preview-dreamland .project-concept-caption {
+    z-index: 1;
+}
+
+@media (max-width: 760px) {
+    .selected-projects-grid {
+        grid-template-columns: minmax(0, 1fr);
+    }
+
+    .selected-projects-grid .featured-project-card {
+        grid-column: auto;
+        grid-template-columns: minmax(0, 1fr);
+    }
+
+    .project-preview {
+        min-height: 230px;
+    }
+
+    .project-preview-businessos {
+        min-height: 255px;
+    }
+
+    .about-project-main {
+        padding: 22px;
+    }
+
+    .project-preview-overlay {
+        opacity: 1;
+        background: linear-gradient(
+            to top,
+            rgba(3,8,12,0.55),
+            transparent 50%
+        );
+        place-items: end center;
+        padding-bottom: 16px;
+    }
+}
+
+@media (prefers-reduced-motion: reduce) {
+    .selected-projects-grid .about-project-card,
+    .project-preview-overlay,
+    .project-card-footer svg {
+        transition: none;
+    }
+}
+
+
 /* ---------------------------------------------------------
    5. RESPONSIVE DESIGN (TABLET & MOBILE)
 --------------------------------------------------------- */

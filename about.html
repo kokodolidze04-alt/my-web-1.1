@@ -731,12 +731,10 @@
 
 
 <!-- =====================================================
-     CURRENT PROJECTS
+     SELECTED PROJECTS
 ===================================================== -->
 
-<section
-    class="home-section about-projects"
->
+<section class="home-section about-projects" id="projects">
 
     <div class="home-section-heading">
 
@@ -744,154 +742,269 @@
             class="section-kicker"
             data-i18n="about_projects_kicker"
         >
-            CURRENT PROJECTS
+            SELECTED PROJECTS
         </span>
 
-
         <h2 data-i18n="about_projects_title">
-            Ideas currently
-            taking shape.
+            Products built to solve real problems.
         </h2>
 
-
         <p data-i18n="about_projects_desc">
-            Personal projects that are currently
-            being designed, developed, and explored.
+            Explore selected software projects, their interfaces,
+            and the ideas behind them.
         </p>
 
     </div>
 
+    <div class="about-project-list selected-projects-grid">
 
-    <div class="about-project-list">
+        <!-- PROJECT 01: BUSINESSOS -->
 
+        <a
+            class="about-project-card featured-project-card"
+            href="https://mvp-m44e.vercel.app"
+            target="_blank"
+            rel="noopener noreferrer"
+            aria-label="Open BusinessOS live demo"
+        >
 
-        <!-- PROJECT 01 -->
+            <div class="project-preview project-preview-businessos">
 
-        <article class="about-project-card">
+                <div class="project-preview-topbar">
+                    <span class="project-window-dot"></span>
+                    <span class="project-window-dot"></span>
+                    <span class="project-window-dot"></span>
 
-            <div class="about-project-index">
-                01
+                    <span class="project-preview-label">
+                        BUSINESSOS / LIVE PREVIEW
+                    </span>
+                </div>
+
+                <div class="project-preview-content">
+
+                    <div class="project-preview-sidebar">
+                        <span class="project-sidebar-logo">B</span>
+                        <span class="project-sidebar-line active"></span>
+                        <span class="project-sidebar-line"></span>
+                        <span class="project-sidebar-line"></span>
+                        <span class="project-sidebar-line"></span>
+                        <span class="project-sidebar-line"></span>
+                    </div>
+
+                    <div class="project-preview-dashboard">
+
+                        <div class="project-preview-heading">
+                            <span></span>
+                            <span></span>
+                        </div>
+
+                        <div class="project-preview-metrics">
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                        </div>
+
+                        <div class="project-preview-panels">
+                            <span class="project-preview-chart"></span>
+                            <span class="project-preview-activity"></span>
+                        </div>
+
+                    </div>
+
+                </div>
+
+                <div class="project-preview-overlay">
+                    <span class="project-preview-open">
+                        <i data-lucide="external-link" aria-hidden="true"></i>
+                        <span data-i18n="project_open_demo">
+                            Open Live Demo
+                        </span>
+                    </span>
+                </div>
+
             </div>
-
 
             <div class="about-project-main">
 
-                <span
-                    class="section-kicker"
-                    data-i18n="project_1_status"
-                >
-                    IN DEVELOPMENT
-                </span>
+                <div class="project-card-meta">
+                    <span class="project-card-number">01</span>
 
+                    <span
+                        class="project-status-live"
+                        data-i18n="project_live_status"
+                    >
+                        LIVE DEMO
+                    </span>
+                </div>
 
-                <h3 data-i18n="project_ai_title">
-                    Local AI
+                <h3 data-i18n="project_businessos_title">
+                    BusinessOS
                 </h3>
 
-
-                <p data-i18n="project_ai_desc">
-                    Building and training local
-                    artificial intelligence systems.
+                <p data-i18n="project_businessos_desc">
+                    A business management platform for organizing
+                    employees, projects, tasks, and workflows.
                 </p>
 
+                <div class="project-tech-stack">
+                    <span>React</span>
+                    <span>TypeScript</span>
+                    <span>Vite</span>
+                </div>
+
+                <div class="project-card-footer">
+                    <span data-i18n="project_open_demo">
+                        Open Live Demo
+                    </span>
+
+                    <i data-lucide="arrow-up-right" aria-hidden="true"></i>
+                </div>
+
             </div>
 
+        </a>
 
-            <div class="about-project-icon">
 
-                <i
-                    data-lucide="arrow-up-right"
-                    aria-hidden="true"
-                ></i>
+       <!-- PROJECT 02: AURELIA -->
+
+<a
+    class="about-project-card selected-project-card"
+    href="https://fine-jewelry-xi.vercel.app/"
+    target="_blank"
+    rel="noopener noreferrer"
+    aria-label="Open AURELIA Fine Jewelry live demo"
+>
+
+    <div class="project-preview project-preview-papers">
+
+        <div class="project-concept-icon">
+            <i data-lucide="gem" aria-hidden="true"></i>
+        </div>
+
+        <span class="project-concept-wordmark">
+            AURELIA
+        </span>
+
+        <span
+            class="project-concept-caption"
+            data-i18n="project_aurelia_preview"
+        >
+            Fine Jewelry · Timeless Elegance
+        </span>
+
+        <div class="project-preview-overlay">
+            <span class="project-preview-open">
+                <i data-lucide="external-link" aria-hidden="true"></i>
+                <span data-i18n="project_open_demo">
+                    Open Live Demo
+                </span>
+            </span>
+        </div>
+
+    </div>
+
+    <div class="about-project-main">
+
+        <div class="project-card-meta">
+            <span class="project-card-number">02</span>
+
+            <span
+                class="project-status-live"
+                data-i18n="project_live_status"
+            >
+                LIVE DEMO
+            </span>
+        </div>
+
+        <h3 data-i18n="project_aurelia_title">
+            AURELIA — Fine Jewelry
+        </h3>
+
+        <p data-i18n="project_aurelia_desc">
+            An elegant jewelry storefront featuring product
+            discovery, search and filtering, product details,
+            shopping cart interactions, and a demo checkout experience.
+        </p>
+
+        <div class="project-tech-stack">
+            <span>HTML</span>
+            <span>CSS</span>
+            <span>JavaScript</span>
+            <span>Supabase</span>
+            <span>Vercel</span>
+        </div>
+
+        <div class="project-card-footer">
+            <span data-i18n="project_open_demo">
+                Open Live Demo
+            </span>
+
+            <i data-lucide="arrow-up-right" aria-hidden="true"></i>
+        </div>
+
+    </div>
+
+</a>
+
+        <!-- PROJECT 03: DREAMLAND -->
+
+        <article class="about-project-card selected-project-card">
+
+            <div class="project-preview project-preview-dreamland">
+
+                <div class="dreamland-orbit dreamland-orbit-one"></div>
+                <div class="dreamland-orbit dreamland-orbit-two"></div>
+
+                <div class="dreamland-core">
+                    <i data-lucide="gamepad-2" aria-hidden="true"></i>
+                </div>
+
+                <span class="dreamland-wordmark">DREAMLAND</span>
+
+                <span
+                    class="project-concept-caption"
+                    data-i18n="project_dreamland_preview"
+                >
+                    A world waiting to be explored.
+                </span>
 
             </div>
-
-        </article>
-
-
-        <!-- PROJECT 02 -->
-
-        <article class="about-project-card">
-
-            <div class="about-project-index">
-                02
-            </div>
-
 
             <div class="about-project-main">
 
-                <span
-                    class="section-kicker"
-                    data-i18n="project_2_status"
-                >
-                    IN DEVELOPMENT
-                </span>
+                <div class="project-card-meta">
+                    <span class="project-card-number">03</span>
 
-
-                <h3 data-i18n="project_papers_title">
-                    PAPERS
-                </h3>
-
-
-                <p data-i18n="project_papers_desc">
-                    A modern document application
-                    designed for macOS.
-                </p>
-
-            </div>
-
-
-            <div class="about-project-icon">
-
-                <i
-                    data-lucide="arrow-up-right"
-                    aria-hidden="true"
-                ></i>
-
-            </div>
-
-        </article>
-
-
-        <!-- PROJECT 03 -->
-
-        <article class="about-project-card">
-
-            <div class="about-project-index">
-                03
-            </div>
-
-
-            <div class="about-project-main">
-
-                <span
-                    class="section-kicker"
-                    data-i18n="project_3_status"
-                >
-                    IN DEVELOPMENT
-                </span>
-
+                    <span
+                        class="project-status-development"
+                        data-i18n="project_development_status"
+                    >
+                        IN DEVELOPMENT
+                    </span>
+                </div>
 
                 <h3 data-i18n="project_dreamland_title">
                     DREAMLAND
                 </h3>
 
-
                 <p data-i18n="project_dreamland_desc">
-                    An original game project focused
-                    on exploration, world building,
-                    and visual storytelling.
+                    An original cubic-world game concept focused on
+                    exploration, atmosphere, and immersive environments.
                 </p>
 
-            </div>
+                <div class="project-tech-stack">
+                    <span>Unreal Engine</span>
+                    <span>Blender</span>
+                    <span>Game Design</span>
+                </div>
 
+                <div class="project-card-footer project-card-footer-muted">
+                    <span data-i18n="project_preview_soon">
+                        Project Preview Coming Soon
+                    </span>
 
-            <div class="about-project-icon">
-
-                <i
-                    data-lucide="arrow-up-right"
-                    aria-hidden="true"
-                ></i>
+                    <i data-lucide="arrow-up-right" aria-hidden="true"></i>
+                </div>
 
             </div>
 
