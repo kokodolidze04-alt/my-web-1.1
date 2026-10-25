@@ -2471,8 +2471,8 @@ const translations = {
         project_papers_desc:
             "A modern document application designed for macOS.",
 
-        project_dreamland_desc:
-            "An original game project focused on exploration, world building, and visual storytelling.",
+        project_appointly_desc:
+            "A booking and client management system with appointment scheduling, service management, a weekly calendar, and reporting.",
 
         about_goals_kicker:
             "FUTURE",
@@ -3201,11 +3201,11 @@ project_papers_title:
 project_papers_desc:
     "A modern macOS writing application focused on page-based editing and a refined user experience.",
 
-project_dreamland_title:
-    "DREAMLAND",
+project_appointly_title:
+    "Appointly",
 
-project_dreamland_desc:
-    "An original game concept centered on exploration, world building, and visual storytelling.",
+project_appointly_desc:
+    "A booking and client management system with appointment scheduling, service management, a weekly calendar, and reporting.",
 
 project_open_demo:
     "Open Live Demo",
@@ -3216,8 +3216,8 @@ project_preview_soon:
 project_papers_preview:
     "A focused writing experience.",
 
-project_dreamland_preview:
-    "A world waiting to be explored.",
+project_appointly_preview:
+    "Appointment booking and client management, in one workspace.",
 
     
     project_live_status:
@@ -3238,11 +3238,11 @@ project_aurelia_title:
 project_aurelia_desc:
     "An elegant jewelry storefront featuring product discovery, search and filtering, product details, shopping cart interactions, and a demo checkout experience.",
 
-project_dreamland_title:
-    "DREAMLAND",
+project_appointly_title:
+    "Appointly",
 
-project_dreamland_desc:
-    "An original game concept centered on exploration, world building, and visual storytelling.",
+project_appointly_desc:
+    "A booking and client management system with appointment scheduling, service management, a weekly calendar, and reporting.",
 
 project_open_demo:
     "Open Live Demo",
@@ -3253,8 +3253,8 @@ project_preview_soon:
 project_aurelia_preview:
     "Fine Jewelry · Timeless Elegance",
 
-project_dreamland_preview:
-    "A world waiting to be explored.",
+project_appointly_preview:
+    "Appointment booking and client management, in one workspace.",
 
 
     },
@@ -3280,11 +3280,11 @@ project_aurelia_title:
 project_aurelia_desc:
     "დახვეწილი საიუველირო მაღაზია პროდუქციის დათვალიერების, ძიებისა და ფილტრაციის, დეტალური აღწერების, კალათისა და დემო შეკვეთის გაფორმების ფუნქციებით.",
 
-project_dreamland_title:
-    "DREAMLAND",
+project_appointly_title:
+    "Appointly",
 
-project_dreamland_desc:
-    "ორიგინალური თამაშის კონცეფცია, რომელიც კვლევაზე, სამყაროს შექმნასა და ვიზუალურ თხრობაზეა ორიენტირებული.",
+project_appointly_desc:
+    "ჯავშნებისა და კლიენტების მართვის სისტემა სერვისების მართვით, კვირის კალენდრითა და ანგარიშგებით.",
 
 project_open_demo:
     "დემო ვერსიის გახსნა",
@@ -3295,8 +3295,8 @@ project_preview_soon:
 project_aurelia_preview:
     "ძვირფასეულობა · მარადიული ელეგანტურობა",
 
-project_dreamland_preview:
-    "სამყარო, რომელიც კვლევას ელოდება.",
+project_appointly_preview:
+    "ჯავშნები და კლიენტები — ერთ სამუშაო სივრცეში.",
 
 
 project_live_status:
@@ -3317,11 +3317,11 @@ project_papers_title:
 project_papers_desc:
     "თანამედროვე macOS აპლიკაცია დოკუმენტების გვერდებად რედაქტირებისა და კომფორტული წერისთვის.",
 
-project_dreamland_title:
-    "DREAMLAND",
+project_appointly_title:
+    "Appointly",
 
-project_dreamland_desc:
-    "ორიგინალური თამაშის კონცეფცია, რომელიც კვლევაზე, სამყაროს შექმნასა და ვიზუალურ თხრობაზეა ორიენტირებული.",
+project_appointly_desc:
+    "ჯავშნებისა და კლიენტების მართვის სისტემა სერვისების მართვით, კვირის კალენდრითა და ანგარიშგებით.",
 
 project_open_demo:
     "დემო ვერსიის გახსნა",
@@ -3332,8 +3332,8 @@ project_preview_soon:
 project_papers_preview:
     "წერისთვის შექმნილი გარემო.",
 
-project_dreamland_preview:
-    "სამყარო, რომელიც კვლევას ელოდება.",
+project_appointly_preview:
+    "ჯავშნები და კლიენტები — ერთ სამუშაო სივრცეში.",
 
 
 
@@ -3503,7 +3503,7 @@ project_dreamland_preview:
             "ჩემ შესახებ",
 
         about_intro_title:
-            "ტექნოლოგიებისადმი მრავალდისციპლინური მიდგომა.",
+            "ვქმნი, ვსწავლობ, ვავითარებ.",
 
         about_intro_desc:
             "ჩემი ინტერესები მოიცავს ტექნოლოგიებს, ფსიქოლოგიას, ხელოვნურ ინტელექტს, ვიზუალურ გამოთვლებსა და კრეატიულ დეველოპმენტს.",
@@ -3622,8 +3622,8 @@ project_dreamland_preview:
         project_papers_desc:
             "თანამედროვე დოკუმენტების აპლიკაცია macOS-ისთვის.",
 
-        project_dreamland_desc:
-            "ორიგინალური თამაშის პროექტი, რომელიც ორიენტირებულია კვლევაზე, სამყაროს შექმნასა და ვიზუალურ თხრობაზე.",
+        project_appointly_desc:
+            "ჯავშნებისა და კლიენტების მართვის სისტემა სერვისების მართვით, კვირის კალენდრითა და ანგარიშგებით.",
 
         about_goals_kicker:
             "მომავალი",

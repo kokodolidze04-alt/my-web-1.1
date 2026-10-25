@@ -66,7 +66,7 @@
         28px;
 
     --container:
-        1180px;
+        1320px;
 
     --nav-height:
         78px;
@@ -129,7 +129,7 @@ body {
     -moz-osx-font-smoothing: grayscale;
 }
 
-body::selection {
+::selection {
 
     background:
         var(--accent);
@@ -5394,7 +5394,7 @@ p {
 
 
 /* =====================================================
-   SELECTED PROJECTS — BUSINESSOS / PAPERS / DREAMLAND
+   SELECTED PROJECTS — BUSINESSOS / AURELIA / APPOINTLY
 ===================================================== */
 
 .selected-projects-grid {
@@ -5771,7 +5771,7 @@ p {
 }
 
 .project-concept-wordmark,
-.dreamland-wordmark {
+.appointly-wordmark {
     font-size: 18px;
     font-weight: 700;
     letter-spacing: 0.18em;
@@ -5783,58 +5783,58 @@ p {
     text-align: center;
 }
 
-.project-preview-dreamland {
+.project-preview-appointly {
     gap: 14px;
     background:
         radial-gradient(
             circle at 50% 35%,
-            rgba(126,99,255,0.24),
+            rgba(0,240,255,0.16),
             transparent 38%
         ),
-        #0d0b16;
-    color: #eee9ff;
+        #071318;
+    color: #e8fcff;
 }
 
-.dreamland-orbit {
+.appointly-orbit {
     position: absolute;
     top: 38%;
     left: 50%;
-    border: 1px solid rgba(172,150,255,0.25);
+    border: 1px solid rgba(0,240,255,0.24);
     border-radius: 50%;
     transform: translate(-50%, -50%);
     pointer-events: none;
 }
 
-.dreamland-orbit-one {
+.appointly-orbit-one {
     width: 180px;
     height: 180px;
 }
 
-.dreamland-orbit-two {
+.appointly-orbit-two {
     width: 125px;
     height: 125px;
     border-color: rgba(255,255,255,0.15);
 }
 
-.dreamland-core {
+.appointly-core {
     z-index: 1;
     width: 62px;
     height: 62px;
     display: grid;
     place-items: center;
-    border: 1px solid rgba(172,150,255,0.4);
+    border: 1px solid rgba(0,240,255,0.38);
     border-radius: 50%;
-    background: rgba(126,99,255,0.12);
-    color: #c5b6ff;
+    background: rgba(0,240,255,0.08);
+    color: #8af7ff;
 }
 
-.dreamland-core svg {
+.appointly-core svg {
     width: 26px;
     height: 26px;
 }
 
-.dreamland-wordmark,
-.project-preview-dreamland .project-concept-caption {
+.appointly-wordmark,
+.project-preview-appointly .project-concept-caption {
     z-index: 1;
 }
 
@@ -5879,6 +5879,235 @@ p {
         transition: none;
     }
 }
+
+
+
+
+
+
+/* ========================================
+   ABOUT INTRODUCTION
+   ======================================== */
+
+.about-introduction {
+    position: relative;
+    isolation: isolate;
+    padding: 100px 7% 110px;
+    overflow: hidden;
+}
+
+.about-introduction .home-section-heading {
+    position: relative;
+    max-width: 850px;
+    margin: 0 auto 42px;
+    text-align: center;
+}
+
+/* Small section label */
+
+.about-introduction .section-kicker {
+    display: inline-flex;
+    align-items: center;
+    gap: 9px;
+    margin-bottom: 20px;
+    color: #59e5d0;
+    font-size: 10px;
+    font-weight: 700;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+}
+
+.about-introduction .section-kicker::before,
+.about-introduction .section-kicker::after {
+    content: "";
+    width: 20px;
+    height: 1px;
+    background: linear-gradient(
+        90deg,
+        transparent,
+        rgba(89, 229, 208, 0.75)
+    );
+}
+
+.about-introduction .section-kicker::after {
+    transform: rotate(180deg);
+}
+
+/* Main heading */
+
+.about-introduction .home-section-heading h2 {
+    max-width: 780px;
+    margin: 0 auto 20px;
+    color: #f0f7f6;
+    font-size: clamp(30px, 4vw, 49px);
+    font-weight: 700;
+    line-height: 1.2;
+    letter-spacing: -1.5px;
+    text-wrap: balance;
+}
+
+/* Heading description */
+
+.about-introduction .home-section-heading > p {
+    max-width: 650px;
+    margin: 0 auto;
+    color: rgba(218, 235, 231, 0.7);
+    font-size: 15px;
+    line-height: 1.9;
+    text-wrap: pretty;
+}
+
+/* Content layout */
+
+.about-introduction .about-introduction-grid {
+    width: min(100%, 920px);
+    margin: 0 auto;
+}
+
+.about-introduction .about-introduction-main {
+    position: relative;
+    padding: 32px 38px;
+    overflow: hidden;
+    border: 1px solid rgba(89, 229, 208, 0.15);
+    border-radius: 18px;
+    background:
+        radial-gradient(
+            ellipse at 0% 0%,
+            rgba(0, 220, 190, 0.065),
+            transparent 55%
+        ),
+        rgba(4, 17, 18, 0.78);
+    box-shadow:
+        0 18px 55px rgba(0, 0, 0, 0.16),
+        inset 0 1px 0 rgba(255, 255, 255, 0.025);
+    backdrop-filter: blur(14px);
+    -webkit-backdrop-filter: blur(14px);
+}
+
+/* Subtle accent line */
+
+.about-introduction .about-introduction-main::before {
+    content: "";
+    position: absolute;
+    top: 28px;
+    bottom: 28px;
+    left: 0;
+    width: 2px;
+    border-radius: 2px;
+    background: linear-gradient(
+        180deg,
+        transparent,
+        #21cdb8 30%,
+        #21cdb8 70%,
+        transparent
+    );
+    opacity: 0.8;
+}
+
+/* Paragraphs */
+
+.about-introduction .about-introduction-main p {
+    margin: 0;
+    color: rgba(228, 240, 237, 0.82);
+    font-size: 15px;
+    line-height: 2;
+    letter-spacing: 0.05px;
+}
+
+.about-introduction .about-introduction-main p + p {
+    margin-top: 20px;
+    padding-top: 20px;
+    border-top: 1px solid rgba(200, 240, 230, 0.08);
+}
+
+/* Hover detail */
+
+@media (hover: hover) {
+    .about-introduction .about-introduction-main {
+        transition:
+            border-color 250ms ease,
+            transform 250ms ease,
+            box-shadow 250ms ease;
+    }
+
+    .about-introduction .about-introduction-main:hover {
+        transform: translateY(-3px);
+        border-color: rgba(89, 229, 208, 0.28);
+        box-shadow:
+            0 24px 65px rgba(0, 0, 0, 0.23),
+            0 0 35px rgba(0, 220, 190, 0.035);
+    }
+}
+
+/* Responsive */
+
+@media (max-width: 768px) {
+    .about-introduction {
+        padding: 75px 22px 80px;
+    }
+
+    .about-introduction .home-section-heading {
+        margin-bottom: 30px;
+    }
+
+    .about-introduction .home-section-heading h2 {
+        font-size: clamp(28px, 6vw, 40px);
+        letter-spacing: -0.8px;
+    }
+
+    .about-introduction .home-section-heading > p {
+        font-size: 14px;
+        line-height: 1.8;
+    }
+
+    .about-introduction .about-introduction-main {
+        padding: 27px 25px;
+    }
+
+    .about-introduction .about-introduction-main p {
+        font-size: 14px;
+        line-height: 1.9;
+    }
+}
+
+@media (max-width: 480px) {
+    .about-introduction {
+        padding: 60px 17px 65px;
+    }
+
+    .about-introduction .section-kicker {
+        font-size: 9px;
+        letter-spacing: 2.3px;
+    }
+
+    .about-introduction .home-section-heading h2 {
+        font-size: 29px;
+        line-height: 1.3;
+    }
+
+    .about-introduction .about-introduction-main {
+        padding: 24px 21px;
+        border-radius: 14px;
+    }
+
+    .about-introduction .about-introduction-main::before {
+        top: 22px;
+        bottom: 22px;
+    }
+
+    .about-introduction .about-introduction-main p {
+        font-size: 13px;
+        line-height: 1.85;
+    }
+}
+
+@media (prefers-reduced-motion: reduce) {
+    .about-introduction .about-introduction-main {
+        transition: none;
+    }
+}
+
+
 
 
 /* ---------------------------------------------------------
@@ -6544,4 +6773,309 @@ p {
         width: calc(100% - 64px);
     }
 
+}
+
+
+/* =========================================================
+   32. RESPONSIVE LAYOUT SYSTEM
+   Fluid sizing with centered containers and safe grid columns.
+   Existing component styles and JavaScript hooks are preserved.
+========================================================= */
+
+:root {
+    --page-gutter: clamp(20px, 4vw, 72px);
+    --content-max: 1480px;
+}
+
+/* Prevent grid/flex children from forcing layout overflow */
+main,
+section,
+article,
+aside,
+header,
+footer,
+.home-section,
+.home-section-heading,
+.home-hero-content,
+.opportunity-inner,
+.selected-projects-grid,
+.pricing-grid,
+.contact-bento-grid {
+    min-width: 0;
+}
+
+img,
+video,
+canvas,
+iframe {
+    max-width: 100%;
+}
+
+/* Consistent, centered content widths */
+.home-section,
+.home-final-cta,
+.pricing-section {
+    width: min(var(--content-max), calc(100% - (var(--page-gutter) * 2)));
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.home-hero {
+    width: 100%;
+    max-width: var(--content-max);
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.home-hero-content {
+    width: min(100%, 820px);
+}
+
+/* Keep headings aligned with their own section, not the viewport */
+.home-section-heading,
+.positioning-copy,
+.opportunity-header {
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.home-section-heading {
+    max-width: 860px;
+}
+
+.home-section-heading h2,
+.positioning-copy h2 {
+    max-width: 100%;
+    font-size: clamp(32px, 3vw, 54px);
+    line-height: 1.12;
+    overflow-wrap: anywhere;
+}
+
+.home-section-heading p,
+.positioning-copy p {
+    max-width: 760px;
+}
+
+/* Project and service cards should shrink evenly, never stretch the page */
+.selected-projects-grid,
+.home-service-grid,
+.process-grid,
+.pricing-grid,
+.contact-bento-grid {
+    width: 100%;
+}
+
+.selected-projects-grid,
+.home-service-grid,
+.process-grid,
+.pricing-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+}
+
+.selected-projects-grid > *,
+.home-service-grid > *,
+.process-grid > *,
+.pricing-grid > *,
+.contact-bento-grid > * {
+    min-width: 0;
+}
+
+.selected-projects-grid .about-project-card,
+.pricing-card,
+.home-service-card,
+.process-card {
+    max-width: 100%;
+}
+
+/* Larger monitors: make better use of available space without overlong text */
+@media (min-width: 1600px) {
+    .home-section,
+    .home-final-cta,
+    .pricing-section {
+        width: min(1480px, calc(100% - 120px));
+    }
+
+    .home-section {
+        padding-top: clamp(100px, 6.5vw, 140px);
+        padding-bottom: clamp(100px, 6.5vw, 140px);
+    }
+
+    .home-service-grid,
+    .selected-projects-grid {
+        gap: clamp(22px, 1.7vw, 30px);
+    }
+
+    .home-service-card {
+        padding: clamp(30px, 2vw, 42px);
+    }
+
+    .process-card {
+        padding: clamp(26px, 1.8vw, 36px);
+    }
+
+    .home-hero h1 {
+        font-size: clamp(64px, 5.2vw, 96px);
+    }
+
+    .home-hero-description {
+        font-size: clamp(16px, 1vw, 19px);
+    }
+}
+
+/* Standard desktop and laptop */
+@media (min-width: 901px) and (max-width: 1599px) {
+    .home-section,
+    .home-final-cta,
+    .pricing-section {
+        width: calc(100% - 96px);
+    }
+
+    .home-positioning {
+        grid-template-columns: minmax(0, 1fr) minmax(0, 1fr);
+        gap: clamp(32px, 5vw, 76px);
+    }
+}
+
+/* Tablet: reduce columns before cards become cramped */
+@media (min-width: 651px) and (max-width: 900px) {
+    .home-section,
+    .home-final-cta,
+    .pricing-section {
+        width: calc(100% - 48px);
+    }
+
+    .home-positioning {
+        grid-template-columns: minmax(0, 1fr) minmax(0, 1fr);
+        gap: 28px;
+    }
+
+    .process-grid,
+    .pricing-grid {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+
+    .selected-projects-grid,
+    .home-service-grid {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+
+    .hero-orbit {
+        opacity: 0.35;
+        right: -90px;
+    }
+
+    .home-final-cta {
+        padding: 38px;
+    }
+}
+
+/* Mobile: stack content naturally and prevent horizontal overflow */
+@media (max-width: 650px) {
+    :root {
+        --page-gutter: 16px;
+    }
+
+    .home-section,
+    .home-final-cta,
+    .pricing-section {
+        width: calc(100% - 32px);
+    }
+
+    .home-hero {
+        width: 100%;
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+
+    .home-hero-content {
+        width: 100%;
+    }
+
+    .home-hero h1 {
+        font-size: clamp(38px, 10vw, 58px);
+        line-height: 1.04;
+    }
+
+    .home-hero-description {
+        font-size: 14px;
+    }
+
+    .home-section-heading h2,
+    .positioning-copy h2 {
+        font-size: clamp(28px, 7.5vw, 38px);
+    }
+
+    .home-service-grid,
+    .process-grid,
+    .pricing-grid,
+    .selected-projects-grid,
+    .contact-bento-grid {
+        grid-template-columns: minmax(0, 1fr);
+    }
+
+    .home-positioning {
+        display: grid;
+        grid-template-columns: minmax(0, 1fr);
+        gap: 28px;
+    }
+
+    .positioning-copy {
+        position: static;
+    }
+
+    .hero-orbit {
+        display: none;
+    }
+
+    .home-final-cta {
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 28px 22px;
+        gap: 24px;
+    }
+
+    .process-card,
+    .process-card:nth-child(2) {
+        border-right: 0;
+        border-bottom: 1px solid var(--border);
+    }
+
+    .process-card:last-child {
+        border-bottom: 0;
+    }
+
+    .opportunity-grid,
+    .opportunity-approach {
+        grid-template-columns: minmax(0, 1fr);
+    }
+
+    .opportunity-card,
+    .opportunity-workstyle,
+    .opportunity-cta {
+        min-width: 0;
+    }
+}
+
+/* Very narrow phones */
+@media (max-width: 380px) {
+    .home-section,
+    .home-final-cta,
+    .pricing-section {
+        width: calc(100% - 24px);
+    }
+
+    .home-hero {
+        padding-left: 14px;
+        padding-right: 14px;
+    }
+
+    .home-hero h1 {
+        font-size: 36px;
+    }
+
+    .home-service-card,
+    .process-card {
+        padding: 20px;
+    }
 }
