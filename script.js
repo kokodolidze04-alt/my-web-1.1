@@ -10,6 +10,77 @@ document.addEventListener("DOMContentLoaded", () => {
 
 
     // =====================================================
+    // AUDIENCE ROUTING MODAL (client orders vs. hiring)
+    // =====================================================
+
+    const audienceModal = document.getElementById("audience-modal");
+    const audienceContinue = document.getElementById("audience-modal-continue");
+    const audienceClose = document.getElementById("audience-modal-close");
+
+    if (audienceModal) {
+        const modalCopyNodes = audienceModal.querySelectorAll("[data-modal-en][data-modal-ka]");
+        const sessionKey = "kokos-web-audience-modal-seen";
+
+        const updateAudienceModalLanguage = () => {
+            const lang = localStorage.getItem("kokos-lang") === "ka" ? "ka" : "en";
+
+            modalCopyNodes.forEach(node => {
+                node.textContent = node.getAttribute(`data-modal-${lang}`);
+            });
+
+            if (audienceClose) {
+                audienceClose.setAttribute(
+                    "aria-label",
+                    lang === "ka" ? "ფანჯრის დახურვა" : "Close dialog"
+                );
+            }
+        };
+
+        const closeAudienceModal = () => {
+            audienceModal.classList.add("is-hidden");
+            audienceModal.setAttribute("aria-hidden", "true");
+            document.body.classList.remove("audience-modal-open");
+            sessionStorage.setItem(sessionKey, "1");
+        };
+
+        updateAudienceModalLanguage();
+
+        if (sessionStorage.getItem(sessionKey) !== "1") {
+            audienceModal.classList.remove("is-hidden");
+            audienceModal.setAttribute("aria-hidden", "false");
+            document.body.classList.add("audience-modal-open");
+
+            if (window.lucide) {
+                lucide.createIcons();
+            }
+        } else {
+            audienceModal.classList.add("is-hidden");
+            audienceModal.setAttribute("aria-hidden", "true");
+        }
+
+        audienceContinue?.addEventListener("click", closeAudienceModal);
+        audienceClose?.addEventListener("click", closeAudienceModal);
+
+        audienceModal.addEventListener("click", event => {
+            if (event.target === audienceModal) {
+                closeAudienceModal();
+            }
+        });
+
+        document.addEventListener("keydown", event => {
+            if (event.key === "Escape" && !audienceModal.classList.contains("is-hidden")) {
+                closeAudienceModal();
+            }
+        });
+
+        document.getElementById("lang-toggle")?.addEventListener(
+            "click",
+            () => window.setTimeout(updateAudienceModalLanguage, 0)
+        );
+    }
+
+
+    // =====================================================
     // LANGUAGE
     // =====================================================
 
@@ -2259,7 +2330,7 @@ const translations = {
             "Realistic product models and visualizations designed to present products before they ever reach the camera.",
 
         home_talk_about_3d:
-            "Talk about your project",
+            "Learn Blender — a powerful, industry-standard 3D tool",
 
         home_position_kicker:
             "WHY KOKOS-LAB",
@@ -2318,6 +2389,30 @@ const translations = {
         home_process_four_desc:
             "Final testing, optimization, deployment, and handover.",
 
+        home_blender_kicker:
+            "BLENDER TRAINING",
+
+        home_blender_title:
+            "Beyond the screen.<br><span>Into 3D.</span>",
+
+        home_blender_desc:
+            "Learn Blender, a powerful, industry-standard 3D creation tool. Build practical skills in modeling, materials, lighting, camera setup, and rendering through a guided learning experience.",
+
+        home_blender_topic_model:
+            "3D Modeling",
+
+        home_blender_topic_materials:
+            "Materials & Textures",
+
+        home_blender_topic_lighting:
+            "Lighting",
+
+        home_blender_topic_render:
+            "Camera & Rendering",
+
+        home_blender_button:
+            "Explore the Blender course",
+
         home_cta_kicker:
             "READY TO START?",
 
@@ -2334,10 +2429,10 @@ const translations = {
             "KOKOS-LAB · ABOUT",
 
         about_hero_title:
-            "At the intersection of <span>various fields .</span>",
+            "AI-assisted software <span>development.</span>",
 
         about_hero_desc:
-            "I explore the intersection of artificial intelligence, software, 3D graphics, neuroscience, and creative technology.",
+            "I build practical digital products with modern web technologies and AI-assisted development — combining cloud models, local models, and hands-on code review.",
 
         about_meta_name_label:
             "NAME",
@@ -2346,22 +2441,22 @@ const translations = {
             "CURRENT FOCUS",
 
         about_meta_focus:
-            "AI · Software · 3D",
+            "HTML · CSS · JavaScript · React · TypeScript · AI მოდელები",
 
         about_intro_kicker:
-            "ABOUT ME",
+            "PROFESSIONAL PROFILE",
 
         about_intro_title:
-            "A multidisciplinary approach to technology.",
+            "Turning ideas into useful software.",
 
         about_intro_desc:
-            "My interests span technology, psychology, artificial intelligence, visual computing, and creative development.",
+            "I combine product thinking, modern web development, and AI-assisted workflows to build and improve digital products.",
 
         about_intro_text_1:
-            "I am Tornike Dolidze, a 22-year-old developer and creative technologist working across several different fields of technology and research.",
+            "I’m Tornike Dolidze, a software developer focused on building web applications, interactive interfaces, and practical digital tools.",
 
         about_intro_text_2:
-            "My academic background and technical interests have led me toward projects that combine software, artificial intelligence, visual technologies, and human cognition.",
+            "I work with AI as a development partner — using cloud and local models for research, implementation, debugging, and review while keeping testing and understanding of the code central to the process.",
 
         about_education_kicker:
             "EDUCATION",
@@ -2486,6 +2581,36 @@ const translations = {
         about_goals_label:
             "ALWAYS BUILDING",
 
+        stack_kicker: "TECH STACK & TOOLING",
+        stack_title: "The tools behind the work.",
+        stack_intro: "A practical toolkit for building, testing, iterating, and shipping software — with AI integrated into the workflow.",
+        stack_frontend_label: "FRONTEND",
+        stack_frontend_title: "Web interfaces",
+        stack_frontend_desc: "Responsive interfaces, component-based UI, and interactive browser experiences.",
+        stack_backend_label: "BACKEND & INTEGRATION",
+        stack_backend_title: "Application functionality",
+        stack_backend_desc: "Connecting interfaces to APIs, data services, and application workflows.",
+        stack_delivery_label: "DEVELOPMENT & DELIVERY",
+        stack_delivery_title: "Build and ship",
+        stack_delivery_desc: "Developing locally, managing code, checking behavior, and deploying web demos.",
+        ai_workspace_kicker: "AI MODEL WORKSPACE",
+        ai_workspace_title: "Cloud intelligence. Local control.",
+        ai_workspace_intro: "I work with both hosted models and locally run models, choosing the right environment for research, coding, experimentation, and privacy-conscious workflows.",
+        ai_cloud_label: "CLOUD MODELS",
+        ai_cloud_title: "Hosted AI assistants",
+        ai_cloud_desc: "Using cloud models for planning, code generation, technical research, debugging, architecture discussions, and reviewing implementation options.",
+        ai_local_label: "LOCAL MODELS",
+        ai_local_title: "LM Studio & local inference",
+        ai_local_desc: "Running and testing local language models through LM Studio, comparing responses, and using local inference for coding and model experimentation.",
+        ai_workspace_note: "AI-generated output is a starting point, not an unquestioned result. I review the code, verify behavior, troubleshoot errors, and refine the implementation.",
+        workflow_kicker: "HOW I WORK",
+        workflow_title: "A clear loop from idea to release.",
+        workflow_intro: "AI helps accelerate parts of the process; structure, testing, and decisions keep the work grounded.",
+        workflow_step1_title: "Understand", workflow_step1_desc: "Clarify the goal, users, constraints, and expected functionality.",
+        workflow_step2_title: "Plan", workflow_step2_desc: "Break work into manageable tasks and select a practical approach.",
+        workflow_step3_title: "Build with AI", workflow_step3_desc: "Use cloud or local models to assist implementation and explore alternatives.",
+        workflow_step4_title: "Review & test", workflow_step4_desc: "Inspect code, run the application, test user flows, and fix issues.",
+        workflow_step5_title: "Refine & ship", workflow_step5_desc: "Improve usability, responsiveness, and reliability, then deploy and document.",
         about_ai_kicker:
             "AI & DEVELOPMENT",
 
@@ -2562,7 +2687,7 @@ const translations = {
             "KOKOS-LAB",
 
         about_cta_title:
-            "Let's build something meaningful.",
+            "Let's talk about what your team is building.",
 
         about_cta_desc:
             "Explore the projects or get in touch to start something new.",
@@ -3145,19 +3270,19 @@ course_2_cert: "Certificate + Recommendation Letter",
             "PREFERRED WORKING MODEL",
 
         opportunity_workstyle_title:
-            "A balance between office and remote work.",
+            "Hybrid collaboration. Ready to contribute.",
 
         opportunity_workstyle_text:
-            "I prefer a hybrid working model that combines working from home with in-person collaboration at the office. This allows me to focus independently while staying connected with the team and contributing directly when collaboration matters.",
+            "I am interested in a hybrid Software Developer role in Tbilisi: primarily focused work with in-person collaboration when the team needs it. I can contribute a full 8-hour workday and want to grow through real product work and team collaboration.",
 
         opportunity_tag1:
-            "Hybrid work",
+            "Hybrid · Tbilisi",
 
         opportunity_tag2:
-            "Team collaboration",
+            "8-hour workday",
 
         opportunity_tag3:
-            "Continuous learning",
+            "Long-term collaboration",
 
         opportunity_cta_title:
             "Have a product in mind?",
@@ -3410,7 +3535,7 @@ project_appointly_preview:
             "რეალისტური პროდუქტის მოდელები და ვიზუალიზაციები, რომლებიც საშუალებას გაძლევს პროდუქტი კამერის წინ გამოჩენამდე წარმოადგინო.",
 
         home_talk_about_3d:
-            "მომიყევი შენს პროექტზე",
+            "შეისწავლე Blender — ძლიერი, ინდუსტრიის სტანდარტის 3D პროგრამა",
 
         home_position_kicker:
             "რატომ KOKOS-LAB",
@@ -3469,6 +3594,30 @@ project_appointly_preview:
         home_process_four_desc:
             "საბოლოო ტესტირება, ოპტიმიზაცია, განთავსება და პროექტის გადმოცემა.",
 
+        home_blender_kicker:
+            "BLENDER-ის სასწავლო კურსი",
+
+        home_blender_title:
+            "ეკრანის მიღმა —<br><span>სამგანზომილებიან სამყაროში.</span>",
+
+        home_blender_desc:
+            "შეისწავლე Blender — ძლიერი, ინდუსტრიის სტანდარტის 3D პროგრამა. კურსის ფარგლებში გაეცნობი მოდელირებას, მასალებსა და ტექსტურებს, განათებას, კამერის გამართვასა და რენდერს პრაქტიკული სწავლების გზით.",
+
+        home_blender_topic_model:
+            "3D მოდელირება",
+
+        home_blender_topic_materials:
+            "მასალები და ტექსტურები",
+
+        home_blender_topic_lighting:
+            "განათება",
+
+        home_blender_topic_render:
+            "კამერა და რენდერი",
+
+        home_blender_button:
+            "გაეცანი Blender-ის კურსს",
+
         home_cta_kicker:
             "მზად ხარ დასაწყებად?",
 
@@ -3485,10 +3634,10 @@ project_appointly_preview:
             "KOKOS-LAB · ჩემ შესახებ",
 
         about_hero_title:
-            "სხვადასხვა<br><span>სფეროს გადაკვეთაზე.</span>",
+            "AI-ით მხარდაჭერილი პროგრამული <span>დეველოპმენტი.</span>",
 
         about_hero_desc:
-            "ვიკვლევ ხელოვნური ინტელექტის, პროგრამული უზრუნველყოფის, 3D გრაფიკის, ნეირომეცნიერებისა და კრეატიული ტექნოლოგიების გადაკვეთას.",
+            "ვქმნი პრაქტიკულ ციფრულ პროდუქტებს თანამედროვე ვებტექნოლოგიებითა და AI-ით მხარდაჭერილი დეველოპმენტით — ქლაუდ და ლოკალური მოდელების გამოყენებით, კოდის შემოწმებასთან ერთად.",
 
         about_meta_name_label:
             "სახელი",
@@ -3500,19 +3649,19 @@ project_appointly_preview:
             "AI · Software · 3D",
 
         about_intro_kicker:
-            "ჩემ შესახებ",
+            "პროფესიული პროფილი",
 
         about_intro_title:
-            "ვქმნი, ვსწავლობ, ვავითარებ.",
+            "იდეებიდან სასარგებლო პროგრამულ პროდუქტებამდე.",
 
         about_intro_desc:
-            "ჩემი ინტერესები მოიცავს ტექნოლოგიებს, ფსიქოლოგიას, ხელოვნურ ინტელექტს, ვიზუალურ გამოთვლებსა და კრეატიულ დეველოპმენტს.",
+            "ვაერთიანებ პროდუქტის ხედვას, თანამედროვე ვებდეველოპმენტსა და AI-ით მხარდაჭერილ სამუშაო პროცესს ციფრული პროდუქტების შესაქმნელად და გასაუმჯობესებლად.",
 
         about_intro_text_1:
-            "მე ვარ თორნიკე დოლიძე, 22 წლის დეველოპერი და კრეატიული ტექნოლოგი, რომელიც ტექნოლოგიისა და კვლევის რამდენიმე მიმართულებაზე მუშაობს.",
+            "მე ვარ თორნიკე დოლიძე — პროგრამული დეველოპერი, რომელიც ვებაპლიკაციებზე, ინტერაქტიულ ინტერფეისებსა და პრაქტიკულ ციფრულ ხელსაწყოებზე მუშაობს.",
 
         about_intro_text_2:
-            "ჩემმა მისწრაფებებმა,  გამოცდილებამ და ტექნიკურმა ინტერესებმა მიმიყვანა პროექტებამდე, რომლებიც პროგრამულ უზრუნველყოფას, ხელოვნურ ინტელექტს, ვიზუალურ ტექნოლოგიებსა და ადამიანის კოგნიციას აერთიანებს.",
+            "AI-ს განვითარების პარტნიორად ვიყენებ — ქლაუდ და ლოკალურ მოდელებს კვლევისთვის, იმპლემენტაციისთვის, დებაგინგისა და კოდის გადახედვისთვის; ამ პროცესში ტესტირება და კოდის გააზრება მთავარ პრიორიტეტად რჩება.",
 
         about_education_kicker:
             "განათლება",
@@ -3637,6 +3786,36 @@ project_appointly_preview:
         about_goals_label:
             "ყოველთვის ვქმნი",
 
+        stack_kicker: "ტექნოლოგიები და ხელსაწყოები",
+        stack_title: "ხელსაწყოები, რომლებითაც ვმუშაობ.",
+        stack_intro: "პრაქტიკული ტექნოლოგიური ნაკრები პროგრამული პროდუქტების შესაქმნელად, შესამოწმებლად, გასაუმჯობესებლად და გასაშვებად — AI ინტეგრირებულია სამუშაო პროცესში.",
+        stack_frontend_label: "FRONTEND",
+        stack_frontend_title: "ვებინტერფეისები",
+        stack_frontend_desc: "ადაპტირებადი ინტერფეისები, კომპონენტებზე დაფუძნებული UI და ინტერაქტიული ვებგამოცდილება.",
+        stack_backend_label: "BACKEND და ინტეგრაცია",
+        stack_backend_title: "აპლიკაციის ფუნქციონალი",
+        stack_backend_desc: "ინტერფეისების API-ებთან, მონაცემთა სერვისებთან და აპლიკაციის სამუშაო პროცესებთან დაკავშირება.",
+        stack_delivery_label: "დეველოპმენტი და გამოშვება",
+        stack_delivery_title: "შექმნა და გაშვება",
+        stack_delivery_desc: "ლოკალური დეველოპმენტი, კოდის მართვა, ფუნქციონალის შემოწმება და ვებდემოებზე განთავსება.",
+        ai_workspace_kicker: "AI მოდელების სამუშაო გარემო",
+        ai_workspace_title: "ქლაუდის შესაძლებლობები. ლოკალური კონტროლი.",
+        ai_workspace_intro: "ვმუშაობ როგორც ჰოსტირებულ, ისე ლოკალურად გაშვებულ მოდელებთან და გარემოს ვარჩევ კვლევის, კოდირების, ექსპერიმენტებისა და მონაცემთა კონფიდენციალურობის საჭიროების მიხედვით.",
+        ai_cloud_label: "ქლაუდ მოდელები",
+        ai_cloud_title: "ჰოსტირებული AI ასისტენტები",
+        ai_cloud_desc: "ქლაუდ მოდელებს ვიყენებ დაგეგმვისთვის, კოდის გენერირებისთვის, ტექნიკური კვლევისთვის, დებაგინგისთვის, არქიტექტურის განხილვისა და იმპლემენტაციის ვარიანტების შესაფასებლად.",
+        ai_local_label: "ლოკალური მოდელები",
+        ai_local_title: "LM Studio და ლოკალური ინფერენსი",
+        ai_local_desc: "LM Studio-ს საშუალებით ლოკალური ენობრივი მოდელების გაშვება და ტესტირება, პასუხების შედარება და ლოკალური ინფერენსის გამოყენება კოდირებისა თუ მოდელებზე ექსპერიმენტებისთვის.",
+        ai_workspace_note: "AI-ის მიერ გენერირებული შედეგი საწყისი წერტილია და არა ბრმად მისაღები პასუხი. კოდს ვამოწმებ, ფუნქციონალს ვადასტურებ, შეცდომებს ვიძიებ და იმპლემენტაციას ვაუმჯობესებ.",
+        workflow_kicker: "როგორ ვმუშაობ",
+        workflow_title: "იდეიდან გამოშვებამდე მკაფიო ციკლი.",
+        workflow_intro: "AI პროცესის ნაწილებს აჩქარებს; სტრუქტურა, ტესტირება და გააზრებული გადაწყვეტილებები კი სამუშაოს სანდოს ხდის.",
+        workflow_step1_title: "გაგება", workflow_step1_desc: "მიზნის, მომხმარებლების, შეზღუდვებისა და მოსალოდნელი ფუნქციონალის დაზუსტება.",
+        workflow_step2_title: "დაგეგმვა", workflow_step2_desc: "სამუშაოს მართვად ამოცანებად დაყოფა და პრაქტიკული მიდგომის შერჩევა.",
+        workflow_step3_title: "შექმნა AI-სთან", workflow_step3_desc: "ქლაუდ ან ლოკალური მოდელების გამოყენება იმპლემენტაციისა და ალტერნატივების შესასწავლად.",
+        workflow_step4_title: "გადახედვა და ტესტირება", workflow_step4_desc: "კოდის შემოწმება, აპლიკაციის გაშვება, მომხმარებლის სცენარების ტესტირება და ხარვეზების გამოსწორება.",
+        workflow_step5_title: "დახვეწა და გაშვება", workflow_step5_desc: "გამოყენებადობის, ადაპტირებადობისა და სანდოობის გაუმჯობესება, შემდეგ კი განთავსება და დოკუმენტირება.",
         about_ai_kicker:
             "AI და დეველოპმენტი",
 
@@ -3709,10 +3888,10 @@ project_appointly_preview:
             "KOKOS-LAB",
 
         about_cta_title:
-            "შევქმნათ რაღაც მნიშვნელოვანი.",
+            "ვისაუბროთ იმ პროდუქტზე, რომელსაც თქვენი გუნდი ქმნის.",
 
         about_cta_desc:
-            "დაათვალიერე პროექტები ან დამიკავშირდი ახალი იდეის დასაწყებად.",
+            "დაათვალიერე ჩემი პროექტები, განვიხილოთ Software Developer პოზიცია ან მომიყევი იმ პროდუქტზე, რომელსაც შენი გუნდი ქმნის.",
 
         about_cta_button:
             "KOKOS-LAB-ზე დაბრუნება",
@@ -4293,19 +4472,19 @@ course_2_cert: "სერტიფიკატი + რეკომენდა�
             "სასურველი სამუშაო ფორმატი",
 
         opportunity_workstyle_title:
-            "ბალანსი ოფისსა და დისტანციურ მუშაობას შორის.",
+            "ჰიბრიდული თანამშრომლობა — მზად ვარ წვლილის შესატანად.",
 
         opportunity_workstyle_text:
-            "უპირატესობას ჰიბრიდულ სამუშაო ფორმატს ვანიჭებ, რომელიც სახლიდან მუშაობასა და ოფისში გუნდთან პირისპირ თანამშრომლობას აერთიანებს. ეს მაძლევს შესაძლებლობას, დამოუკიდებლად კონცენტრირებულად ვიმუშაო და ამავდროულად, გუნდთან აქტიური კომუნიკაცია და საჭირო საკითხებზე უშუალო თანამშრომლობა შევინარჩუნო.",
+            "ვეძებ ჰიბრიდულ Software Developer პოზიციას თბილისში: ძირითადად კონცენტრირებული სამუშაო სახლიდან და ოფისში გუნდთან თანამშრომლობა საჭიროებისამებრ. შემიძლია სრულ 8-საათიან სამუშაო დღეში მონაწილეობა და მსურს რეალურ პროდუქტებზე გუნდთან ერთად განვითარება.",
 
         opportunity_tag1:
-            "ჰიბრიდული მუშაობა",
+            "ჰიბრიდი · თბილისი",
 
         opportunity_tag2:
-            "გუნდური თანამშრომლობა",
+            "8-საათიანი სამუშაო დღე",
 
         opportunity_tag3:
-            "უწყვეტი განვითარება",
+            "გრძელვადიანი თანამშრომლობა",
 
         opportunity_cta_title:
             "გაქვთ პროდუქტის იდეა?",
