@@ -2393,7 +2393,7 @@ const translations = {
             "BLENDER TRAINING",
 
         home_blender_title:
-            "Beyond the screen.<br><span>Into 3D.</span>",
+            "Learn Blender.<br><span>Create in 3D.</span>",
 
         home_blender_desc:
             "Learn Blender, a powerful, industry-standard 3D creation tool. Build practical skills in modeling, materials, lighting, camera setup, and rendering through a guided learning experience.",
@@ -2412,6 +2412,24 @@ const translations = {
 
         home_blender_button:
             "Explore the Blender course",
+
+        home_web_feature_kicker:
+            "WEB DEVELOPMENT",
+
+        home_web_feature_desc:
+            "Purpose-built websites and web applications with responsive design, thoughtful user experience, and reliable functionality.",
+
+        home_web_tag_one:
+            "Responsive Websites",
+
+        home_web_tag_two:
+            "Web Applications",
+
+        home_web_tag_three:
+            "UI & UX",
+
+        home_web_feature_button:
+            "Explore web services",
 
         home_cta_kicker:
             "READY TO START?",
@@ -3598,7 +3616,7 @@ project_appointly_preview:
             "BLENDER-ის სასწავლო კურსი",
 
         home_blender_title:
-            "ეკრანის მიღმა —<br><span>სამგანზომილებიან სამყაროში.</span>",
+            "შეისწავლე Blender.<br><span>შექმენი 3D-ში.</span>",
 
         home_blender_desc:
             "შეისწავლე Blender — ძლიერი, ინდუსტრიის სტანდარტის 3D პროგრამა. კურსის ფარგლებში გაეცნობი მოდელირებას, მასალებსა და ტექსტურებს, განათებას, კამერის გამართვასა და რენდერს პრაქტიკული სწავლების გზით.",
@@ -3617,6 +3635,24 @@ project_appointly_preview:
 
         home_blender_button:
             "გაეცანი Blender-ის კურსს",
+
+        home_web_feature_kicker:
+            "ვებ-დეველოპმენტი",
+
+        home_web_feature_desc:
+            "შენს მიზნებზე მორგებული ვებსაიტები და ვებაპლიკაციები — ადაპტური დიზაინით, გააზრებული მომხმარებლის გამოცდილებითა და გამართული ფუნქციონალით.",
+
+        home_web_tag_one:
+            "ადაპტური ვებსაიტები",
+
+        home_web_tag_two:
+            "ვებაპლიკაციები",
+
+        home_web_tag_three:
+            "UI და UX",
+
+        home_web_feature_button:
+            "გაეცანი ვებ-სერვისებს",
 
         home_cta_kicker:
             "მზად ხარ დასაწყებად?",
